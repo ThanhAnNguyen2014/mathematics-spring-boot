@@ -56,9 +56,9 @@
     <meta property="og:description" content="Phân số thập phân là phân số có mẫu số là 10; 100; 1000; ... Các dạng toán chuyển số thập phân sang phân số thập phân và rút gọn. Toán lớp 5" />
     <meta property="og:title" content="Phân số thập phân và số thập phân - Toán lớp 5" />
     <script type='text/javascript' src="../../../media/jquery/jquery.js?v=1"></script>
-    <script type='text/javascript' src="/modules/math/math.js?01032017"></script>
+    <script type='text/javascript' src="../../../modules/math/math.js?01032017"></script>
     <script type='text/javascript' src="../../../media/templates/olm/js/bootstrap.min.js?01032017"></script>
-    <link rel='stylesheet' type='text/css' href='/modules/grade/grade.css?01032017' />
+    <link rel='stylesheet' type='text/css' href='../../../modules/grade/grade.css?01032017' />
     <link rel='stylesheet' type='text/css' href='../../../media/templates/olm/css/math.css?01032017' />
     <link rel='stylesheet' type='text/css' href='../../../media/templates/olm/css/page.css?01032017' />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -353,50 +353,35 @@
 		</span>
                     </div>
                     <div id="error_panel"></div>
-                    <div id='qcontainer' tabindex="1">
-                        <div id='question' class="question">
-                            <center>
-                                <div class="lds-css ng-scope">
-                                    <div class="lds-spin" style="width:100%;height:100%">
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </center>
+                    <div id="qcontainer" tabindex="1">
+                        <div id="question" class="question">
+                            <h2>Chuyển phân số sau sang phân số thập phân (phân số thập phân là phân số có mẫu số là 1, 10, 100, …), sau đó viết dưới dạng số thập phân:</h2>
+                            <table style="font-size: 20px;">
+                                <tbody>
+                                    <tr align="center">
+                                        <td style="border-bottom: solid 1px;"> 1</td>
+                                        <td rowspan="2" valign="middle">&nbsp; = &nbsp;</td>
+                                        <td style="border-bottom: solid 1px;"> <input type="text" id="inputTuso2question" style="font-size:17px;width:40px"></td>
+                                        <td rowspan="2" valign="middle">&nbsp; = &nbsp;<input type="text" id="inputValuequestion" style="font-size:17px;width:40px"></td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td> 20</td>
+                                        <td> <input type="text" id="inputMauso2question" style="font-size:17px;width:40px"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <br class='clearfix' />
-                        <div class='std_btn' id="std_btn">
-                            <button class='btn btn-danger btn-large' title='Làm xong và nộp bài' id='btn-done'><b class="icon icon-white icon-ok"></b>  Nộp bài !</button>&nbsp;
+                        <br class="clearfix">
+                        <div class="std_btn" id="std_btn">
+                            <button class="btn btn-danger btn-large" title="Làm xong và nộp bài" id="btn-done"><b class="icon icon-white icon-ok"></b>  Nộp bài !</button>&nbsp;
                             <span class="btn-custom" style="float: right;">
-						<button onclick="return _OLM_.ignore();" title="Không trả lời được, chọn bỏ qua - câu hỏi này sẽ tính là câu sai trong thống kê của bạn" class='btn'><b class="icon icon-play"></b> Bỏ qua</button> 
-						<button onclick="Cf.loadHistory();" title="Xem lại các câu hỏi trước" class="btn"><b class="icon icon-time"></b></button> 
-						<button id='btn-ipad' onclick = "iPad.toggle();"  data-content='Ẩn/Hiện bàn phím ảo' class="btn"><b class="icon icon-th"></b></button>
-					</span>
+                                <button onclick="return _OLM_.ignore();" title="Không trả lời được, chọn bỏ qua - câu hỏi này sẽ tính là câu sai trong thống kê của bạn" class="btn"><b class="icon icon-play"></b> Bỏ qua</button> 
+                                <button onclick="Cf.loadHistory();" title="Xem lại các câu hỏi trước" class="btn"><b class="icon icon-time"></b></button> 
+                                <button id="btn-ipad" onclick="iPad.toggle();" data-content="Ẩn/Hiện bàn phím ảo" class="btn"><b class="icon icon-th"></b></button>
+                            </span>
 
                         </div>
-                        <div id='datablock' style='display: none;'></div>
+                        <div id="datablock" style="display: none;"></div>
                     </div>
                     <div class='verygood' id='verygood' style='display: none;'>
                         <div id='good' class='alert-success text-shadow'>Đúng rồi !</div>
