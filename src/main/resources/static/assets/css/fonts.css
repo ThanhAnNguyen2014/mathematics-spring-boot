@@ -1,0 +1,54 @@
+/* ======================================================= */
+/* ===================== UTM FONTS ======================= */
+/* ======================================================= */
+
+@font-face {font-family: "UTM"; src: local("UTM Cookies"), local("UTM Cookies"), url("../fonts/UTM%20Cookies.ttf") format("truetype");}
+@font-face {font-family: "UTM Androgyne"; src: local("UTM Androgyne"), local("UTM Androgyne"), url("../fonts/UTM%20Androgyne.ttf") format("truetype");}
+@font-face {font-family: "Skranji Bold"; src: local("Skranji Bold"), local("Skranji Bold"), url("../fonts/Skranji%20Bold.ttf") format("truetype");}
+
+/* ======================================================= */
+/* =================== OPENSANS FONTS ==================== */
+/* ======================================================= */
+
+@font-face {font-family: "OpenSans-Regular"; src: local("OpenSans-Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype");}
+@font-face {font-family: "OpenSans-Semibold"; src: local("OpenSans-Semibold"), local("OpenSans-Semibold"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");}
+@font-face {font-family: "OpenSans-Light"; src: local("OpenSans-Light"), local("OpenSans-Light"), url("../fonts/OpenSans-Light.ttf") format("truetype");}
+
+/* ======================================================= */
+/* ==================== ROBOTO FONTS ===================== */
+/* ======================================================= */
+
+@font-face {font-family: "Roboto-Regular"; src: local("Roboto-Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype");}
+@font-face {font-family: "Roboto-Black"; src: local("Roboto-Black"), local("Roboto-Black"), url("../fonts/Roboto-Black.ttf") format("truetype");}
+@font-face {font-family: "Roboto-Bold"; src: local("Roboto-Bold"), local("Roboto-Bold"), url("../fonts/Roboto-Bold.ttf") format("truetype");}
+@font-face {font-family: "Roboto-Light"; src: local("Roboto-Light"), local("Roboto-Light"), url("../fonts/Roboto-Light.ttf") format("truetype");}
+@font-face {font-family: "Roboto-Medium"; src: local("Roboto-Medium"), local("Roboto-Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype");}
+@font-face {font-family: "RobotoCondensed-Regular"; src: local("RobotoCondensed-Regular"), local("RobotoCondensed-Regular"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");}
+
+@font-face {font-family: "RobotoSlab-Bold"; src: local("RobotoSlab-Bold"), local("RobotoSlab-Bold"), url("../fonts/RobotoSlab-Bold.ttf") format("truetype");}
+@font-face {font-family: "RobotoSlab-Thin"; src: local("RobotoSlab-Thin"), local("RobotoSlab-Thin"), url("../fonts/RobotoSlab-Thin.ttf") format("truetype");}
+@font-face {font-family: "RobotoSlab-Light"; src: local("RobotoSlab-Light"), local("RobotoSlab-Light"), url("../fonts/RobotoSlab-Light.ttf") format("truetype");}
+@font-face {font-family: "RobotoSlab-Regular"; src: local("RobotoSlab-Regular"), local("RobotoSlab-Regular"), url("../fonts/RobotoSlab-Regular.ttf") format("truetype");}
+
+/* ======================================================= */
+/* ==================== UTM AVO FONTS ===================== */
+/* ======================================================= */
+
+@font-face {font-family: "UTM AVO"; src: local("UTM AVO"), local("UTM AVO"), url("../fonts/UTM%20AVO.TTF") format("truetype");}
+@font-face {font-family: "UTM AVO BOLD"; src: local("UTM AVO BOLD"), local("UTM AVO BOLD"), url("../fonts/UTM%20AVO%20BOLD.TTF") format("truetype");}
+@font-face {font-family: "UTM AVO BOLD ITALIC"; src: local("UTM AVO BOLD ITALIC"), local("UTM AVO BOLD ITALIC"), url("../fonts/UTM%20AVO%20BOLD%20ITALIC.TTF") format("truetype");}
+@font-face {font-family: "UTM AVO ITALIC"; src: local("UTM AVO ITALIC"), local("UTM AVO ITALIC"), url("../fonts/UTM%20AVO%20ITALIC.TTF") format("truetype");}
+
+/* ======================================================= */
+/* ==================== Liquid FONTS ===================== */
+/* ======================================================= */
+
+@font-face {font-family: "Liquid"; src: local("Liquid"), local("Liquid"), url("../fonts/Liquid.otf") format("truetype");}
+@font-face {font-family: "Liquid-light"; src: local("Liquid-light"), local("Liquid-light"), url("../fonts/Liquid-light.otf") format("truetype");}
+@font-face {font-family: "Jasmine"; src: local("Jasmine"), local("Jasmine"), url("../fonts/Jasmine.ttf") format("truetype");}
+
+/* ======================================================= */
+/* =================== PACIFICO FONTS ==================== */
+/* ======================================================= */
+
+@font-face {font-family: "Pacifico-Regular"; src: local("Pacifico-Regular"), local("Pacifico-Regular"), url("../fonts/Pacifico-Regular.ttf") format("truetype");}

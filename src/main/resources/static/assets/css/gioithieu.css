@@ -1,0 +1,242 @@
+.space3vw {clear: both;height: 3vw;width: 100%;}
+.pc-tutorial-page{font-family: Roboto-Regular; width: 100%; margin: auto; font-size: 15px;background-color: #fff;}
+.pc-t-title{text-align: center; font-size: 26px;}
+.pc-t-title-red{color: #dd5555;font-family: RobotoSlab-Bold;font-size: 24.5px;margin-left: 1.5vw;text-align: center;}
+.pc-t-info a{text-decoration: none; color: #ec5c51;}
+.pc-ti-title{background: rgba(0, 0, 0, 0) url("../image/home/line_title.png") no-repeat scroll left bottom;font-weight: bold;height: 32px;margin-bottom: 20px;}
+.pc-ti-content{color: #585858; text-align: justify;}
+.pc-ti-content a{color: #dd5555;font-weight: bold;}
+.pc-t-info .pc-ti-content{padding-right: 68px;}
+.pc-t-intro,.text-center{font-size: 14px;margin: 0 auto;text-align: center;width: 66vw;}
+.title_step{font-size: 16px;text-align: center;font-family: RobotoSlab-Regular;}
+.__showpostvst{width: 100%;margin-bottom: 0;}
+.pc-t-header{background-color: #dd5555;color: #fff;padding: 0.4vw 3vw;position: fixed;top: 0;width: 100vw;z-index: 9999;}
+.menu{margin: 0 auto;width: 70vw;}
+.menu .menu_item{display: inline-block;margin: 0 auto;text-align: center;width: 9vw;display: inline-block;cursor: pointer;}
+.menu .menu_item.logo{background: rgba(0, 0, 0, 0) url("../image/gioithieu/logo.png") no-repeat scroll left center;height: 45px;vertical-align: middle;width: 162px;}
+.menu .menu_item.order_card{background-color: #65b24a;border: 1px solid;border-radius: 12px;color: #fff;padding: 5px 0;}
+.banner_img{background-color: #324329;}
+.banner_img img{display: block;height: 26vw;margin: 0 auto;width: 70vw;}
+.page{margin: 0 auto;padding: 3vw 0;width: 65.5vw;} 
+.page_step{margin: 0 auto;padding: 3vw 0;width: 65.5vw;min-height: 42vw;} 
+.page .intro_video{display: inline-block;cursor: pointer;margin-left: 5vw;}
+.page .text_intro{display: inline-block;font-family: Roboto-Regular;font-size: 15px;margin-top: 1.5vw;text-align: justify;vertical-align: top;width: 65vw;}
+.bold{font-weight: bold;}
+.page_benefit{background: rgba(0, 0, 0, 0) url("../image/gioithieu/bg_benefit.png") no-repeat scroll center center;padding-bottom: 3vw;}
+.page_benefit .title_benefit{font-family: RobotoSlab-Bold;font-size: 28px;color: #fff;margin: 0 auto;padding: 2vw 0;text-shadow: 1px 2px 1px #000;text-transform: uppercase;width: 46vw;}
+.page_benefit .content{background-color: #fff;border-radius: 15px;margin: 0 auto;opacity: 0.85;width: 66vw;}
+.page_benefit .content ._item_content{display: inline-block;margin: 1vw 0 1vw 3vw;width: 29vw;}
+.page_benefit .content ._item_content img{display: inline-block;vertical-align: middle;}
+.page_benefit .content ._item_content .text-conten{display: inline-block;font-size: 15px;text-align: justify;vertical-align: top;width: 26vw;}
+.page_benefit .content ._item_content_end .text-conten{color:#000;}
+.page_benefit .content ._item_content .text-conten img{vertical-align: middle;}
+.page_benefit .content ._item_content_end{width: 35vw;margin: 0 auto;padding-bottom: 15px;}
+.text-red{color: #dd5555;font-size: 22px;font-family: RobotoSlab-Regular;}
+.uppercase{text-transform: uppercase;}
+._step{float: left;width: 16vw;margin: 1vw 0;}
+._step .text_step{text-align: justify;width: 15vw;padding: 1vw 0;}
+.step_img {background: rgba(0, 0, 0, 0) url("../image/gioithieu/step1.png") no-repeat scroll center center / 100% 100%;height: 25vw;width: 15vw;position: relative;}
+.step_img._1 {background-image: url("../image/gioithieu/step1.png");}
+.step_img._2 {background-image: url("../image/gioithieu/step2.png");}
+.step_img._3 {background-image: url("../image/gioithieu/step3.png");}
+.step_img._4 {background-image: url("../image/gioithieu/step4.png");}
+.step_img .number_step{background-color: #dd5555;border-radius: 50%;bottom: 1vw;color: #fff;font-size: 18px;left: 7.5vw;padding: 5px;position: absolute;text-align: center;width: 28px;}
+.page_intro_card{padding: 3vw 0;background: rgba(0, 0, 0, 0) url("../image/gioithieu/bg_dk_the.png") no-repeat scroll center center;}
+.page_intro_card .title_intro_card{color: #fff;font-family: RobotoSlab-Bold;font-size: 28px;margin: 0 auto;padding: 1vw 0;text-align: center;text-shadow: 1px 2px 1px #000;text-transform: uppercase;width: 55vw;}
+.page_intro_card .content{margin: 0 auto;width: 55vw;}
+.page_intro_card .content ._item_content{background-color: rgba(255, 255, 255, 0.85);display: inline-block;padding: 2vw 2vw 2vw 3vw;width: 50vw;}
+.page_intro_card .content ._item_content img{display: inline-block;vertical-align: middle;}
+.page_intro_card .content ._item_content .text-conten{display: inline-block;font-size: 15px;text-align: justify;vertical-align: top;width: 26vw;}
+.page_intro_card .content ._item_content .text-conten img{vertical-align: middle;}
+.bg_orange{background-color: #f99a00;color: #fff;padding: 5px;}
+.bt_datthe,.bt_datthe_action{cursor: pointer;background-color: #45a324;border-radius: 0.5vw;color: #fff;font-size: 20px;margin: 0 auto;padding: 0.5vw 3vw;text-align: center;width: 20vw;}
+.card_discount{background-color: #fff;padding: 0.5vw 3vw;}
+.card_discount img{background-color: #fff;}
+.card_discount .text-conten{display: inline-block;margin-left: 1vw;padding-top: 1vw;vertical-align: top;width: 33vw;}
+.title_discount {color: #dd5555;font-family: RobotoSlab-Regular;font-size: 16px;text-transform: uppercase;}
+.page_feedback {background-image: url("../image/gioithieu/balo.png"), url("../image/gioithieu/balo1.png");background-position: left bottom, 60vw bottom;background-repeat: no-repeat;margin: 0 auto;min-height: 35vw;padding: 0vw;width: 88.5vw;} 
+.box_feedback{margin: 0 auto;width: 100%;text-align: center;}
+._feedback {background-color: #fff;border: 1px solid #c3c3c3;border-radius: 5px;display: inline-block;margin: 1vw;text-align: justify;vertical-align: top;width: 280px;}
+._feedback .text_feedback {padding: 1vw;width: 248px;}
+._feedback .text_feedback .name_fb{color: #848484;font-family: Arial;font-size: 12px;}
+._feedback .text_feedback .content_fb{color: #363535;font-family: Times New Roman;font-size: 14px;font-style: italic;margin-top: 1vw;}
+.box_order_card{background: rgba(0, 0, 0, 0) url("../image/gioithieu/bg_dk_the_form.png") no-repeat scroll center center;padding-bottom: 3vw; width: 98.99vw;margin-top: 3vw;}
+.box_order_card .content{border: 1px solid #c8c292;margin: 0 auto;width: 58vw;}
+.box_order_card .content ._item_content{background-color: #fefff6;display: inline-block;width: 100%;}
+.box_order_card .content ._item_content  .card-title{border-bottom: 1px solid #c8c292;color: #010101;font-family: RobotoSlab-Regular;font-size: 15px;padding: 1vw 2vw;text-align: center;vertical-align: top;}
+.box_success_dk_the{display: none;}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/**************************               nap the page                        **************************************************/
+/* --- css for box nap the --- */
+.hide{display:none;}
+.title_dkthe {font-family: RobotoSlab-Bold;font-size: 22px;margin: 1vw auto 0;text-align: center;text-transform: uppercase;width: 40vw;}
+.intro_dkthe {color: #45a324;font-family: Roboto-Regular;font-size: 16px;margin: 0 auto;text-align: center;width: 50vw;}
+.box_content_dkthe .box_left{float: left;font-size: 16px;padding-left: 5vw;padding-top: 1vw;text-align: left;width: 45%;}
+.box_content_dkthe .box_right{float: left;font-size: 16px;padding-top: 1vw;text-align: left;width: 40%;}
+.box_content_dkthe .box_full{float: left;padding-left: 5vw;text-align: left;width: 90%;}
+.box_content_dkthe .error_napthe{color: red;font-family: Arial;font-size: 12px;}
+.input_item{display: inline-block;position: relative;}
+.input_item .label_inp{margin-bottom: 0;font-weight: bold;font-family: RobotoSlab-Bold;}
+.inp_dk_card{background-color: #fff;border: 1px solid #c8c292;color: #422f2f;font-size: 16px;padding: 0.6vw 2vw;text-align: center;width: 22vw;}
+.inp_dk_card.false{font-weight: bold;background-color: #ffcece;}
+#dk_address{height: 4vw;width: 48vw;}
+.input_item .inp_card_hint{font-family: Arial;background: #fffdef none repeat scroll 0 0;border: 1px solid #c9c9c9;top: 95px;color: #3c3c3c;display: none;font-size: 13px;font-weight: normal;left: 5%;line-height: 25px;min-height: 30px;padding: 10px;position: absolute;text-align: justify;width: 255px;z-index: 9999;}
+.input_item .inp_card_hint .inp_card_hint_left{background-image: url("../image/ar-tooltip-top.png");background-repeat: no-repeat;height: 20px;left: 50%;position: absolute;top: -10px;width: 20px;}
+.note_dk{color: #9a9a9a;font-family: Arial;font-size: 14px;font-style: italic;line-height: 18px;margin: 0 2vw;text-align: center;width: 85%;}
+.label_inp .note_dk{margin: 0;font-weight: normal;font-size: 12px;}
+#dk_sl_the{float: left;padding: 12px;width: 75px;}
+.bt_dk_the{background-color: #65b24a;border-radius: 10px;color: #fff;cursor: pointer;font-family: Arial;font-size: 18px;font-weight: bold;margin: 1vw auto 1vw 14vw;padding: 0.6vw 1vw;text-align: center;text-transform: uppercase;width: 20vw;}
+.card_km{top: 30px;background-color: #ff0000;color: #fff;font-family: arial;font-size: 10px;font-weight: bold;padding: 2px 5px;position: absolute;text-transform: uppercase;}
+.note_price{color: #65b24a;font-family: Arial;font-size: 14px;}
+.box_hoidap{background-color: transparent;color: #247ba0;font-family: Arial;font-size: 14px;margin: 0 auto;width: 35vw;}
+.box_phone_support{background-color: transparent;color: #474747;font-family: Arial;font-size: 14px;position: relative;text-align: center;}
+.box_phone_support ._content_support{display: inline-block;height: 3vw;line-height: 2.5vw;margin-left: -8vw;text-transform: uppercase;}
+.box_phone_support .bt_phone_support{float: left;background-color: #fdfef3;opacity: 0.5;padding: 18px 20px;border-radius: 25px;width: 120px;margin-left: 15px;}
+.box_phone_support .icon_phone{background-color: #65b24a;background-image: url("../image/napthe/ic_phone.png");background-position: 10px center;background-repeat: no-repeat;border-radius: 2vw;color: #fff;display: inline-block;font-size: 15px;font-weight: bold;padding: 0.5vw 0;position: absolute;right: 0;text-indent: 15px;width: 10vw;}
+.item_ques .item_ques_title{background: rgba(0, 0, 0, 0) url("../image/napthe/ic_hoidap.png") no-repeat scroll 0 center;cursor: pointer;height: 25px;margin: 1vw auto;text-indent: 35px;}
+.item_ques .item_ques_ans{font-style: italic;margin-left: 35px;display: none;text-align: justify;}
+
+.__boxdkthe .box_success_dk_the{background:url(../image/napthe/ic_tree.png) no-repeat bottom right;background-color: #fdfef3;border-radius: 10px;font-family: Roboto-Light;font-size: 17px;height: 450px;left: 200px;position: absolute;text-align: center;top: 55px;width: 710px;display: none;}
+.box_success_dk_the .box_success_title{color: #65b24a;display: none;font-family: Roboto-regular;font-size: 24px;margin: 0 auto;text-align: center;width: 60vw;}
+.box_success_dk_the .box_success_title ._check{margin: 15px auto;background:url(../image/napthe/ic-check.png) no-repeat top center;width:47px;height:47px;}
+.box_success_dk_the .box_success_title .msg_success{color: #9a9a9a;font-size: 14px;margin-top: 0;text-transform: none;}
+.box_success_dk_the .box_success_title .msg_success span{color: #0082b9;}
+
+.box_success_dk_the ._item{color: #565656;float: left;font-family: Arial;font-size: 17px;padding-left: 55px;padding-top: 15px;text-align: left;width: 100%;}
+.box_success_dk_the ._item ._item_title{float: left;font-weight: bold;width: 23%;}
+.box_success_dk_the ._item ._item_cont{float: left}
+.box_success_dk_the ._item ._item_cont .back_home{text-transform: uppercase;background-color: #dd5555;border-radius: 10px;color: #fff;display: inline-block;font-size: 18px;margin-bottom: 2vw;padding: 1vw 5vw;text-align: center;}
+.box_success_dk_the ._item ._item_cont .back_dkthe{cursor:pointer;background-color: #65b24a;border-radius: 10px;color: #fff;display: inline-block;padding: 10px 40px;text-align: center;}
+
+.vb_note_card {background: rgba(0, 0, 0, 0) url("../image/napthe/bg_note_landing.png") no-repeat scroll 0 0;margin: 3vw auto;width: 58vw;}
+.vb__content_note {font-size: 14px;padding: 1vw 1vw 4vw 16vw;text-align: justify;width: 35vw;}
+.vb_red {color: #dd5555;}
+.vb_bold {font-weight: bold;}
+._intro_nt{color: green;font-weight: bold; margin: 20px 20px 0;text-transform: uppercase;}
+.page_hoidap{margin-top: -3vw;}
+.box_content_suc{margin: 0 auto;width: 58vw;}
+.text-orange{color:#8b4500}
+.text-blue, .bold a{color:#5490AC!important;}
+.text-main{color:#dd5555;}
+.view_video{border-radius: 20px;left: 50%;padding: 1vw;position: absolute;top: 10vw;margin-left:-426px;}
+.gioithieu_opacity{display: none;z-index: 1;position: fixed; top: 0px; left: 0px; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.6);}
+
+#footer_gioithieu {
+    background: #ffffe7 url("../image/home/footer.png") no-repeat scroll center top;
+    bottom: 0;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+}
+#top-footer {
+    color: #ffcf8f;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    width: 1000px;
+}
+#top-footer a {
+    color: #ffcf8f;
+    font-weight: bold;
+}
+#bottom-footer {
+    height: 95px;
+    margin: 0 auto;
+    width: 1000px;
+}
+#bottom-footer .b_logo {
+    background-image: url("../image/home/foo-logo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    height: 52px;
+    width: 187px;
+}
+#bottom-footer .info_foo {
+    float: left;
+    padding-left: 55px;
+    padding-right: 55px;
+    width: 540px;
+}
+#bottom-footer .foo_text_info {
+    color: #bf9843;
+    font-size: 11px;
+    text-align: justify;
+}
+#bottom-footer .foo_add {
+    color: #010101;
+    font-size: 11px;
+    text-align: justify;
+}
+#bottom-footer .social_foo {
+    float: right;
+    margin-top: 20px;
+}
+.social_foo .fb_icon {
+    background-image: url("../image/home/icon_fb.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 31px;
+    width: 31px;
+}
+.social_foo a {
+    margin-left: 20px;
+}
+.social_foo .tw_icon {
+    background-image: url("../image/home/icon_tw.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 31px;
+    width: 31px;
+}
+.social_foo .rss_icon {
+    background-image: url("../image/home/icon_rss.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 31px;
+    width: 31px;
+}
+.menu a.active{color:#fff;}
+.menu a{color:#b1b1b1;}
+
+@keyframes scale {
+      0% { 
+       transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+                -moz-transform: scale(1.0);
+                -o-transform: scale(1.0);
+      }      
+      50% {
+    transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -o-transform: scale(1.2);       
+      }
+      100% {
+    transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+                -moz-transform: scale(1.0);
+                -o-transform: scale(1.0);       
+      }
+  }
+  .intro_video{position: relative;}
+  .iv-bg{width: auto;}
+  .iv-play{position: absolute; top: 50%; left: 50%; width: 90px; margin-top: -45px; margin-left: -45px; cursor: pointer;
+   animation: scale 1.5s linear infinite;
+      -moz-animation: scale 1.5s linear infinite;
+      -webkit-animation: scale 1.5s linear infinite;
+      -o-animation: scale 1.5s linear infinite;
+  }
+  
+  .onsend{margin: 1vw auto;width: 12vw;}
+  
+   .box_popup_hint,.box_popup_hint_atm{z-index: 9999;display: none;border: 1px solid #c4c4c4;left: 50%;margin-left: -355px;position: absolute;top: -140px;width: 80%;border-radius: 10px;background-color: #D4FFC5;}
+.box_popup_hint .close_popup,.box_popup_hint_atm .close_popup{cursor: pointer;background: rgba(0, 0, 0, 0) url("../image/napthe/ic-cancel.png") no-repeat scroll right center;border: 1px solid #dedede;border-radius: 18px;height: 28px;position: absolute;right: -15px;top: -10px;width: 28px;}
+.box_popup_hint .content_popup,.box_popup_hint_atm .content_popup{font-size: 16px;padding: 15px 25px;}
+.box_popup_hint .content_popup .title_red,.box_popup_hint_atm .content_popup .title_red{text-transform: uppercase;color:#dd5555;}
+.box_popup_hint .bt_close_popup,.box_popup_hint_atm .bt_close_popup{cursor: pointer;background-color: #dd5555;border-radius: 8px;color: #fff;font-family: Arial;font-size: 18px;margin: 20px auto;padding: 8px 40px;text-align: center;text-transform: uppercase;width: 150px;}
+.bt_dk_tv{background-color: #dd5555;border-radius: 10px;color: #fff;cursor: pointer;font-family: Arial;font-size: 18px;font-weight: bold;margin: 1vw auto 1vw 25%;padding: 0.6vw 1vw;text-align: center;text-transform: uppercase;width: 20vw;}

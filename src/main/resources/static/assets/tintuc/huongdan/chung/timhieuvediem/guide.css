@@ -1,0 +1,100 @@
+.text-bold {
+    font-weight: bold;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-center {
+    text-align: center;
+}
+.hide {
+    display: none!important;
+}
+.show {
+    display: block!important;
+}
+.inline-block {
+    display: inline-block;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.table {
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.table-justify .table-cell {
+    width: 1%;
+}
+.lt123-guide {
+    margin: 0 auto;
+    padding: 0;
+    width: 958px;
+}
+.g-container {
+    margin: auto;
+    font-family: Roboto-Regular;
+    font-size: 15px;
+    min-height: 800px;
+}
+.g-container .g-c-nav {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 7px;
+    cursor: pointer;
+    font-family: Roboto-Bold;
+    font-size: 18px;
+}
+.g-container .g-c-nav img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.g-container .g-c-nav.active {
+    border-color: #dd5555;
+    color: #dd5555;
+}
+.g-container .g-c-nav:nth-child(1) {
+    text-align: left;
+}
+.g-container .g-c-nav:nth-child(2) {
+    text-align: center;
+}
+.g-container .g-c-nav:nth-child(3) {
+    text-align: right;
+}
+.g-container .g-content .g-c-layout {
+    display: none;
+}
+.g-container .g-content .g-c-layout .g-c-block {
+    padding: 25px 0px;
+}
+.g-container .g-content .g-c-layout .g-c-block .g-c-title {
+    color: #dd5555;
+    margin: 5px 0px;
+    font-size: 18px;
+    font-family: Roboto-Bold;
+}
+.g-container .g-content .g-c-layout .g-c-block .g-c-context {
+    line-height: 25px;
+    margin: 5px 0px;
+}
+.__showpostvst {
+    padding: 0 45px;
+    width: 980px;
+}
+.__itemmorevst:last-child{display: none;}
+.__ctrlmorevst {margin-left: 0;}
+.box_section {border-right: none;}
+.m-sk-lesson-name, .m-sk-other-lesson{display:none;}
+.mobi{width:90vw;}
+.mobi .g-c-block img{width:92vw;}
+.mobi .table-cell{display:block;}
+.mobi .navi .table-cell{display:table-cell;}
+.tablet .__showpostvst {padding: 0 0px;width: 800px;}
+.tablet .lt123-guide {width: auto; }
+.tablet .text-center img{max-width: 750px;}

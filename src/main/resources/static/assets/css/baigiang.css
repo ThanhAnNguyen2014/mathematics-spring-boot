@@ -1,0 +1,286 @@
+#bottom-fixed{display: none !important;}
+.wrapper {background: url(../image/giaitoan/bg_gocthongthai.png) top center repeat-x;min-height: 1475px;min-height: 1410px;background-color: #e9ebee;}
+.navigation_tree{background-color: transparent;padding: 0 25px;}
+._toptitle {margin: 15px 0 -15px 0;width: 100%;height: 34px;line-height: 34px;text-align: left;color: #010101;font-size: 22px;font-family: Arial;font-weight: bold;background-color: transparent;}
+._boxcontent {border-radius: 5px;height: auto;width: 100%;}
+.box_section{margin-left: 0;border-right: none;width: 850px;}
+.box_sidebar_baigiang{width: 230px;display: inline-block;font-family: Roboto-Regular;margin-left: 15px;margin-top: 20px;}
+.box_baigiang_note img{max-width: 230px;}
+.box_baigiang_tb{background-color: #fff;}
+.box_baigiang_tb ._title{text-transform: uppercase;font-size: 16px;color: #5b5b5b;text-align: center;padding: 20px 0 10px;}
+.box_baigiang_tb ._title_intro{text-align: center;font-size: 14px;font-family: Roboto-Bold;color: #39b54a;padding-bottom: 10px;}
+.box_baigiang_tb ._content{font-size: 13px;color: #656464;padding: 0 20px 20px;text-align: justify;}
+.box_baigiang_intro{background-color: #fff;color: #444444;font-size: 14px;font-family: Roboto-Regular;word-wrap: break-word;border: 1px solid #dfe0e4;border-radius: 3px;padding: 20px 30px;margin-top: 20px;}
+.box_baigiang_intro ._title{font-size: 25px;text-transform: uppercase;font-weight: bold;}
+.box_baigiang_intro ._intro{margin-bottom: 5px;}
+.box_baigiang_intro ._note{font-size: 13px;color: #646464;}
+.box_baigiang_intro ._note .fa{margin-right: 5px;color: #a6cf92;}
+.box_baigiang_intro .box_giaovien{margin-top: 20px;position: relative;}
+.box_baigiang_intro .box_giaovien .item_giaovien{width: 60%;display: inline-block;}
+.box_baigiang_intro .box_giaovien .item_giaovien ._avatar{width: 80px;height: 80px;border-radius: 50%;margin-right: 10px;display: inline-block;}
+.box_baigiang_intro .box_giaovien .item_giaovien ._info{display: inline-block;width: 70%;font-size: 13px;color: #777777;vertical-align: top;margin-top: 5px;}
+.box_baigiang_intro .box_giaovien .item_giaovien ._info ._name{font-size: 19px;font-weight: bold;color: #555555;}
+.box_baigiang_intro .box_giaovien .box_baitap{width: 280px;display: inline-block;margin-top: 10px;position: absolute;right: 0;}
+.box_baigiang_intro .box_giaovien .box_baitap .btn_baitap{text-align: center;margin-bottom: 8px;border-radius: 3px;width: 230px;padding: 12px 25px;background-color: #dd5555;color: #fff;font-size: 18px;font-weight: bold;}
+.box_baigiang_intro .box_giaovien .box_baitap .btn_baitap .fa{margin-right: 5px;}
+.box_baigiang_intro .box_giaovien .box_baitap .note_baitap{color: #8a8a8a;font-size: 12px;}
+
+.box_baigiang_content{background-color: #fff;color: #555555;font-size: 14px;font-family: Roboto-Regular;word-wrap: break-word;border: 1px solid #dfe0e4;border-radius: 3px;margin-top: 20px;}
+.box_baigiang_content .box_search_baigiang{background-color: #f3f2f2;}
+.box_baigiang_content .box_search_baigiang input{ margin: 15px 30px;padding: 15px 20px;border: 1px solid #ccc;border-radius: 3px;width: 747px;background-image: url(../image/baigiang/ic-search.png);background-repeat: no-repeat;background-position: 752px center;}
+.box_baigiang_content .box_list_baigiang{padding: 20px 30px;display: table;border-collapse: collapse;}
+.box_baigiang_content .box_list_baigiang .item_baigiang{display: table-row;border-bottom: 1px solid #dfe0e4;}
+.box_baigiang_content .box_list_baigiang .item_baigiang:hover{background-color: #f3f2f2;}
+.box_baigiang_content .box_list_baigiang .item_baigiang > img{width: 163px;height: 93px;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .table-cell{display: table-cell;vertical-align: middle;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .table-row{display: table-row;}
+.box_baigiang_content .box_list_baigiang .item_baigiang img{width: 163px;height: 93px;margin-right: 10px;padding: 20px 0 20px 30px;}
+.box_baigiang_content .box_list_baigiang .item_baigiang ._info{width: 380px;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .box_rate{width: 175px;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .box_favorite{text-align: center;width: 120px;font-size: 12px;color: #666666;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .box_favorite .fa{font-size: 18px;margin: 9px;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .box_favorite .fa-heart-o:hover::before{content: "\f004";color: #ec5c51;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .box_favorite .fa-heart:hover::before{content: "\f08a";color: #777;}
+.box_baigiang_content .box_list_baigiang .item_baigiang .box_rate .note_rate{max-width: 127px;font-size: 12px;color: #666666;}
+.box_baigiang_content .box_list_baigiang .item_baigiang ._info ._title{font-size: 18px;font-weight: bold;width: 335px;}
+.box_baigiang_content .box_list_baigiang .item_baigiang ._info ._title span{color: #ec5c51;}
+.box_baigiang_content .box_list_baigiang .item_baigiang ._info ._duration{font-size: 12px;color: #888888;}
+
+/****** Style Star Rating Widget *****/
+.rating { 
+    border: none;
+    display: inline-block;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label { 
+    color: #dddbdb; 
+    float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+/*.rating > input:checked ~ label{ color: #ffcf10;  }*/
+
+/*.rating > input:checked ~ label,  show gold star when clicked 
+.rating:not(:checked) > label:hover,  hover current star 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }  hover previous stars in list 
+
+.rating > input:checked + label:hover,  hover current star when changing rating 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,  lighten current selection 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } */
+
+/*css danh sach video yeu thich - sidebar*/
+.box_sidebar_baigiang .box_baigiang_favorite{background-color: #fff;padding: 10px 20px;color: #777777;font-size: 14px;}
+.box_sidebar_baigiang .box_baigiang_favorite ._title{font-size: 17px;border-bottom: 1px solid #ccc;width: 135px;}
+.box_sidebar_baigiang .box_baigiang_favorite .item_favorite{border-bottom: 1px solid #ccc;padding: 12px 0;}
+.box_sidebar_baigiang .box_baigiang_favorite .item_favorite ._title_baigiang{font-weight: bold;color: #555555;}
+.box_sidebar_baigiang .box_baigiang_favorite .item_favorite ._favorite{margin-top: 3px;}
+.box_sidebar_baigiang .box_baigiang_favorite .item_favorite ._favorite .fa{margin-right: 5px;}
+.box_sidebar_baigiang .box_baigiang_favorite .item_favorite ._favorite .fa-heart:hover::before{content: "\f08a";color: #777;}
+.box_sidebar_baigiang .box_baigiang_favorite .item_favorite ._favorite .note_favorite{font-size: 12px;color: #8a8a8a;}
+.box_sidebar_baigiang .box_baigiang_favorite ._view_more_bg_fav{padding: 8px 0;font-size: 12px;color: #8a8a8a;}
+
+/*css mon lien quan - sidebar*/
+.box_sidebar_baigiang .box_mon_lienquan{background-color: #fff;padding: 10px 20px;color: #777777;font-size: 13px;}
+.box_sidebar_baigiang .box_mon_lienquan ._title_box{font-size: 17px;padding: 10px 0;}
+.box_sidebar_baigiang .box_mon_lienquan ._title{font-size: 14px;font-weight: bold;color: #555555;padding: 10px 0;}
+
+/*css video moi nhat - sidebar*/
+.box_sidebar_baigiang .box_baigiang_new{background-color: #fff;color: #777777;font-size: 14px;}
+.box_sidebar_baigiang .box_baigiang_new ._title{font-size: 17px;color: #ec5c51;padding: 10px 20px 0;}
+.box_sidebar_baigiang .box_baigiang_new ._title.text-green{color:#67ad45;}
+.box_sidebar_baigiang .box_baigiang_new .item_new{border-bottom: 2px solid #ccc;padding: 12px 0;padding: 10px 20px;}
+.box_sidebar_baigiang .box_baigiang_new .item_new:last-child{border-bottom: none;}
+.box_sidebar_baigiang .box_baigiang_new .item_new ._title_baigiang{font-weight: bold;color: #555555;}
+.box_sidebar_baigiang .box_baigiang_new .item_new ._new{margin-top: 3px;}
+.box_sidebar_baigiang .box_baigiang_new .item_new ._new .fa{margin-right: 5px;}
+.box_sidebar_baigiang .box_baigiang_new .item_new ._new .subject_baigiang_new{font-size: 12px;color: #888888;}
+.rating.rating_bg_sidebar > label:before{font-size: 1em;margin: 2px;}
+
+/*======================CSS VIDEO BAI GIANG DETAIL=============================*/
+.box_video_baigiang{padding: 30px 25px 20px;background-color: #fff;color: #ecebeb;font-size: 14px;font-family: Roboto-Regular;word-wrap: break-word;border: 1px solid #dfe0e4;border-radius: 3px;margin-top: 20px;}
+.box_video_baigiang .view_video{}
+.box_video_baigiang .view_video .img_play_video{ width: 800px;height: 455px; background-size: 100% 100%; cursor: pointer; position:relative; margin-top:-455px; text-align:center;}
+.box_video_baigiang .view_video .img_play_video img{position: absolute;top: 50%;left: 50%;width: 90px;margin-top: -55px;margin-left: -55px;cursor: pointer;animation: scale 1.5s linear infinite;-moz-animation: scale 1.5s linear infinite;-webkit-animation: scale 1.5s linear infinite;-o-animation: scale 1.5s linear infinite;}
+@keyframes scale {
+    0% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+    }      
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);       
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);       
+    }
+}
+.box_video_baigiang video{width:800px;height: 455px;}
+.box_video_baigiang .title_video{font-family: Roboto-Bold;font-size: 21px;color: #555555;padding-top: 15px;}
+.box_video_baigiang .box_rate{display: inline-block;color: #666666;}
+.box_video_baigiang .box_rate .info{vertical-align: top;display: inline-block;margin-top: 6px;}
+.box_video_baigiang .box_favorite{display: inline-block;color: #666666;vertical-align: top;margin: 6px 0 6px 50px;cursor: pointer;}
+.box_video_baigiang .box_favorite:hover > .fa{color: #ec5c51;cursor: pointer;}
+.box_video_baigiang .box_time_duration{border-top: 1px solid #ccc;display: inline-block;}
+.box_video_baigiang .box_time_duration ._title{padding: 15px 0;color: #777777;}
+.box_video_baigiang .box_time_duration .item_duration{margin-top: 5px;cursor: pointer;color: #505050;font-size: 14px;background-color: #ecebeb;border-radius: 3px;display: inline-block;padding: 10px 15px;margin-right: 8px;}
+.box_video_baigiang .box_time_duration .register_vip{margin-top: 5px;cursor: pointer;color: #fff;font-size: 14px;background-color: #dd5555;border-radius: 3px;display: inline-block;padding: 10px 15px;margin-right: 8px;}
+.box_video_baigiang .box_time_duration .item_duration:hover{background-color: #dadada;}
+.box_video_baigiang .box_time_duration .item_duration .fa,.box_video_baigiang .box_time_duration .register_vip .fa{color: #acacac;font-size: 22px;vertical-align: middle;margin-right: 5px;}
+
+/*============ TOM TAT BAI HOC ==================*/
+.box_intro_baigiang{position: relative;padding: 25px;background-color: #fff;color: #666666;font-size: 16px;font-family: Roboto-Regular;word-wrap: break-word;border: 1px solid #dfe0e4;border-radius: 3px;margin-top: 20px;}
+.box_intro_baigiang ._title{margin-bottom: 10px;color: #555555;font-size: 25px;}
+.box_intro_baigiang ._content{overflow: hidden;height: 150px;min-width: 150px;}
+
+.box_intro_baigiang ._content ._cl_1{color: #ec5c51;font-weight: normal;}
+.box_intro_baigiang ._content ._cl_2{color: #659e4a;font-family: Roboto-Bold;font-size: 18px;font-weight: normal;}
+.box_intro_baigiang ._content .btn_hide_content{width: 150px;background-color: #8b8b8b;color: #fff;text-align: center;padding: 8px 0;margin: 20px auto;cursor: pointer;}
+.box_intro_baigiang ._hide_content{position: absolute;height: 95px;width: 800px;top: 125px;background: linear-gradient(transparent,#fff);}
+.box_intro_baigiang ._hide_content .btn_show_full_content{margin-top: 50px;margin-left: 40%;width: 150px;background-color: #8b8b8b;color: #fff;text-align: center;padding: 8px 0;cursor: pointer;}
+.box_intro_baigiang .box_quick_test{border-top: 1px solid #ccc;padding: 15px 0 30px 0;cursor: pointer;}
+.box_intro_baigiang .box_quick_test_show ._title{font-size: 25px;color: #555555;padding: 10px 0 0;text-align: center;}
+.box_intro_baigiang .box_quick_test ._box_content{background-color: #f0f0f0;padding: 10px 15px;border-radius: 5px;}
+.box_intro_baigiang .box_quick_test ._box_content .fa{display: inline-block;font-size: 50px;margin-right: 10px;color: #909090;}
+.box_intro_baigiang .box_quick_test ._box_content ._info{display: inline-block;width: 600px;}
+.box_intro_baigiang .box_quick_test ._box_content ._info ._title_quick{color:#0072bc;font-size: 16px;font-family: Roboto-Bold;}
+.box_intro_baigiang .box_quick_test ._box_content ._info ._intro_quick{color: #888888;}
+.box_intro_baigiang .box_quick_test ._box_content .box_score_test{border-radius: 20px;background-color: #ec5c51;color: #fff;font-size: 14px;padding: 3px 10px;text-align: center;display: inline-block;vertical-align: top;margin-top: 10px;}
+
+/* =========================== DANH GIA BAI HOC ===============================*/
+.box_rating_baigiang{cursor: pointer;padding-bottom: 10px;background-color: #fff;color: #666666;font-size: 14px;font-family: Roboto-Regular;word-wrap: break-word;border: 1px solid #dfe0e4;border-radius: 3px;margin-top: 20px;}
+.box_rating_baigiang .head_rating_baigiang{border-bottom: 1px solid #dfe0e4;font-size: 15px;padding: 10px 25px 5px;}
+.box_rating_baigiang .head_rating_baigiang ._item{display: inline-block;padding: 10px 0;width: 310px;}
+.box_rating_baigiang .head_rating_baigiang ._item:first-child > .fa{color: #ffcf10;}
+.box_rating_baigiang .head_rating_baigiang ._item:last-child{width: 160px;}
+.box_rating_baigiang .head_rating_baigiang ._item:last-child > .fa{color: #ec5c51;}
+.box_rating_baigiang .head_rating_baigiang ._item .fa{font-size: 22px;margin-right: 5px;vertical-align: middle;}
+.box_rating_baigiang .box_show_rating_comment{display: none;}
+.box_rating_baigiang .box_show_rating_comment ._title{font-size: 25px;padding: 25px 25px 0;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details{padding: 10px 25px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .box_rate{display: inline-block;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .box_rate ._point_star{font-size: 78px;color:#67ad45;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .box_rate ._rate{font-size: 12px;color:#777777;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .box_rate ._rate fieldset{font-size: 18px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail{display: inline-block;vertical-align: top;margin-top: 25px;margin-left: 50px;line-height: 25px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .table-row{display: table-row;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .table-cell{display: table-cell;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .table-cell:first-child{width:50px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .table-cell:nth-of-type(even){width:380px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .progress_star{border-radius: 20px;background-color: #e9ebee;height: 15px;position: relative;width: 355px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .progress_star .starBar{background-color: #ec5f54;height: 100%;position: absolute;border-radius: 15px;}
+.box_rating_baigiang .box_show_rating_comment .box_rating_details .progress_rate_detail .progress_star .starBar._top{background-color: #4caf50;height: 100%;position: absolute;border-radius: 15px;}
+.box_rating_baigiang .more_rating_baigiang{color: #2f4ea5;text-align: center;font-size: 15px;padding-top: 5px;cursor: pointer;}
+
+.box_rating_baigiang .box_user_rating{padding: 20px 25px;background-color: #eaeaea;}
+.box_rating_baigiang .box_user_rating .bg-ava{width: 52px;position: relative;display: inline-block;vertical-align: top;}
+.box_rating_baigiang .box_user_rating .bg-ava img{width: 50px;display: inline-block;vertical-align: top;border: 1px solid #ccc;border-radius: 50%;}
+.box_rating_baigiang .box_user_rating .bg-info{margin-left: 8px;display: inline-block;line-height: 50px;position: relative;}
+.box_rating_baigiang .box_user_rating .bg-info .vip_user{transform: scale(0.8);top: 15px;right: -40px;}
+.box_rating_baigiang .box_user_rating .box_rating {display: inline-block;}
+.box_rating_baigiang .box_user_rating .box_rating .box_rate{line-height: 30px;}
+.box_rating_baigiang .box_user_rating .box_rating .box_rate fieldset{font-size: 22px;}
+.box_rating_baigiang .box_user_rating .box_rating .box_rate .hint_rating{font-size: 12px;font-style: italic;}
+/*--animate vote star--*/
+.box_rating_baigiang .box_user_rating .rating > label {color: #d1cece;float: right;}
+.rating > input:checked ~ label{ color: #ffcf10;  }
+.box_rating_baigiang .box_user_rating .rating > input:checked ~ label,  /*show gold star when clicked */
+.box_rating_baigiang .box_user_rating .rating:not(:checked) > label:hover,  /*hover current star */
+.box_rating_baigiang .box_user_rating .rating:not(:checked) > label:hover ~ label { color: #FFD700;  }  /*hover previous stars in list */
+
+.box_rating_baigiang .box_user_rating .rating > input:checked + label:hover,  /*hover current star when changing rating */
+.box_rating_baigiang .box_user_rating .rating > input:checked ~ label:hover,
+.box_rating_baigiang .box_user_rating .rating > label:hover ~ input:checked ~ label,  /*lighten current selection*/ 
+.box_rating_baigiang .box_user_rating .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+/*--end animate vote star--*/
+.box_rating_baigiang .box_user_rating .box_comment{display: inline-block;vertical-align: top;margin-left: 75px;}
+.box_rating_baigiang .box_user_rating .box_comment textarea{width: 518px;height: 55px;padding: 10px;}
+.box_rating_baigiang .box_user_rating .box_comment .btn_comment_bg{padding: 10px 0;margin-top: 10px;background-color: #ec5f54;color: #fff;text-align: center;width: 170px;}
+.box_rating_baigiang .box_list_comment_bg{font-size: 14px;color: #999999;}
+.box_rating_baigiang .box_list_comment_bg .head_list_comment_bg{padding: 25px 25px 0;}
+.box_rating_baigiang .box_list_comment_bg .head_list_comment_bg .total_comment{display: inline-block;}
+.box_rating_baigiang .box_list_comment_bg .head_list_comment_bg .filter_comment{float: right;color: #222222;}
+.box_rating_baigiang .box_list_comment_bg .content_list_comment_bg{padding: 0 25px;}
+.box_rating_baigiang .box_list_comment_bg .content_list_comment_bg .item_comment{padding: 25px 0;border-bottom: 1px solid #f5f5f5;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_user{display: inline-block;width: 225px;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_user .bg-ava{width: 52px;position: relative;display: inline-block;vertical-align: top;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_user .bg-ava img{width: 50px;display: inline-block;vertical-align: top;border: 1px solid #ccc;border-radius: 50%;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_user .bg-info{margin-left: 8px;display: inline-block;line-height: 35px;position: relative;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_user .bg-info .vip_user{transform: scale(0.8);top: 8px;}
+.box_comment_reply .item_user_reply .box_user .bg-info .vip_user{right: -40px;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_user .bg-info .time{margin-top: -15px;font-size: 12px;color: #b6b6b6;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment{max-width: 525px;display: inline-block;margin-left: 45px;vertical-align: middle;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment .del_comment{margin-top: 5px;cursor: pointer;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment .del_comment:hover{color:#dd5555;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment .detail_comment{color:#666666;}
+
+.url_luyentap{background-color: #3AB54A;color: #fff;font-size: 16px;padding: 15px 25px;border: 1px solid #dfe0e4;border-radius: 3px;margin-top: 20px;}
+.url_luyentap div{display: inline-block;vertical-align: top;margin-left: 5px;}
+.url_luyentap .fa{font-size: 25px;display: inline-block;}
+.url_luyentap .fa:last-child{float: right;}
+
+/* CSS FAVORITE VIDEO */
+.box_baigiang_fav{background-color: #f9f9f9;color: #444444;font-size: 14px;font-family: Roboto-Regular;word-wrap: break-word;border: 1px solid #dfe0e4;border-radius: 3px;margin-top: 20px;}
+.box_baigiang_fav ._title{font-size: 25px;text-transform: uppercase;font-weight: bold;padding: 20px 30px 10px;}
+.box_baigiang_fav ._intro{margin-bottom: 5px;padding: 0 30px;}
+.box_baigiang_fav ._note{font-size: 13px;color: #ec5c51;    padding: 0 30px;}
+.box_baigiang_fav ._note .fa{margin-right: 5px;color: #ec5c51;}
+.box_baigiang_fav .box_search_baigiang {color: #888888;height: 25px;margin-top: 30px;}
+.box_baigiang_fav .box_search_baigiang select{float: right;padding: 8px 20px;margin-left: 8px;color: #888888;}
+.box_baigiang_fav .box_search_baigiang .fa{float: right;font-size: 22px;margin: 5px 20px;cursor: pointer;}
+.box_baigiang_fav_content{background-color: #fff;color: #555555;font-size: 14px;font-family: Roboto-Regular;word-wrap: break-word;border-top: 1px solid #dfe0e4;margin-top: 20px;}
+.box_baigiang_fav_content .box_list_baigiang{padding: 20px 30px;display: table;border-collapse: collapse;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav{display: table-row;border-bottom: 1px solid #dfe0e4;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav:hover{background-color: #f3f2f2;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav > img{width: 163px;height: 93px;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .table-cell{display: table-cell;vertical-align: middle;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .table-row{display: table-row;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav img{width: 163px;height: 93px;margin-right: 10px;padding: 20px 0 20px 30px;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav ._info{width: 380px;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .box_mon{width: 175px;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .box_mon .text_mon{max-width: 127px;font-size: 14px;color: #222222;border-radius: 20px; background-color: #e9ebee;    text-align: center;padding: 5px;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .box_favorite{text-align: center;width: 120px;font-size: 12px;color: #666666;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .box_favorite .fa{font-size: 18px;margin: 9px;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .box_favorite .fa-heart-o:hover::before{content: "\f004";color: #ec5c51;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav .box_favorite .fa-heart:hover::before{content: "\f08a";color: #777;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav ._info ._title{font-size: 18px;font-weight: bold;padding: 0;width: 335px;text-transform: none;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav ._info ._title span{color: #ec5c51;}
+.box_baigiang_fav_content .box_list_baigiang .item_baigiang_fav ._info ._duration{font-size: 12px;color: #888888;}
+.box_baigiang_fav_content .pagination{padding: 10px 10px 15px 595px;}
+.box_baigiang_fav_content .pagination .back {background-color: #efefef;border-radius: 10px 0 0 10px;color: #363636;display: inline-block;margin-right: 3px;padding: 8px 22px;}
+.box_baigiang_fav_content .pagination a .next, .box_baigiang_fav_content .pagination a .back {background-color: #f8c701;cursor: pointer;}
+.box_baigiang_fav_content .pagination .next {background-color: #efefef;border-radius: 0 10px 10px 0;color: #363636;display: inline-block;padding: 8px 22px;}
+
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment .total_comment {display:inline-block;margin-right: 20px;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment .del_comment {display:inline-block;}
+.dialog_comment_reply{display:none;}
+.tip {width: 0px;height: 0px;position: absolute;background: transparent;border: 10px solid #eaeaea;}
+.tip-up {top: -25px;left: 20px;border-right-color: transparent;border-left-color: transparent;border-top-color: transparent;}
+.dialog_comment_reply .box_comment_reply {position: relative;height: auto;margin: 20px 0;padding: 5px;background-color: #eaeaea;border-radius: 3px;border: 5px solid #eaeaea;}
+.box_comment_reply .item_reply {min-height: 30px;border-radius: 3px;font-family: Arial;font-size: 14px;line-height: 1.5;color: #797979;padding: 10px 5px;border-bottom: 1px solid #ccc;}
+.box_comment_reply .item_reply:last-child {border-bottom: none;}
+.txt_comment_reply {width: 495px;height: 70px;margin: 20px 0 10px;padding: 10px;}
+.btn_comment_reply{padding: 10px 0;background-color: #ec5f54;color: #fff;text-align: center;width: 170px;}
+.box_list_comment_bg .content_list_comment_bg .item_comment .box_comment_reply .box_comment{margin-top: -15px;margin-left: 30px;max-width: 500px;}

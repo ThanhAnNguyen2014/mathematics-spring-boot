@@ -1,0 +1,26 @@
+/*body{width: 1100px; margin: auto; border-radius: 5px; border: 1px solid #ccc;}*/
+._table{width: 100%; display: table;}
+._table-cell{vertical-align: top; display: table-cell;}
+.pc-tutorial-page{font-family: Roboto-Regular; width: 970px; margin: auto auto auto 10px; font-size: 15px;}
+.pc-t-title{text-align: center; font-size: 26px;}
+.pc-t-block{margin: 30px 0px;}
+.pc-t-info{}
+.pc-t-info p{}
+.pc-t-info a{text-decoration: none; color: #ec5c51;}
+.pc-ti-title{background: rgba(0, 0, 0, 0) url("../../../../../../../static/image/home/line_title.png") no-repeat scroll left bottom;font-weight: bold;height: 32px;margin-bottom: 20px;}
+.pc-ti-content{color: #585858; text-align: justify;}
+.pc-ti-content a{color: #dd5555;font-weight: bold;}
+.pc-t-info .pc-ti-content{padding-right: 68px;}
+.pc-t-pic{text-align: center;margin-top: 10px;}
+.pc-t-pic img{}
+.box_section {width:auto;margin-left: 40px;}
+.__showpostvst {width: auto;}
+.__itemmorevst:last-child{display: none;}
+.__ctrlmorevst {margin-left: 0;}
+.m-sk-lesson-name, .m-sk-other-lesson{display:none;}
+.mobi{width:90vw;}
+.mobi .pc-t-pic img{width:92vw;}
+.mobi .pc-t-info .pc-ti-content{padding-right:0;}
+.box_section {border-right: none;}
+.tablet .pc-tutorial-page {width: 755px!important;}
+.tablet .pc-t-pic img {max-width: 755px;}

@@ -1,0 +1,1820 @@
+.JustifyRight{
+    text-align: right;
+}
+._lt123_smallblock{
+    width:50% !important;
+}
+.clear_both {
+    clear: both;
+    display: block !important;
+    float: none;
+    width: 100% !important;
+}
+
+.lt123 {
+    margin: 70px auto;
+}
+
+.lt123.view_1 {
+}
+
+.lt123.view_1 .left {
+    float: left;
+    width: 40%;
+}
+
+.lt123.view_1 .right {
+}
+
+.lt123.view_1 .ltview {
+    display: inline-block;
+    line-height: 15px;
+    margin: 0 auto;
+}
+
+.lt123.view_1 .ltview span {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    width: 20px;
+}
+
+.lt123.view_1 .right .explain {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.lt123.view_1 .ltview b {
+    border-top: 1px solid;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 35px;
+    text-align: center;
+    width: 20px;
+}
+
+.lt123.view_2 {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.lt123.view_2 p {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.smth123 {
+    display: block;
+}
+
+.tb_matrix tr td.lf {
+    border-left: 1px solid #000000 !important;
+}
+
+.tb_matrix tr td.rt {
+    border-right: 1px solid #000000 !important;
+}
+
+.tb_matrix tr td.bm {
+    border-bottom: 1px solid #000000 !important;
+}
+
+.tb_matrix tr td.tp {
+    border-top: 1px solid #000000 !important;
+}
+
+.mth_td.otrong .tim_x{
+    text-align: right !important;
+    padding-right: 3px;
+    width: 100% !important;
+    font-size: 15pt !important;
+}
+.mth_td.item_col .tim_x{
+    text-align: right !important;
+    padding-right: 3px;
+    width: 100% !important;
+    font-size: 15pt !important;
+}
+.lt123_view {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.tb_view {
+}
+
+.tb_view tr {
+}
+
+.tb_view tr td {
+    border: medium none !important;
+    padding: 0 !important;
+}
+
+.tb_view tr td span {
+    display: block;
+    font-family: arial;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.tb_view tr .mth_td.lf {
+    border-left: 1px solid #000000 !important;
+}
+
+.tb_view tr .mth_td.rt {
+    border-right: 1px solid #000000 !important;
+}
+
+.tb_view tr .mth_td.bm {
+    border-bottom: 1px solid #000000 !important;
+}
+
+.tb_view tr .mth_td.tp {
+    border-top: 1px solid #000000 !important;
+}
+
+ul.view_note {
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: auto;
+}
+
+ul.view_note li {
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+    list-style: inside none disc;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.lt123_imgs {
+}
+
+.lt123_imgs img.small {
+    height: 50px;
+}
+
+.lt123_imgs img.medium {
+    height: 120px;
+}
+/*
+.lt123_imgs img.large {
+    height: 150px;
+}
+*/
+.lt123_imgs img.large {
+    /*
+    height: auto;
+    max-width: 450px;
+    */
+    height: 150px;
+    max-width: 300px;
+}
+.lt123_math .tim_x {
+    bottom: 2px;
+}
+.lt123_math .item_col.otrong{background-color: #fff;}
+
+.lt123_math .tim_x.x2 {
+    width: 120px !important;
+}
+
+.item_col .mt_note {
+    background-color: #c3c3c3;
+}
+
+.lt123_math .mt_note{
+    float: left !important;
+    font-size: 14px !important;
+    font-style: italic;
+    text-align: left !important;
+    width: 300px !important;
+}
+
+.tb_matrix_1 input {
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    height: 40px;
+    line-height: 20px;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    text-align: center;
+    width: 50px;
+}
+
+.tb_matrix_1 tr {
+}
+
+.box_math table tr .mth_td {
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.mth_input:hover {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+
+.cl_r {
+    background: deepskyblue none repeat scroll 0 0;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tb_matrix_1 {
+    width: auto !important;
+}
+
+.box_math {
+    margin-bottom: 50px;
+}
+
+.box_math textarea {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    height: 300px;
+    margin: 0 10px;
+    width: 500px;
+}
+
+.tool_math {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tool_math .btn123 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 5px 10px;
+    min-width: 25px;
+    text-align: center;
+}
+
+.tool_math .btn123:hover {
+    background-color: #424242;
+    color: #fff;
+}
+
+.tool_math .btn123.left:hover, .tool_math .btn123.right:hover, .tool_math .btn123.bottom:hover, .tool_math .btn123.top:hover {
+    background-color: #fff;
+    color: #424242;
+}
+
+.tool_math .btn123.left {
+    background-image: url("../image/left.png");
+}
+
+.tool_math .btn123.right {
+    background-image: url("../image/right.png");
+}
+.tool_math .btn123.right_ {
+    background-image: url("../image/right2.png");
+}
+
+.tool_math .btn123.top {
+    background-image: url("../image/top.png");
+}
+
+.tool_math .btn123.bottom {
+    background-image: url("../image/bottom.png");
+}
+
+.box_math table.tb_matrix_1_1 tr .mth_td.lf {
+    border-left: 1px solid #000000 !important;
+}
+
+.box_math table.tb_matrix_1_1 tr .mth_td.rt {
+    border-right: 1px solid #000000 !important;
+}
+
+.box_math table.tb_matrix_1_1 tr .mth_td.bm {
+    border-bottom: 1px solid #000000 !important;
+}
+
+.box_math table.tb_matrix_1_1 tr .mth_td.tp {
+    border-top: 1px solid #000000 !important;
+}
+
+.btn-default {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0 5px;
+    padding: 5px 15px;
+}
+
+#list_image, ._inpimg_list {
+    border-right: 1px solid #dcdcdc;
+    float: left;
+    height: 400px;
+    overflow-y: scroll;
+    width: 200px;
+}
+
+#list_image img,#list_image_blc img {
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: auto;
+    margin: 10px;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#list_image img:hover {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+.img_dd {
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 80px;
+    margin: 5px;
+}
+
+.img_dd.sl {
+    border: 1px solid #d55;
+}
+
+select#choose_img,select#choose_img_blc {
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.view_choose {
+    float: left;
+    width: 780px;
+}
+
+button.tiny {
+    cursor: pointer;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+button.small {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+button.large {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+button.none {
+    color: #d55;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 10px;
+}
+button.medium {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.before_view {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img_dd.tiny {
+    height: 35px;
+}
+/*
+.img_dd.small {
+    height: 90px;
+}
+*/
+.img_dd.small {
+    height: 50px;
+}
+.img_dd.medium {
+    height: 110px;
+}
+
+.img_dd.large {
+    height: 130px;
+}
+img.img_dd.none {
+    width: auto;
+    max-width: none;
+    height: auto;
+    max-height: none;
+}
+
+.vetiaso {
+}
+
+.vetiaso .left {
+    border-right: 1px solid #dcdcdc;
+    float: left;
+    min-height: 300px;
+    width: 20%;
+}
+
+.vetiaso .right {
+    float: left;
+    min-height: 300px;
+    width: 70%;
+}
+
+.vetiaso p {
+    padding: 5px 0;
+}
+
+.vetiaso span {
+}
+
+.vetiaso input {
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px;
+    text-align: center;
+    width: 30px;
+}
+
+.btn123 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    color: #424242;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 5px 10px;
+}
+
+.bt_tiaso {
+    background-image: url("../image/tiaso.png");
+    background-position: left 10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 40px;
+    min-width: 100px;
+    padding-right: 40px;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    word-break: normal;
+}
+
+.bt_tiaso.no_tia {
+    background-image: none;
+}
+
+.bt_tiaso.no_tia .so {
+    background-image: none;
+}
+
+.bt_tiaso.no_tia .topn {
+    background-image: none;
+}
+
+.bt_tiaso .so {
+    background-image: url("../image/tia_moc.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    margin-top: -10px;
+    padding-top: 15px;
+    text-align: center;
+    width: 40px;
+}
+
+.bt_tiaso .so:first-child {
+    margin-left: -20px;
+}
+
+.bt_tiaso .topn {
+    background-image: url("../image/tiaso_1.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: transparent;
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px;
+}
+
+.bt_tiaso .bottom {
+    background-image: url("../image/tia_moc.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 1px;
+}
+
+.bt_tiaso .input_so {
+    display: inline-block;
+    font-size: 16pt;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 20px;
+}
+
+.bt_tiaso .ottia .tim_x {
+    margin: 0 auto !important;
+    position: static;
+    width: 40px !important;
+}
+
+.bt_tiaso .separate {
+    background: #000000 none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    margin: 3px auto;
+    width: 90%;
+}
+
+.hienthi {
+    margin-top: 20px;
+}
+
+.lt123_matrix {
+    max-width: 900px;
+}
+
+.wrapper_matrix {
+    border: medium none;
+    border-collapse: collapse;
+    float: left;
+}
+
+.item_col {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    min-height: 30px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    position: relative;
+}
+
+.in_put {
+    border-left: 1px solid #949494;
+    border-top: 1px solid #949494;
+    font-size: 20px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+}
+
+.in_put.x2 {
+    width: 100px;
+}
+
+.note_matrix {
+    float: left;
+    margin-left: 10px;
+}
+
+.note_matrix #textnote {
+    border: 1px solid #dcdcdc;
+    height: 200px;
+    width: 300px;
+}
+
+.lt123_matrix .tool_math {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 390px;
+}
+
+.item_col.lf {
+    border-left: 1px solid #000000 !important;
+}
+
+.item_col.rt {
+    border-right: 1px solid #000000 !important;
+}
+
+.item_col.rt_{
+    border-right: none !important;
+}
+.item_col.rt_:after{
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 1px;
+    height: 70%;
+    background-color: #000;
+}
+.item_col.tp {
+    border-top: 1px solid #000000 !important;
+}
+
+.item_col.bm {
+    border-bottom: 1px solid #000000 !important;
+}
+
+.lt123_matrix .mt_left {
+    float: left;
+    width: 60%;
+}
+
+.lt123_matrix .mt_right {
+    float: left;
+    width: 40%;
+}
+
+.lt123_math {
+    float: left;
+    display: inline-block;
+}
+
+.mot_so .tim_x {
+    border-radius: 0px;
+    top: 2px;
+}
+
+.item_col .mt_text {
+    background-color: #CCF2F2;
+}
+
+.item_col .mt_long_text {
+    background-color: #ce767c;
+}
+
+.lt123_math .item_col {
+    border: medium none;
+    display: inline-block;
+    float: left;
+    font-size: 18pt;
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: right;
+    width: 55px;
+    position: relative;
+}
+
+.mot_so .item_col.mt_text {
+    width: 40px;
+    padding: 1px 5px;
+    padding-left: 1px;
+    min-height: 25px;
+}
+
+.mot_so .item_col.mt_long_text {
+    width: 55px;
+    padding: 1px 5px;
+    padding-left: 1px;
+    min-height: 25px;
+}
+
+.lt123_math .item_col .math-gach-cheo{
+    position: absolute;
+    right: 3px;
+}
+
+.lt123_math .item_col .math-gach-cheo-trai{
+    font-size: 10px;
+    position: absolute;
+    right: 2px;
+    top: 8px;
+}
+
+.item_col.otrong {
+    background-color: #0088cc;
+}
+
+.cke_editable input.tim_x.basic {
+    width: 40px !important;
+}
+
+.cke_editable input.tim_x.basic_long {
+    width: 120px !important;
+}
+
+.tim_x {
+    border: 1px solid #dcdcdc;
+    font-size: 18pt !important;
+    height: 22px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    position: relative;
+    text-align: center;
+    /*top: -2px;*/
+    /*width: 80% !important;*/
+}
+
+.clear_both {
+    clear: both;
+    display: block;
+}
+
+.render .input_so.otrong {
+    background-color: #006dcc;
+}
+
+.hienthi .input_so.otrong {
+    background: transparent none repeat scroll 0 0;
+}
+
+.ottia {
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: -20px;
+    width: 45px;
+}
+
+.ottia_input {
+    margin: 0 !important;
+    width: 20px;
+}
+
+.ottia_input.otrong {
+    background: #0070e5 none repeat scroll 0 0;
+}
+
+.lt123_imgs {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.lt123_imgs .img_dd {
+    /*max-width: 200px;*/
+}
+
+.bt_noiso {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.bt_noiso span {
+    display: block;
+    float: left;
+}
+
+.bt_noiso .o_so {
+    font-size: 20px;
+    min-height: 25px;
+    min-width: 40px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+    /*max-width: 95px;*/
+    width:auto;
+}
+
+.bt_noiso .o_muiten {
+    background-image: url("../image/arrow3.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 30px;
+    margin-left: 0;
+    margin-right: 3px;
+    margin-top: -5px;
+    text-align: center;
+    width: 95px;
+}
+
+.bt_noiso .line_capso {
+    background-image: url("../image/line_capso.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 30px;
+    margin-left: 0;
+    margin-top: -7px;
+    text-align: center;
+    width: 95px;
+}
+
+.bt_noiso .o_muiten .o_tren, .bt_noiso .line_capso .o_tren {
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    margin-top: 0;
+    position: relative;
+    top: -35px;
+}
+
+.btn_them_capso {
+    background-image: url("../image/them.png");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 100px;
+}
+
+.render .bt_noiso .tim_x.otrong {
+    background: #c0c0c0 none repeat scroll 0 0;
+}
+
+.mot_so .item_col {
+    width: 12px;
+    padding: 1px;
+    padding-left: 1px;
+    min-height: 25px;
+}
+
+.wrapper_matrix.mot_so .item_col {
+    width: 20px;
+}
+
+.phep_cong {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: -50%;
+}
+.phep_nhan {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: -50%;
+}
+.phep_tru {
+    font-size: 20px;
+    position: absolute;
+    right: 20%;
+    top: -50%;
+}
+
+.item_col.selected {
+    background: #f5f5f5;
+}
+
+.bt_noiso .tim_x {
+    /*width: 35px !important;*/
+    text-align: center;
+    border: none;
+    top: 0px;
+    line-height: 25px;
+    min-width: 55px;
+    min-height: 25px;
+    width: auto;
+}
+
+.o_tren .tim_x {
+    border: 1px solid #ccc;
+}
+
+.bt_noiso .o_muiten .tim_x, .bt_noiso .line_capso .tim_x {
+    width: 35px !important;
+    border-radius: 0px;
+}
+
+.render, .hienthi {
+    text-align: center;
+}
+
+.bt_tiaso .so .tim_x {
+    border-radius: 0;
+    display: block;
+    font-size: 16pt;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    width: 30px !important;
+}
+
+.lt123_math.mot_so .tim_x {
+    right:3px;
+    width: 100% !important;
+}
+
+.bt_tiaso .ottia {
+    font-size: 16pt;
+    text-align: center;
+    width: 60px;
+}
+
+.lt123matrix {
+    display: inline-block;
+}
+
+.tb_banghuongdan{font-size:15px;}
+.banghd_col{width:45%;float: left;}
+.banghd_col.bd_left div{text-align: left;}
+.banghd_col.bd_left{border-right:1px solid #c3c3c3;margin-left: 20px;padding-right: 15px;}
+.banghd_col div{white-space: normal;line-height: 25px;text-align: center;}
+
+.bt_bangso,.bt_banghuongdan {
+    display: inline-block;
+}
+
+.tb_bangso tr {
+}
+
+.tb_bangso {
+    border-collapse: collapse;
+
+}
+
+.tb_bangso.noborder {
+    border: none;
+}
+
+.tb_bangso.noborder tr td {
+    border: none;
+}
+
+.tb_bangso tr td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    font-size: 16pt;
+    padding: 5px 10px;
+    text-align: left;
+    text-indent: 15px;
+}
+
+.tb_bangso tr td .input_text {
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin: 0px;
+}
+
+.tb_bangso .tim_x {
+    min-width: 45px !important;
+}
+
+input.clock-parse, input.clock-digital-parse {
+    text-align: center !important;
+    background-image: url("../image/digital-clock.png");
+    width: 110px !important;
+    height: 74px;
+    padding: 0;
+    border: none !important;
+    font-family: "Liquid-light", sans-serif;
+    color: #6BD9D9;
+    font-size: 26px !important;
+    letter-spacing: 4px;
+}
+
+input.balance-parse {
+    background-image: url("../image/input-balance.png");
+    border: medium none !important;
+    color: #000;
+    font-family: "Liquid-light",sans-serif;
+    font-size: 15px !important;
+    font-weight: bold;
+    height: 50px;
+    padding: 0;
+    text-align: center !important;
+    width: 50px !important;
+}
+
+.in_put.phep_tinh_input,.tim_x.phep_tinh_input {
+    border: 1px solid #dcdcdc;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 20%;
+    top: -40%;
+    width: 20px !important;
+}
+
+.otrong.pcong,.otrong.ptru,.otrong.pnhan{
+    background: white;
+}
+
+
+svg text {
+    font-size: 20px;
+}
+
+/* =================================================================== */
+/* ======================= css admin news ============================ */
+
+a._atabi img{width: 40px;}
+._atabi{display: inline-block;width: 40px; border: 1px solid #fff;}
+._atabi._slimg{border:1px solid #d55;}
+/* =================================================================== */
+/* =================================================================== */
+
+#_bd_num, #_bd_oned, #_bd_twod{
+    width: 80px;
+}
+/* =================================================================== */
+/* ====================== css for bieu do ============================ */
+/* =================================================================== */
+._line_bd{
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+    position: relative;
+    margin-top: 70px;
+    z-index: 50;
+    margin-bottom: 70px;
+}
+._p_bd{
+    width: 60px;
+    height: 10px;
+    display: inline-block;
+    float: left;
+    margin-top: -5px;
+    position: relative;
+    z-index: 50;
+    border-left: 2px solid #333;
+}
+._p_end {
+    width: 2px;
+    height: 10px;
+    background-color: #333;
+    display: inline-block;
+    float: left;
+    margin-top: -5px;
+}
+
+._bdall {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-top: none;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    z-index: -9;
+}
+._bdall span {
+    display: inline-block;
+    position: absolute;
+    bottom: -70%;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+._bdone,._bdtwo {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-bottom: none;
+    margin-top: -32px;
+    margin-left: -1px;
+    z-index: 1;
+}
+._bdtwo{
+    right:0px;
+}
+._bdone._1,._bdtwo._1{
+    width: 101%;
+}
+._bdone._2,._bdtwo._2{
+    width: 202%;
+}
+._bdone._3,._bdtwo._3{
+    width: 303%;
+}
+._bdone._4,._bdtwo._4{
+    width: 404%;
+}
+._bdone._5,._bdtwo._5{
+    width: 505%;
+}
+._bdone._6,._bdtwo._6{
+    width: 620%;
+}
+._bdone._7,._bdtwo._7{
+    width: 720%;
+}
+._bdone._8,._bdtwo._8{
+    width: 825%;
+}
+._bdone._9,._bdtwo._9{
+    width: 928%;
+}
+._bdone span,._bdtwo span {
+    display: inline-block;
+    position: absolute;
+    top: -70%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    line-height:20px;
+}
+
+/* ---------------------------------- */
+._line_bd._last:after {
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+    content: "";
+    display: block;
+    height: 70px;
+    position: relative;
+    top: 0;
+    width: 99%;
+}
+._line_bd._last1:after {
+    content: "";
+    height: 70px;
+    width: 97%;
+    border-right: 1px dashed;
+    border-left: 1px dashed;
+    display: block;
+    position: relative;
+    top: -70px;
+}
+#curly-brace.bottom{
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    text-align: center;
+}
+#curly-brace.top{
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    text-align: center;
+}
+
+.brace
+{
+    border-bottom: 2px solid;
+    margin: 0 10%;
+    width: 30%;
+    height: 20px;
+    float: left;
+}
+
+.brace:before,
+.brace:after
+{
+    content: "";
+    width: 10%;
+    height: 50px;
+    position: absolute;
+    display: block;
+}
+
+
+.bottom #left:before
+{
+    border-bottom: 2px solid;
+    border-bottom-left-radius: 20px;
+    margin-left: -10%;
+    margin-top: -30px;
+}
+
+.bottom #left:after
+{
+    border-top: 2px solid;
+    border-top-right-radius: 10px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.bottom #right:before
+{
+    border-top: 2px solid;
+    border-top-left-radius: 10px;
+    margin-left: -10%;
+    margin-top: 20px;
+}
+
+.bottom #right:after
+{
+    border-bottom: 2px solid;
+    border-bottom-right-radius: 20px;
+    margin-left: 30%;
+    margin-top: -30px;
+}
+.top #left:before
+{
+    border-top: 2px solid;
+    border-top-left-radius: 20px;
+    margin-left: -10%;
+    margin-top: 20px;
+}
+
+.top #left:after
+{
+    border-bottom: 2px solid;
+    border-bottom-right-radius: 10px;
+    margin-left: 30%;
+    margin-top: -30px;
+}
+
+.top #right:before
+{
+    border-bottom: 2px solid;
+    border-bottom-left-radius: 10px;
+    margin-left: -10%;
+    margin-top: -30px;
+}
+
+.top #right:after
+{
+    border-top: 2px solid;
+    border-top-right-radius: 20px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+._total.top{
+    position:absolute;
+    left:45%;
+    top: -35px;
+}
+._total.bottom{
+    position:absolute;
+    left:45%;
+    top: 55px;
+}
+
+/* =================================================================== */
+/* =================================================================== */
+/* =================================================================== */
+
+
+/* =================================================================== */
+/* ========================= CSS FOR BANG HINH ======================= */
+/* =================================================================== */
+._tabimg{
+    white-space: normal;
+    margin: 20px auto;
+}
+._tabimg img{
+    padding: 0px;
+    width: 40px;
+    margin: 0;
+    box-sizing: content-box;
+    border: 0;
+}
+._tabimg._2{
+    width: 100px;
+}
+._tabimg._3{
+    width: 150px;
+}
+._tabimg._4{
+    width: 200px;
+}
+._tabimg._5{
+    width: 250px;
+}
+._tabimg._6{
+    width: 300px;
+}
+._tabimg._7{
+    width: 350px;
+}
+._tabimg._8{
+    width: 400px;
+}
+._tabimg span{
+    display: inline-block;
+    padding: 5px;
+    border: 0;
+    margin-left: -4px;
+    margin-top: -5px;
+}
+._tabimg span._c{
+    background-color: #CCF2F2;
+}
+/* =================================================================== */
+/* =================================================================== */
+/* =================================================================== */
+
+
+/* =================================================================== *
+/* =============================== image text ========================= */
+/* =================================================================== */
+._inpimg_list img{width: 60px;}
+._inpimg_list ._ac img,#list_image_blc ._ac img{border:1px solid red;}
+._inpimg_list img{border:1px solid #fff;}
+
+
+._boximg1,._boximg2,._boximg3{
+    position: relative;
+}
+._boximg1 input,._boximg2 input,._boximg3 input,._boximg1 span,._boximg2 span,._boximg3 span{
+    position: absolute;
+    z-index: 8;
+    top: 50%;
+    left: 44%;
+    height: 40px;
+    line-height: 18px;
+    width: 95px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #fff;
+}
+._boximg1.onlyOne input,._boximg1.onlyOne p, ._boximg2.onlyOne input,._boximg2.onlyOne p,._boximg3.onlyOne input,._boximg3.onlyOne p{
+    z-index: 8;
+    text-align: center;
+    padding: 0;
+    margin: 2% 0;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+._boximg3 input,._boximg3 span{
+    left: 48%;
+    top: 30%;
+}
+/* -------------------- */
+/* --- img2 - 3 ipn --- */
+._boximg2 input._31,._boximg2 span._31 {
+    left: 35%;
+}
+._boximg2 input._32,._boximg2 span._32 {
+    left: 52%;
+}
+.view_hinhchu ._boximg2 input._32,.view_hinhchu ._boximg2 span._32 {
+    left: 85%;
+}
+._boximg2 input._33,._boximg2 span._33 {
+    left: 43%;
+    top: 75%;
+}
+.view_hinhchu ._boximg2 input._33,.view_hinhchu ._boximg2 span._33 {
+    left: 60%;
+}
+/* --- img2 - 2 ipn --- */
+._boximg2 input._21,._boximg2 span._21 {
+    left: 35%;
+}
+._boximg2 input._22,._boximg2 span._22 {
+    left: 55%;
+}
+/* --- img2 - 1 ipn --- */
+/*._boximg2 input._11,._boximg2 span._11 {
+    left: 35%;
+}*/
+
+/* -------------------- */
+/* --- img3 - 3 ipn --- */
+._boximg3 input._31,._boximg3 span._31 {
+    left: 39%;
+}
+._boximg3 input._32,._boximg3 span._32 {
+    left: 54%;
+}
+.view_hinhchu ._boximg3 input._32,.view_hinhchu ._boximg3 span._32 {
+    left: 90%;
+}
+._boximg3 input._33,._boximg3 span._33 {
+    left: 50%;
+    top: 50%;
+}
+.view_hinhchu ._boximg3 input._33,.view_hinhchu ._boximg3 span._33 {
+    left: 70%;
+}
+.view_hinhchu ._boximg1 input,.view_hinhchu ._boximg1 span {
+    left: 20%;
+}
+/* --- img3 - 2 ipn --- */
+._boximg3 input._21,._boximg3 span._21 {
+    left: 39%;
+}
+._boximg3 input._22,._boximg3 span._22 {
+    left: 54%;
+}
+/* --- img3 - 1 ipn --- */
+._boximg3 input._11,._boximg3 span._11 {
+    left: 50%;
+    top: 30%;
+}
+.view_hinhchu{
+    width:210px;
+    margin:0 auto;
+}
+/* =================================================================== */
+/* =================================================================== */
+/* =================================================================== */
+
+
+/* =================================================================== */
+/* ====================== CSS Table Diagonal ========================= */
+/* =================================================================== */
+._diagonal{
+    position: relative;
+    width: 80px;
+    height: 40px
+}
+#_diagonal_0 {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    color: #000;
+    height: 50px;
+    width: 100px;
+    /*border: 1px solid;*/
+    font-size: 10px;
+}
+#_diagonal_1 {
+    display: block;
+    position: absolute;
+    top: 12%;
+    left: 24%;
+    word-break: break-word;
+}
+#_diagonal_2 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    word-break: break-word;
+}
+#q_preview #_diagonal_1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    word-break: break-word;
+}
+#q_preview #_diagonal_2 {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    word-break: break-word;
+}
+#_diagonal_line {
+    position: absolute;
+    top: 21px;
+    left: -18px;
+    height: 52px;
+    width: 112px;
+    border-top: 1px solid #000;
+    -webkit-transform: rotate(26.5deg);
+    -moz-transform: rotate(26.5deg);
+    -ms-transform: rotate(26.5deg);
+    -o-transform: rotate(26.5deg);
+    transform: rotate(26.5deg);
+    color:#fff;
+}
+/* =================================================================== */
+/* =================================================================== */
+/* =================================================================== */
+
+
+/* =================================================================== */
+/* ========================== ĐO ĐOẠN THẲNG ========================== */
+
+#math_ruler{position: relative;min-width: 800px; min-height: 200px; margin: 50px auto auto auto;}
+.dosolieu_{position: relative;min-width: 800px; min-height: 200px; margin: 50px auto auto auto;text-align: justify;}
+#ruler_parent{position: relative;}
+#ruler{position: absolute; top: 0px; cursor: pointer;left: 8px;}
+.line_name{position: relative;margin-bottom: 25px;margin-left: 25px;}
+.name{position: relative; height: 20px; width: 100%;}
+.point_name{position: absolute;}
+.point_name_left{left: -15px;}
+.point_name_right{right: -15px;}
+.line{width: 100%;z-index:1; height: 2px; background-color: #333; position: relative; background-position: 0px 5px;}
+.point{background-color: #000;height: 6px;top: -2px;width: 6px;position: absolute;border-radius: 50%;}
+.point_left{left: -1px;}
+.point_right{right: -1px;}
+#button{}
+.line_name_active .line{background-color: red!important;}
+#math_ruler .ui-resizable-se{position: absolute; width: 14px; height: 15px; cursor: w-resize; right: -10px;}
+
+/* =================================================================== */
+/* =================================================================== */
+.space20{width: 100%;height: 20px;clear: both;}
+
+/* =================================================================== */
+/* ===================== Style so do doan thang ====================== */
+._ctrbieudo2 input{margin-bottom: 10px;}
+
+._rbieudo2{
+    max-width: 710px;
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    display: block;
+    clear: both;
+    min-height: 170px;
+}
+.vetiaso ._rbieudo2{
+    min-height: 10px;
+}
+.cke_editable ._rbieudo2{
+    min-height: 10px !important;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+._sddcenters ._bdall {
+    top: -40px;
+}
+._sddcenters ._bdall span{
+    top: -35%;
+    font-size: 13px;
+}
+._sddcenters ._line_bd{
+    margin-bottom: 0px;
+}
+._rbieudo2 ._leftrs {
+    width: 20%;
+    float: left;
+    position: relative;
+    height: 200px;
+}
+._sddcenters {
+    float: left;
+    text-align: justify;
+}
+._rbieudo2 ._leftrs p._c1{
+    position: absolute;
+    top: 45px;
+}
+._rbieudo2 ._leftrs p._c2{
+    position: absolute;
+    top: 120px;
+}
+._rbieudo2 ._leftrs p._c3{
+    position: absolute;
+    top: 190px;
+}
+._rbieudo2 ._rightrs {
+    position: relative;
+    top: 95px;
+    right: 0;
+    float: left;
+    left: 10px;
+}
+._rbieudo2 ._bigright {
+    font-size: 700%;
+    font-family: "Jasmine";
+}
+
+._rbieudo2 ._bdall._hoi {
+    top: 0px;
+    right: 0px;
+}
+._rbieudo2 ._bdall._hoi span {
+    top: 70%;
+}
+._rbieudo2 ._bdall._hoi._6 {
+    width: 620%;
+}
+._rbieudo2 ._bdall._hoi._7 {
+    width: 720%;
+}
+._rbieudo2 ._bdall._hoi._8 {
+    width: 825%;
+}
+._rbieudo2 ._bdall._hoi._9 {
+    width: 928%;
+}
+._rbieudo2 ._bdall._hoi._5 {
+    width: 515%;
+}
+._rbieudo2 ._bdall._hoi._4 {
+    width: 412%;
+}
+._rbieudo2 ._bdall._hoi._3 {
+    width: 306%;
+}
+._rbieudo2 ._bdall._hoi._2 {
+    width: 204%;
+}
+/* =================================================================== */
+/* =================================================================== */
+
+/* ============= css MathJax ============== */
+.mrow,.mn,.mi{font-family: Tahoma !important;}
+.MathJax{font-size: 11px !important;}
+
+/* ============= css angle ============== */
+.input_bchart_data input,.input_angle_data input, .input_angle_data select, .input_circle_data select,.input_fraction_data select, .vetiaso select {
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px;
+    text-align: center;
+    width: 120px;
+}
+
+.control-angle button.add,.control-barchart button.add,.control-circle button.add,.control-fraction button.add {
+    background-color: #00a6a6;
+}
+
+.control-angle button.del,.control-barchart button.del,.control-circle button.del,.control-fraction button.del {
+    background-color: #d55;
+}
+
+.control-angle button,.control-barchart button,.control-circle button,.control-fraction button {
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.point1{
+    font-weight:bold;
+    position: absolute;
+    top: -20px;
+    left: 175px;
+    transform: rotate(180deg);
+}
+
+.point2{
+    left: 0;
+    font-weight:bold;
+    position: absolute;top: -21px;
+    transform: rotate(180deg);
+}
+
+.point3{
+    font-weight:bold;
+    position: absolute;top: -20px;
+    left: 165px;
+    transform: rotate(90deg);
+}
+
+.background-line{
+    display: inline-block;
+    height: 170px;
+    margin: 5% -4% 2% 20%;
+    width: 170px;
+}
+
+.cke_dialog_contents_body .background-line{
+    margin: 5% -5% 5% 20%;
+}
+
+.line1 {
+    border-bottom: 2px solid red;
+    position: absolute;
+    transform: rotate(180deg);
+    transform-origin: 0 50% 0;
+    width: 170px;
+}
+
+.line2 {
+    border-bottom: 2px solid green;
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: 0 50% 0;
+    width: 170px;
+}
+
+.box_drag{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+.targetRuler{;
+    width: 210px;
+    height: 150px;
+    background-image: url(../image/eke-cam.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.draggableRuler{
+    width: 194px;
+}
+
+.ui-rotatable-handle{
+/*    position: absolute;
+    left: 130px;
+    bottom: 45px;*/
+}
+
+.ui-rotatable-handle {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-image: url(../image/rotate.png);
+    background-size: 100%;
+    left: 45px;
+    bottom: 45px;
+    position: absolute;
+}
+
+.fraction input.tim_x.basic {
+    margin-bottom: 5px !important;
+}
+
+/*====================Hiển thị phân số==========================*/
+.fractions {position: relative;top: 20px;display: inline-table;}
+.fractions span{display: table-cell; vertical-align: middle;}
+.fractions .fracItem{line-height: 22px;}
+.fractions .tuso{border-bottom:1px solid #000;padding-bottom: 2px;}
+.fractions .mauso{margin-top:2px;}
+
+/*====================Hiển thị dạng ảnh text==========================*/
+._inpimg input{width: 185px;padding: 5px;margin: 5px;}
+.dang_hinhchu #folder_image{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc; padding: 10px;}
+._inpimg_list img {border: 1px solid transparent;cursor: pointer;display: inline-block;float: left;height: auto;margin: 10px;max-height: 70px;max-width: 70px;}
+
+/*====================Cân đồng hồ=====================================*/
+.imageBalance{}
+.imageBalance img{height:100px;margin-bottom: -7px;}
+
+/*=============CAN DONG HO ===============*/
+.box-inp-balance {
+    border: 1px solid #ccc;
+    display: inline-block;
+    float: right;
+    min-height: 305px;
+    padding: 20px;
+    width: 72%;
+}
+
+.balance_block {
+    position: absolute;
+    width: 185px;
+    height: 185px;
+    z-index: 8888;
+}
+
+#list_image_blc{
+    border-right: 1px solid #dcdcdc;
+    float: left;
+    height: 400px;
+    overflow-y: scroll;
+    width: 22%;
+}
+
+.control-balance button.add {
+    background-color: #00a6a6;
+}
+.control-balance button.add.hs {
+    background-color: #06ba89;
+}
+.control-balance button {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 0 10px 17px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+/*============= BIỂU ĐỒ CỘT ===============*/
+.box-bar-chart {
+    border: 1px solid #ccc;
+    display: inline-block;
+    float: right;
+    min-height: 250px;
+    padding: 20px;
+    width: 96%;
+}
+.chart_name{text-align: center;font-weight: bold;font-size: 15px;text-transform: uppercase;margin-bottom: 10px;}
+.dv_x{font-style: italic;float: left;font-size: 14px;}
+.dv_y{font-style: italic;float: right;font-size: 14px;}
+/*==== bgImage ==*/
+.bgImage{background-size: 100% 100%; background-repeat: no-repeat;}

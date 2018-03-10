@@ -1,0 +1,70 @@
+/* ----------- style for form register ----------- */
+.show{display: block!important;}
+.tit-reg{font-family: Arial; font-size: 14px;font-weight: bold; margin-left: 35px; padding-top: 20px;}
+.reg-mem-info{border-bottom: 1px solid #f1e1ae;padding-top: 15px; position: relative;display: none;}
+.reg-mem-info input{padding: 10px;}
+.reg-mem-info p{width: 100%;padding: 4px 2px;}
+.reg-mem-info p label{width: 24%;float: left;text-align: right;padding-right: 25px;line-height: 40px; color: #474747;font-size: 14px; font-family: Arial;font-weight: 500;}
+.reg-mem-info p input{width: 36%;border-radius:10px;-webkit-border-radius: 10px;-moz-border-radius: 10px; border: 1px solid #c8c292; background-color: #f0f6ce;}
+.reg-mem-info p input:focus{border:1px solid #3493bc;}
+.reg-mem-info p input.false, .reg-mem-info p select.false{background-color: #ffcece;}
+.reg-mem-info p input.code-capt{width: 16%;}
+.act-register,.act-continue{background-color: #d55; color: #fff; font-size: 18px; font-family: OpenSans-Regular; border: none;border-radius:10px;-webkit-border-radius: 10px;-moz-border-radius: 10px;padding: 5px 30px; cursor: pointer;margin-left: 200px;}
+.cbx-reg-note{font-size: 13px; font-family:OpenSans-Regular; color: #474747;font-weight: normal;margin-left: 20px;height: 18px;display: inline-block;background-image: url(../image/ic_cbx.png);background-repeat: no-repeat;background-position: left 0;padding-left: 25px;cursor: pointer;}
+.cbx-reg-note.tick {background-position: left 100%;}
+.a-blue{color: #3493bc;font-size: 13px; font-family:OpenSans-Regular;cursor: pointer;}
+.a-blue:hover{color: #d55;}
+.p-nomal{font-size: 13px; font-family:OpenSans-Regular; color: #474747;font-weight: normal; text-align: justify;margin-left: 100px;}
+.span-star-red{color: red;display: inline-block;margin-left: 5px;font-size: 18px;}
+.alert-err{color: #ed1c24;font-size: 12px; font-family: Arial;margin-left: 185px;}
+.box_ms_mainb{border: 2px solid #dea303;color: #614c0e;font-size: 14px;margin: 0 auto;padding: 10px 20px;width: 70%;}
+/* ------------- success --------- */
+.reg-tit-success{font-size: 18px;color: #474747;text-align: center;padding-top: 50px;padding-bottom: 20px;}
+.reg-tit-success a{color:#3493bc;}
+.reg-tit-success a:hover{color:#d55;}
+.reg-p-success{text-align:center;color:#474747; font-size:14px; margin:0 auto; width:80%;padding-bottom:15px;}
+.reg-p-success #timer{color:#d55; font-size:15px; font-weight:bold;}
+.reg-back-home{background-color: #d55;color: #fff;border-radius: 10px;-webkit-border-radius: 10px;-moz-border-radius: 10px;margin: 0 auto;width: 28%;display: block;text-align: center;height: 40px;line-height: 40px;font-size: 18px;font-family:OpenSans-Regular;}
+/* ------------- end success --------- */
+
+/* ----------- hint tooltip input style ------------ */
+.reg_hint{min-height:30px;display:none;font-size:13px;position: absolute;right: -20px;width: 180px;border: 1px solid #c9c9c9;padding: 10px;background: #fffdef;text-align:justify;color:#3c3c3c;}
+.reg_hint .reg_hint_left{background-image: url(../image/ar-tooltip.png);background-repeat: no-repeat;width: 10px;height: 20px;position: absolute;left: -10px;top: 10px;}
+/* ----------- end hint tooltip input style ------------ */
+
+.box_popup_hint{z-index: 9999;border: 1px solid #c4c4c4;left: 50%;margin-left: -400px;position: absolute;top: 235px;width: 40%;border-radius: 10px;background-color: #fff;}
+.box_popup_hint .title_popup{border-radius: 5px 5px 0 0;background-color: #66b447;color: #fff;font-size: 22px;padding: 8px;text-align: center;text-transform: uppercase;}
+.box_popup_hint .content_popup{font-size: 16px;padding: 15px 25px;}
+.box_popup_hint .mess_intro{text-align: center;font-weight: bold;}
+.box_popup_hint .box_info{background-color: #FFEBD3;border-radius: 10px;padding: 10px 25px;margin: 15px 0;}
+.box_popup_hint .box_info p{display: inline-block;width: 195px;color: #88837F;}
+.box_popup_hint .box_info span{font-weight: bold;color: #424242;}
+.box_popup_hint .note_hint{color: #dd5555;line-height: 20px;}
+.box_popup_hint .note_hint1{line-height: 20px;margin: 10px 0;}
+.box_popup_hint .content_popup .title_red{text-transform: uppercase;color:#dd5555;}
+.box_popup_hint .bt_close_popup{cursor: pointer;border-radius: 8px;color: #247A9D;font-family: Arial;margin: 20px auto;padding: 8px 15px;text-align: center;width: 245px;border: 1px solid #ccc;}
+.reg_opactity{position: fixed;top: 0;left: 0;background-color: #000;opacity: 0.5;width: 100%;height: 100%;display: none;}
+
+/* ----------- select style --------- */
+.custom-dropdown__select{padding: .5em;margin: 0;}
+.custom-dropdown__select--emerald {background-color: #fff;color: #474747;    }               
+@supports ( pointer-events: none ) and ((-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none)) {
+    .custom-dropdown {position: relative;display: inline-block;vertical-align: middle;}
+    .custom-dropdown__select{padding-right:2.5em;border:1px solid #c8c292;border-radius:3px;-webkit-appearance:none;-moz-appearance:none;appearance:none;width:263px;}
+    .custom-dropdown::before, .custom-dropdown::after {content: "";position: absolute;pointer-events: none;}
+    .custom-dropdown::after {content: "\25BC";height: 1em;font-size: .625em;line-height: 1;right: 1.2em;top: 50%; margin-top: -.5em;}
+    .custom-dropdown::before {width: 2em;right: 0; top: 0; bottom: 0;border-radius: 0 3px 3px 0;}
+    .custom-dropdown__select[disabled] {color: rgba(0,0,0,.3);}
+    .custom-dropdown.custom-dropdown--disabled::after {color: rgba(0,0,0,.1);}               
+    .custom-dropdown--emerald::before {background-color: #fff;border: 1px solid #c8c292;}
+    .custom-dropdown--emerald::after {color: rgba(0,0,0,.4);}
+    /* FF only temporary & ugly fixes */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }   
+}
+
+.custom-dropdown {display: inline-block;}
+/* ----------- end select style --------- */

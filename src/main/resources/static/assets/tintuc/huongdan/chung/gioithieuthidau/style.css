@@ -1,0 +1,27 @@
+/*body{width: 1100px; margin: auto; border-radius: 5px; border: 1px solid #ccc;}*/
+.__ctrlmorevst {margin-left: 0;}
+.__itemmorevst:last-child{display: none;}
+._table{width: 100%; display: table;}
+._table-cell{vertical-align: top; display: table-cell;}
+.pc-tutorial-page{font-family: Roboto-Regular; width: 970px; margin: auto auto auto 10px; font-size: 15px;}
+.pc-t-title{color: #dd5555;font-size: 22px;font-weight: bold;text-align: center;}
+.pc-t-intro{font-size: 18px;font-weight: bold;text-align: center;}
+.pc-t-block{margin: 30px 0px;}
+.pc-t-info{}
+.pc-t-info p{}
+.pc-t-info a{text-decoration: none; color: #ec5c51;}
+.pc-ti-title{color: #dd5555;font-family: Roboto-Bold;font-size: 18px;text-transform: uppercase;}
+.pc-ti-content{text-align: justify;}
+.pc-ti-content a{color: #dd5555;font-weight: bold;}
+.pc-t-info .pc-ti-content{padding-right: 68px;}
+.pc-t-pic{text-align: center;margin-top: 10px;}
+.pc-t-pic img{}
+.box_section {width:auto;margin-left: 40px;}
+.__showpostvst {width: auto;}
+.pc-ti-content a{color:#247ba0;font-weight:normal;}
+.bt_thidau{background-color: #2fb400;border-radius: 10px;color: #fff;font-weight: bold;margin: 30px auto;padding: 10px 25px;text-align: center;text-transform: uppercase;width: 150px;}
+.m-sk-lesson-name, .m-sk-other-lesson{display:none;}
+.mobi{width:90vw;}
+.mobi .pc-t-pic img{width:92vw;}
+.box_section {border-right: none;}
+.tablet .pc-tutorial-page {width: 755px!important;}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<!-- header user -->
+<head th:fragment="site-header" th:href="@{/}">
+    <meta charset="UTF-8"/>
+	<title>Website mathematics online</title>
+	<link rel="shortcut icon" href="/assets/img/luyenthi123-favicon.ico"
+		type="image/x-icon" />
+	<link rel="stylesheet" href="/assets/css/homed86d.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link href="/assets/css/font-awesome.mina138.css" rel="stylesheet" />
+	<script src="/assets/js/jquery_min.js"></script>
+	<script src="/assets/js/jquery.cookie.js"></script>
+	<script src="/assets/js/smart.min.js"></script>
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+              <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div class="wrapper">
+		<div class="header_tb_opacity"></div>
+		<!-- HEADER -->
+		<div id="header">
+			<div class="header-left">
+				<a href="index.html" title="Mathematics online"></a>
+			</div>
+
+			<div class="header-right">
+				<div class="header-member-act">
+					<a class="f-act-login" href="/login" title="Đăng nhập hệ thống">Đăng
+						nhập</a> <a class="f-act-register" href="/dang-ky" title="Đăng ký">Đăng
+						ký</a>
+				</div>
+			</div>
+			<img class="top-head-cloud1" src="/assets/image/home/top-cloud1.png" />
+			<img class="top-head-cloud2" src="/assets/image/home/top-cloud2.png" />
+			<script src="/assets/js/header.js"></script>
+		</div>
+		<!-- END HEADER -->
+		<!-- MAIN - MENU -->
+		<div id="main-menu">
+			<div class="navigation_menu">
+				<div class='nav_menu'>
+					<ul>
+						<li class='p-has-sub ic_lophoc'><a><span>Lớp học</span></a>
+							<ul>
+								<li class='has-sub'><a href='toan-lop-1.html'><span>Lớp
+											1</span></a></li>
+								<li class='has-sub'><a href='toan-lop-2.html'><span>Lớp
+											2</span></a></li>
+								<li class='has-sub'><a href='toan-lop-3.html'><span>Lớp
+											3</span></a></li>
+								<li class='has-sub'><a href='toan-lop-4.html'><span>Lớp
+											4</span></a></li>
+								<li class='has-sub'><a href='toan-lop-5.html'><span>Lớp
+											5</span></a></li>
+							</ul></li>
+						<li class="ic_kiemtra"><a href='de-kiem-tra/toan-lop-1.html'><span>Kiểm
+									Tra</span></a></li>
+						<li class="ic_thidau"><a
+							href='tin-tuc/huong-dan/gioi-thieu-ve-thi-dau-108.html'><span
+								style="line-height: 27px;">Thi đấu<span class="nav_new"></span></span></a></li>
+						<li class="ic_toanvui"><a href='hoc-ma-choi.html'><span>Học
+									mà chơi</span></a></li>
+						<li class="ic_huongdan"><a href='goc-thong-thai.html'><span>Hỏi
+									đáp</span></a></li>
+					</ul>
+					<div class="box_search">
+						<input id="inp_search" type="text" placeholder="Tìm kiếm" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END MAIN - MENU -->
+
+		<link rel="stylesheet" type="text/css"
+			href="/assets/libraries/editor/mathquill.css">
+			<script src="/assets/libraries/editor/mathquill.min.js"></script>
+			<script type="text/javascript"
+				src="/assets/libraries/MathJax/MathJax8331.js?config=TeX-AMS_HTML-full"></script>
+				
+				
+				
+		<!-- NOI DUNG -->		
+<!-- 			<section  th:fragment="{tranghienthi}">
+			
+			
+			</section> -->
+	</div>
+	<!-- WRAPPER -->
+
+
+
+
+   	<!-- FOOTER  -->
+	<div th:fragment="site-footer" id="footer">
+		<div id="top-footer">
+			<a href="gioi-thieu.html" title="Giới thiệu">Giới thiệu</a>&nbsp&nbsp|&nbsp&nbsp
+			<a href="tin-tuc/huong-dan/cau-hoi-thuong-gap-59.html"
+				title="Hướng dẫn">Câu hỏi thường gặp</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+			<a href="de-kiem-tra/toan-lop-1.html" title="Kiểm tra">Kiểm tra</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+			<!--<a href="" title="Giới thiệu">Thi đấu</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp-->
+			<a href="hoc-ma-choi.html" title="Học mà chơi">Học mà chơi</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+			<!--<a href="" title="Giới thiệu">Bác học nhí</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp-->
+			<a href="tin-tuc.html" title="Tin tức">Tin tức</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+			<a href="tin-tuc/huong-dan/quy-dinh-su-dung-109.html" title="Tin tức">Quy
+				định sử dụng</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp <a
+				href="tin-tuc/huong-dan/chinh-sach-bao-mat-148.html" title="Tin tức">Chính
+				sách bảo mật</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp <a href="lien-he.html"
+				title="Liên hệ">Góp ý - Liên hệ</a>
+		</div>
+
+		<div id="bottom-footer">
+			<a class="b_logo" href="index.html"></a>
+			<div class="info_foo">
+				<p class="foo_text_info">
+					Website mathematics online - a product of BeOnline Co., Ltd.<br />
+				</p>
+				<div class="space5"></div>
+				<p class="foo_add">
+					Tel: 0123456896 - 02436628077
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email:
+					hotro@Website_mathematics_online.com<br />Địa chỉ: Khu phố 6, P.
+					Linh Trung, Q. Thủ Đức, TP.HCM.
+				</p>
+			</div>
+			<div class="social_foo"></div>
+		</div>
+	</div>
+	</div>
+<!-- END FOOTER -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*----------------------------------------------------------------------*/
+.home_hocmachoi{font-family: Roboto-Medium;margin: 0 auto 0 25px;width: 755px;}
+.home_hocmachoi a{text-decoration: none;}
+/*hk*/
+.hk_hr{background-color: #dcdcdc;height: 1px;margin: 20px 0px;text-align: center;position: relative;}
+.hk_hr_introduce{padding: 0px 15px;background-color: #fff;display: inline-block;position: relative;top: -8px;font-size: 15px;color: #666;}
+.hkgc_name{padding: 3px 20px;background-color: #00a8f1;border-radius: 20px;color: #fff;font-size: 20px;display: inline-block;vertical-align: middle;}
+.hkgc_introduce{display: inline-block;vertical-align: middle;color: #666;font-size: 15px;margin-left: 10px;font-family: Roboto-Light;}
+.hkbg_cats{margin: 0px;}
+.hkb_cats{border-bottom: 1px solid #dedede;padding: 15px 0 25px;}
+.hkb_cats:first-child{padding-top: 0;}
+.hkb_cats:last-child{border-bottom: none;}
+.hkb_lessons{background-color: #f7f7f7;color: #494949;display: inline-block;font-size: 13px;padding: 15px;width: 420px;}
+.hk_avata_cat{}
+.hk_name_cat{color: #ed145b;font-size: 20px;line-height: 25px;margin: 5px 0 0;}
+.hk_name_cat_vi{color: #666;font-size: 12px;margin: 3px 0px 0px 0px;}
+.hk_introduce_cat{font-size: 13px;color: #666;padding: 5px 0px 7px 0px;text-align: left;line-height: 18px;font-family: Arial;margin: auto;}
+.hk_lessons{background-color: #dcfeff;font-size: 13px;padding: 10px 10px 10px 10px;border-top: 1px solid #e7e7e7;height: 50px;}
+.hk_link_lesson{display: block;height: 25px;line-height: 25px;}
+.hk_items_lesson{display: inline-block;width: 5px;background-color: #dd5555;height: 5px;vertical-align: middle;border-radius: 50%;margin-right: 5px;}
+.hk_name_lesson{display: inline-block;vertical-align: middle;white-space: nowrap;}
+.hk_banner{width: 714px;border: 2px solid transparent;border-radius: 18px;}
+.hk_banner:hover{border-color: #31bbdb;}
+/*hkb_lecture*/
+#hkb_cats_scienkids,#hkb_cats_story,#hkb_cats_write_me,#hkb_cats_what_happen_next,#hkb_cats_repetition,#hkb_cats_rocket_2,#hkb_cats_letlearn_4{margin: 5px 4px;}
+
+#hkb_cats_scienkids:hover,#hkb_cats_story:hover,#hkb_cats_write_me:hover,#hkb_cats_what_happen_next:hover,#hkb_cats_repetition:hover,#hkb_cats_rocket_2:hover,#hkb_cats_letlearn_4:hover{margin: 4px 3px;}
+#hkbg0_cats .hk_avata_cat{width: 100%;}
+/*hkb_practice - hkb_olympic - hkb-teacher*/
+#hk5_link_cat_teacher,#hk2_link_cat_olympic,#hk1_link_cat_practice{height: 133px;}
+/*hkb_learn_play*/
+#hk_hr_learn_play{margin: 30px 0px;}
+/*common_conversation_phrases*/
+#hk6_link_cat_common_conversation_phrases{height: 171px;}
+/*detect ie*/
+._boxcontent {background-color: #fff;border-radius: 5px;box-shadow: 0 1px 8px 0 #a4b594;height: auto;padding: 10px 0 20px;width: 100%;}
+.home_hocmachoi ._content{}
+.home_hocmachoi .lesson_img{border: 1px solid #dedede;border-radius: 5px;display: inline-block;margin: 15px 25px 15px 0;min-width: 205px;}
+.home_hocmachoi .lesson_img img{display: inline-block;max-height: 170px;padding: 5px;width: 235px;}
+.home_hocmachoi .lesson_detail{display: inline-block;position: absolute;font-family: Arial;margin-top: 15px;}
+.home_hocmachoi .lesson_detail .title_lesson{color: #000;font-size: 14px;font-weight: bold;}
+.home_hocmachoi .lesson_detail .intro_lesson{color: #777777;font-size: 13px;margin: 5px 0;text-align: justify;width: 455px;}

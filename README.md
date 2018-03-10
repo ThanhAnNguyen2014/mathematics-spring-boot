@@ -1,1 +1,0 @@
-# mathematics-spring-boot
