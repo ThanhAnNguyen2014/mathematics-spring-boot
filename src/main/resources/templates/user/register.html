@@ -1,223 +1,246 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Website mathematics online">	
-        <link rel="shortcut icon" href="/assets/img/luyenthi123-favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="/assets/css/homed86d.css?vs=10012018" /> 
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link href="/assets/css/font-awesome.mina138.css?v=25092017" rel="stylesheet"/>
-        <script src="/assets/js/jquery_min.js"></script>
-        <script src="/assets/js/jquery.cookie.js"></script>
-        <script src="/assets/node_modules/socket.io.js"></script>
-        <script src="/assets/js/smart.min.js"></script>
-            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-            <!--[if lt IE 9]>
-              <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-            <![endif]-->
-            <div id="fb-root"></div>
-            <script src="/assets/js/libs.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Website mathematics online">
+    <link rel="shortcut icon" href="/assets/img/luyenthi123-favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/css/homed86d.css?vs=10012018"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link href="/assets/css/font-awesome.mina138.css?v=25092017" rel="stylesheet"/>
+    <script src="/assets/js/jquery_min.js"></script>
+    <script src="/assets/js/jquery.cookie.js"></script>
+    <script src="/assets/node_modules/socket.io.js"></script>
+    <script src="/assets/js/smart.min.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <div id="fb-root"></div>
+    <script src="/assets/js/libs.js"></script>
 
 
-    </head>
-    <body>
-        <!-- WRAPPER -->
-        <div class="wrapper">
-            <div class="header_tb_opacity"></div>
-            <!-- HEADER -->
-            <div id="header">
-                <div class="header-left">
-                    <a href="index.html" title="Website mathematics online"></a>
-                </div>
-                <div class="thongbao_top" style="display:none;">Chú ý: Để đảm bảo quyền lợi và bảo vệ tài khoản của mình <br>Bạn hãy xác thực địa chỉ email đăng ký nhé.  <a href="tin-tuc/luyen-thi-123/thong-bao-xac-thuc-tai-khoan-234.html">Chi tiết xem tại đây</a></div>
-                <div class="header-right">
-                    
-                   
-                    <div class="header-member-act">
-                        <a class="f-act-login" href="login.html" title="Đăng nhập hệ thống">Đăng nhập</a>
-                        <a class="f-act-register" href="dang-ky.html" title="Đăng ký">Đăng ký</a>
-                    </div>
-                    <script type="text/javascript">
-                        const member_data = [];
-                    </script>    
-                    
-                    
-                </div>
-                <img class="top-head-cloud1" src="/assets/image/home/top-cloud1.png" />
-                <img class="top-head-cloud2" src="/assets/image/home/top-cloud2.png" />
-                <script src="/assets/js/header.js"></script>
+</head>
+<body>
+<!-- WRAPPER -->
+<div class="wrapper">
+    <div class="header_tb_opacity"></div>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="header-left">
+            <a href="index.html" title="Website mathematics online"></a>
+        </div>
+        <div class="thongbao_top" style="display:none;">Chú ý: Để đảm bảo quyền lợi và bảo vệ tài khoản của mình <br>Bạn
+            hãy xác thực địa chỉ email đăng ký nhé. <a
+                    href="tin-tuc/luyen-thi-123/thong-bao-xac-thuc-tai-khoan-234.html">Chi tiết xem tại đây</a></div>
+        <div class="header-right">
+
+
+            <div class="header-member-act">
+                <a class="f-act-login" href="login.html" title="Đăng nhập hệ thống">Đăng nhập</a>
+                <a class="f-act-register" href="dang-ky.html" title="Đăng ký">Đăng ký</a>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            <div id="show-act-ctrl-header-per-vip">
-                <div class="box_popup_tb_header tb_permission_vip">
-                    <div class="close_popup close_permission" onclick="return close_permission();"></div>
-                    <div class="title_popup">Quyền lợi thành viên thường & thành viên Vip</div>
-                    <div class="content_popup">
-                        <table class="table_permission_vip">
-                            <tr>
-                                <th class="non-border"></th>
-                                <th class="blue-cell">Thành viên thường<br></th>
-                                <th class="red-cell">Thành viên VIP<br></th>
-                            </tr>
-                            <tr>
-                                <td class="dam">Học và làm bài tập</td>
-                                <td class="text-center"><span class="dam">3 - 5</span> bài miễn phí (chọn sẵn)</td>
-                                <td class="text-center cl_green">Tất cả (không giới hạn)<br></td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Xem đáp án, lời giải chi tiết</td>
-                                <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
-                                <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Làm bài kiểm tra</td>
-                                <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
-                                <td class="text-center cl_green">Tất cả (không giới hạn)</td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Toán vui mỗi ngày</td>
-                                <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
-                                <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Toán vui mỗi tuần</td>
-                                <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
-                                <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Thi đấu kiến thức</td>
-                                <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
-                                <td class="text-center cl_green">Không giới hạn</td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Hỏi đáp nhanh</td>
-                                <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
-                                <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Danh sách bạn bè</td>
-                                <td class="text-center">Tối đa <span class="dam">50</span> bạn</td>
-                                <td class="text-center cl_green">Tối đa <span class="dam">200</span> bạn</td>
-                            </tr>
-                            <tr>
-                                <td class=""><span class="dam">Xem bài giảng video</span><br><span class="font-size:10px">(Sắp ra mắt)</span></td>
-                                <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
-                                <td class="text-center cl_green">Xem toàn bộ, không giới hạn<br></td>
-                            </tr>
-                            <tr>
-                                <td class="dam">Phí thành viên<br></td>
-                                <td class="text-center dam">Free</td>
-                                <td class="text-center dam cl_red">150.000 đ/năm<br></td>
-                            </tr>
-                            
-                        </table>
-                        <div class="note_per_vip">Thành viên VIP sẽ được hưởng tất cả các quyền lợi VIP trong vòng 1 năm (365 ngày). <br/>(học được tất cả các lớp, tất cả các môn có trên website)</div>
-                    </div>
-                </div>
-            </div>
-            <!-- END HEADER -->
-
-<!-- MAIN - MENU -->
-  <div id="main-menu">
-    <div class="navigation_menu">
-      <div class='nav_menu'>
-        <ul>
-           <li class='p-has-sub ic_lophoc'><a><span>Lớp học</span></a>
-              <ul>
-                 <li class='has-sub'><a href='toan-lop-1.html'><span>Lớp 1</span></a></li>
-                 <li class='has-sub'><a href='toan-lop-2.html'><span>Lớp 2</span></a></li>
-                 <li class='has-sub'><a href='toan-lop-3.html'><span>Lớp 3</span></a></li>
-                 <li class='has-sub'><a href='toan-lop-4.html'><span>Lớp 4</span></a></li>
-                 <li class='has-sub'><a href='toan-lop-5.html'><span>Lớp 5</span></a></li>
-              </ul>
-              
-           </li>
-           <li class="ic_kiemtra"><a href='de-kiem-tra/toan-lop-1.html'><span>Kiểm Tra</span></a></li>
-           <li class="ic_thidau"><a href='tin-tuc/huong-dan/gioi-thieu-ve-thi-dau-108.html'><span style="line-height: 27px;">Thi đấu<span class="nav_new"></span></span></a></li>
-           <li class="ic_toanvui"><a href='hoc-ma-choi.html'><span>Học mà chơi</span></a></li>
-           <!--<li class="ic_bachocnhi"><a href='https://www.luyenthi123.com/bac-hoc-nhi'><span>Bác học nhí</span></a></li>-->
-           <!--<li class="ic_huongdan"><a href='https://www.luyenthi123.com/tin-tuc/huong-dan/huong-dan-chon-lop-bat-dau-hoc-58.html'><span>Hướng dẫn</span></a></li>-->
-           <!--<li class="ic_bachocnhi"><a href='https://www.luyenthi123.com/gioi-thieu.html'><span>Giới thiệu</span></a></li>-->
-           <li class="ic_huongdan"><a href='goc-thong-thai.html'><span>Hỏi đáp</span></a></li>
-        </ul>
-        <div class="box_search"><input id="inp_search" type="text" placeholder="Tìm kiếm" /></div>
-      </div>
+            <script type="text/javascript">
+                const member_data = [];
+            </script>
+        </div>
+        <img class="top-head-cloud1" src="/assets/image/home/top-cloud1.png"/>
+        <img class="top-head-cloud2" src="/assets/image/home/top-cloud2.png"/>
+        <script src="/assets/js/header.js"></script>
     </div>
-  </div>
-  <!-- END MAIN - MENU -->
+
+
+    <div id="show-act-ctrl-header-per-vip">
+        <div class="box_popup_tb_header tb_permission_vip">
+            <div class="close_popup close_permission" onclick="return close_permission();"></div>
+            <div class="title_popup">Quyền lợi thành viên thường & thành viên Vip</div>
+            <div class="content_popup">
+                <table class="table_permission_vip">
+                    <tr>
+                        <th class="non-border"></th>
+                        <th class="blue-cell">Thành viên thường<br></th>
+                        <th class="red-cell">Thành viên VIP<br></th>
+                    </tr>
+                    <tr>
+                        <td class="dam">Học và làm bài tập</td>
+                        <td class="text-center"><span class="dam">3 - 5</span> bài miễn phí (chọn sẵn)</td>
+                        <td class="text-center cl_green">Tất cả (không giới hạn)<br></td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Xem đáp án, lời giải chi tiết</td>
+                        <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
+                        <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Làm bài kiểm tra</td>
+                        <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
+                        <td class="text-center cl_green">Tất cả (không giới hạn)</td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Toán vui mỗi ngày</td>
+                        <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
+                        <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Toán vui mỗi tuần</td>
+                        <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
+                        <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Thi đấu kiến thức</td>
+                        <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
+                        <td class="text-center cl_green">Không giới hạn</td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Hỏi đáp nhanh</td>
+                        <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
+                        <td class="text-center"><img src="/assets/image/home/ic_check.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Danh sách bạn bè</td>
+                        <td class="text-center">Tối đa <span class="dam">50</span> bạn</td>
+                        <td class="text-center cl_green">Tối đa <span class="dam">200</span> bạn</td>
+                    </tr>
+                    <tr>
+                        <td class=""><span class="dam">Xem bài giảng video</span><br><span class="font-size:10px">(Sắp ra mắt)</span>
+                        </td>
+                        <td class="text-center"><img src="/assets/image/home/ic_non.png"></td>
+                        <td class="text-center cl_green">Xem toàn bộ, không giới hạn<br></td>
+                    </tr>
+                    <tr>
+                        <td class="dam">Phí thành viên<br></td>
+                        <td class="text-center dam">Free</td>
+                        <td class="text-center dam cl_red">150.000 đ/năm<br></td>
+                    </tr>
+
+                </table>
+                <div class="note_per_vip">Thành viên VIP sẽ được hưởng tất cả các quyền lợi VIP trong vòng 1 năm (365
+                    ngày). <br/>(học được tất cả các lớp, tất cả các môn có trên website)
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- MAIN - MENU -->
+    <div id="main-menu">
+        <div class="navigation_menu">
+            <div class='nav_menu'>
+                <ul>
+                    <li class='p-has-sub ic_lophoc'><a><span>Lớp học</span></a>
+                        <ul>
+                            <li class='has-sub'><a href='toan-lop-1.html'><span>Lớp 1</span></a></li>
+                            <li class='has-sub'><a href='toan-lop-2.html'><span>Lớp 2</span></a></li>
+                            <li class='has-sub'><a href='toan-lop-3.html'><span>Lớp 3</span></a></li>
+                            <li class='has-sub'><a href='toan-lop-4.html'><span>Lớp 4</span></a></li>
+                            <li class='has-sub'><a href='toan-lop-5.html'><span>Lớp 5</span></a></li>
+                        </ul>
+
+                    </li>
+                    <li class="ic_kiemtra"><a href='de-kiem-tra/toan-lop-1.html'><span>Kiểm Tra</span></a></li>
+                    <li class="ic_thidau"><a href='tin-tuc/huong-dan/gioi-thieu-ve-thi-dau-108.html'><span
+                            style="line-height: 27px;">Thi đấu<span class="nav_new"></span></span></a></li>
+                    <li class="ic_toanvui"><a href='hoc-ma-choi.html'><span>Học mà chơi</span></a></li>
+                    <!--<li class="ic_bachocnhi"><a href='https://www.luyenthi123.com/bac-hoc-nhi'><span>Bác học nhí</span></a></li>-->
+                    <!--<li class="ic_huongdan"><a href='https://www.luyenthi123.com/tin-tuc/huong-dan/huong-dan-chon-lop-bat-dau-hoc-58.html'><span>Hướng dẫn</span></a></li>-->
+                    <!--<li class="ic_bachocnhi"><a href='https://www.luyenthi123.com/gioi-thieu.html'><span>Giới thiệu</span></a></li>-->
+                    <li class="ic_huongdan"><a href='goc-thong-thai.html'><span>Hỏi đáp</span></a></li>
+                </ul>
+                <div class="box_search"><input id="inp_search" type="text" placeholder="Tìm kiếm"/></div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN - MENU -->
 
     <div class="body_content">
-    <div class="reg_opactity"></div>
-    <div >
-
-      
-        <div class="box_section">
-            <div class="class_content_cen" style="background:#fff">
-                <div class="box_class_content_cen" style="min-height:500px;">
-                    <div class="box-reg" style="width:665px;margin: 0 auto;">
-                        <p class="tit-reg">Em hãy nhập thông tin vào bên dưới để đăng ký, những mục có dấu (<font style="color:red">*</font>) là bắt buộc</p>
-                        <div class="reg-mem-info show" id="register-page-1">
-                            <p><label>Tên đăng nhập: </label>
-                                <input class="reg_tooltip" name="username" type="text">
-                                <span class="span-star-red">*</span>
-                                <span class="reg_hint">Độ dài từ 6 đến 16 ký tự. Không gõ tiếng việt có dấu, dấu cách và các ký tự đặc biệt <span class="reg_hint_left"></span></span>
-                            </p><p class="alert-err error-username"></p>
-                            <p><label>Mật khẩu: </label>
-                                <input class="reg_tooltip" title="Mật khẩu phải có ít nhất 6 kí tự và không được chứa khoảng trắng." name="password" type="password">
-                                <span class="span-star-red">*</span>
-                                <span class="reg_hint">Mật khẩu phải có ít nhất 6 kí tự và không được chứa khoảng trắng. <span class="reg_hint_left"></span></span>
-                            </p><p class="alert-err error-pass"></p>
-                            <p><label>Nhập lại mật khẩu: </label>
-                                <input class="reg_tooltip" title="Trùng khớp với mật khẩu vừa nhập bên trên!" name="re-password" type="password">
-                                <span class="span-star-red">*</span>
-                                <span class="reg_hint">Trùng khớp với mật khẩu vừa nhập bên trên! <span class="reg_hint_left"></span></span>
-                            </p><p class="alert-err error-repass"></p>
-                            <p><label>Email: </label>
-                                <input class="reg_tooltip" title="Nhập địa chỉ email liên hệ của bạn." name="email" type="text">
-                                <span class="span-star-red">*</span>
-                            <div style="color:#FF9000;margin-left: 187px;">Hãy điền chính xác địa chỉ email để xác thực tài khoản và<br/> được hỗ trợ khi bạn quên/mất mật khẩu.</div>
-                            <span class="reg_hint">Chúng tôi sử dụng thông tin này để xác thực tài khoản và liên hệ khi bạn cần hỗ trợ như quên mật khẩu. <span class="reg_hint_left"></span></span>
-                        </p><p class="alert-err error-email"></p>
-                    <button class="act-continue">Tiếp tục</button>
-                    <div class="space20"></div>
-                </div>
-                <div class="reg-mem-info address" id="register-page-2">
-                    <p>
-                        <label>Bạn đã đăng ký với: </label>
-                        <span style="color: #474747;font-family: Arial;font-size: 14px;text-align: left;display: inline-block;">
+        <div class="reg_opactity"></div>
+        <div>
+            <div class="box_section">
+                <div class="class_content_cen" style="background:#fff">
+                    <div class="box_class_content_cen" style="min-height:500px;">
+                        <div class="box-reg" style="width:665px;margin: 0 auto;">
+                            <p class="tit-reg">Em hãy nhập thông tin vào bên dưới để đăng ký, những mục có dấu (<font
+                                    style="color:red">*</font>) là bắt buộc</p>
+                            <div class="reg-mem-info show" id="register-page-1">
+                                <p><label>Tên đăng nhập: </label>
+                                    <input class="reg_tooltip" name="username" type="text">
+                                    <span class="span-star-red">*</span>
+                                    <span class="reg_hint">Độ dài từ 6 đến 16 ký tự. Không gõ tiếng việt có dấu, dấu cách và các ký tự đặc biệt <span
+                                            class="reg_hint_left"></span></span>
+                                </p>
+                                <p class="alert-err error-username"></p>
+                                <p><label>Mật khẩu: </label>
+                                    <input class="reg_tooltip"
+                                           title="Mật khẩu phải có ít nhất 6 kí tự và không được chứa khoảng trắng."
+                                           name="password" type="password">
+                                    <span class="span-star-red">*</span>
+                                    <span class="reg_hint">Mật khẩu phải có ít nhất 6 kí tự và không được chứa khoảng trắng. <span
+                                            class="reg_hint_left"></span></span>
+                                </p>
+                                <p class="alert-err error-pass"></p>
+                                <p><label>Nhập lại mật khẩu: </label>
+                                    <input class="reg_tooltip" title="Trùng khớp với mật khẩu vừa nhập bên trên!"
+                                           name="re-password" type="password">
+                                    <span class="span-star-red">*</span>
+                                    <span class="reg_hint">Trùng khớp với mật khẩu vừa nhập bên trên! <span
+                                            class="reg_hint_left"></span></span>
+                                </p>
+                                <p class="alert-err error-repass"></p>
+                                <p><label>Email: </label>
+                                    <input class="reg_tooltip" title="Nhập địa chỉ email liên hệ của bạn." name="email"
+                                           type="text">
+                                    <span class="span-star-red">*</span>
+                                <div style="color:#FF9000;margin-left: 187px;">Hãy điền chính xác địa chỉ email để xác
+                                    thực tài khoản và<br/> được hỗ trợ khi bạn quên/mất mật khẩu.
+                                </div>
+                                <span class="reg_hint">Chúng tôi sử dụng thông tin này để xác thực tài khoản và liên hệ khi bạn cần hỗ trợ như quên mật khẩu. <span
+                                        class="reg_hint_left"></span></span>
+                                </p><p class="alert-err error-email"></p>
+                                <button class="act-continue">Tiếp tục</button>
+                                <div class="space20"></div>
+                            </div>
+                            <div class="reg-mem-info address" id="register-page-2">
+                                <p>
+                                    <label>Bạn đã đăng ký với: </label>
+                                    <span style="color: #474747;font-family: Arial;font-size: 14px;text-align: left;display: inline-block;">
                             - Tên tài khoản: <span class="dam b1_username"></span><br/>
                             - Email: <span class="dam b1_email"></span><br/>
                             - Password: <span class="dam b1_pass"></span><br/>
                         </span>
-                    </p>
-                    <p><label>Họ và tên: </label>
-                        <input class="reg_tooltip" title="Nhập họ tên đầy đủ của bạn." name="full-name" type="text">
-                        <span class="span-star-red">*</span>
-                        <span class="reg_hint">Nhập họ tên đầy đủ của bạn. <span class="reg_hint_left"></span></span>
-                    </p><p class="alert-err error-fullname"></p>
-                    <p><label>Giới tính: </label><span class="custom-dropdown custom-dropdown--emerald">
+                                </p>
+                                <p><label>Họ và tên: </label>
+                                    <input class="reg_tooltip" title="Nhập họ tên đầy đủ của bạn." name="full-name"
+                                           type="text">
+                                    <span class="span-star-red">*</span>
+                                    <span class="reg_hint">Nhập họ tên đầy đủ của bạn. <span
+                                            class="reg_hint_left"></span></span>
+                                </p>
+                                <p class="alert-err error-fullname"></p>
+                                <p><label>Giới tính: </label><span class="custom-dropdown custom-dropdown--emerald">
                             <select class="custom-dropdown__select custom-dropdown__select--emerald" name="gioitinh">
                                 <option value="Nam">Nam</option>
                                 <option value="Nữ">Nữ</option>
-                            </select></span></p><div class="space10"></div>
-                    <p><label>Số điện thoại phụ huynh: </label>
-                        <input  class="reg_tooltip" title="Nhập số điện thoại của phụ huynh. Để lấy lại mật khẩu khi quên." name="phone-num" type="text">
-                        <span class="span-star-red">*</span>
-                        <span class="reg_hint">Nhập số điện thoại của phụ huynh. Để lấy lại mật khẩu khi quên.<span class="reg_hint_left"></span></span>
-                    </p><p class="alert-err error-phone"></p>
-                    <p><label>Địa chỉ: </label>
-                        <input class="reg_tooltip" title="Nhập địa chỉ đầy đủ của bạn. Đây sẽ là địa chỉ giao thẻ mặc định khi bạn đặt mua thẻ Website mathematics online và cũng là địa chỉ nhận quà, phần thưởng của bạn." name="address" type="text" vd="0">
-                        <span class="reg_hint">Nhập địa chỉ đầy đủ của bạn. Đây sẽ là địa chỉ giao thẻ mặc định khi bạn đặt mua thẻ Website mathematics online và cũng là địa chỉ nhận quà, phần thưởng của bạn. <span class="reg_hint_left"></span></span>
-                    </p><p class="alert-err error-address"></p>
-                    <p><label>Tỉnh/TP: </label>
-                        <span class="custom-dropdown custom-dropdown--emerald">
+                            </select></span></p>
+                                <div class="space10"></div>
+                                <p><label>Số điện thoại phụ huynh: </label>
+                                    <input class="reg_tooltip"
+                                           title="Nhập số điện thoại của phụ huynh. Để lấy lại mật khẩu khi quên."
+                                           name="phone-num" type="text">
+                                    <span class="span-star-red">*</span>
+                                    <span class="reg_hint">Nhập số điện thoại của phụ huynh. Để lấy lại mật khẩu khi quên.<span
+                                            class="reg_hint_left"></span></span>
+                                </p>
+                                <p class="alert-err error-phone"></p>
+                                <p><label>Địa chỉ: </label>
+                                    <input class="reg_tooltip"
+                                           title="Nhập địa chỉ đầy đủ của bạn. Đây sẽ là địa chỉ giao thẻ mặc định khi bạn đặt mua thẻ Website mathematics online và cũng là địa chỉ nhận quà, phần thưởng của bạn."
+                                           name="address" type="text" vd="0">
+                                    <span class="reg_hint">Nhập địa chỉ đầy đủ của bạn. Đây sẽ là địa chỉ giao thẻ mặc định khi bạn đặt mua thẻ Website mathematics online và cũng là địa chỉ nhận quà, phần thưởng của bạn. <span
+                                            class="reg_hint_left"></span></span>
+                                </p>
+                                <p class="alert-err error-address"></p>
+                                <p><label>Tỉnh/TP: </label>
+                                    <span class="custom-dropdown custom-dropdown--emerald">
                             <select class="slc custom-dropdown__select custom-dropdown__select--emerald" name="tinh-tp">
                                 <option value="0">Chọn tỉnh/TP</option>
                                 
@@ -350,112 +373,123 @@
                                 <option value="22">Đồng Tháp</option>
                                 
                             </select></span>
-                        <span class="span-star-red">*</span>       
-                    </p><p class="alert-err error-city"></p>
-                    <div class="space10"></div>
-                    <p><label>Quận/Huyện: </label><span class="custom-dropdown custom-dropdown--emerald">
-                            <select class="slc custom-dropdown__select custom-dropdown__select--emerald" name="quan-huyen">
+                                    <span class="span-star-red">*</span>
+                                </p>
+                                <p class="alert-err error-city"></p>
+                                <div class="space10"></div>
+                                <p><label>Quận/Huyện: </label><span class="custom-dropdown custom-dropdown--emerald">
+                            <select class="slc custom-dropdown__select custom-dropdown__select--emerald"
+                                    name="quan-huyen">
                                 <option value="0">Chọn Quận/Huyện</option>
                                 
                             </select></span>
-                    </p><p class="alert-err error-district"></p>
-                    <div class="space10"></div>
-                    <p><label>Trường: </label><span class="custom-dropdown custom-dropdown--emerald">
+                                </p>
+                                <p class="alert-err error-district"></p>
+                                <div class="space10"></div>
+                                <p><label>Trường: </label><span class="custom-dropdown custom-dropdown--emerald">
                             <select class="slc custom-dropdown__select custom-dropdown__select--emerald" name="school">
                                 <option value="0">Chọn Trường</option>
                                 
                             </select></span>
-                    </p><p class="alert-err error-school"></p>
-                    <div class="space10"></div>
-                    <p><label>Khối - Lớp: </label><span class="custom-dropdown custom-dropdown--emerald">
-                            <select class="slc custom-dropdown__select custom-dropdown__select--emerald"  name="class">
+                                </p>
+                                <p class="alert-err error-school"></p>
+                                <div class="space10"></div>
+                                <p><label>Khối - Lớp: </label><span class="custom-dropdown custom-dropdown--emerald">
+                            <select class="slc custom-dropdown__select custom-dropdown__select--emerald" name="class">
                                 <option value="0">Chọn khối - lớp</option>
-                                
-                                
                                 <option value="5">Lớp 5</option>
-                                
                                 <option value="4">Lớp 4</option>
-                                
                                 <option value="3">Lớp 3</option>
-                                
                                 <option value="2">Lớp 2</option>
-                                
                                 <option value="1">Lớp 1</option>
-                                
                             </select></span>
-                        <span class="span-star-red">*</span>
-                    </p><p class="alert-err error-class"></p>
-                    <div class="box_ms_mainb">
-                        <b class="dam">(*) Lưu ý:</b>
-                        <p>Tài khoản đăng ký trước ngày 15/08, sử dụng lớp của năm học cũ. </p>
-                        <p>Tài khoản đăng ký từ ngày 15/08, sử dụng lớp của năm học mới.</p>
-                        <p>Chọn khối lớp để làm căn cứ xếp hạng. <b class="dam">(Bạn vẫn có thể học toàn bộ chương trình của các lớp khác.)</b></p>
-                        <p>Thông tin trường lớp là cơ sở để xét thưởng cho học sinh.</p>
-                    </div>
-                    <div class="space10"></div>
-                    <p><label>Nhập mã xác nhận: </label><span class="captcha"><img id="reloadCapcha" src="includes/captcha.png">&nbsp
+                                    <span class="span-star-red">*</span>
+                                </p>
+                                <p class="alert-err error-class"></p>
+                                <div class="box_ms_mainb">
+                                    <b class="dam">(*) Lưu ý:</b>
+                                    <p>Tài khoản đăng ký trước ngày 15/08, sử dụng lớp của năm học cũ. </p>
+                                    <p>Tài khoản đăng ký từ ngày 15/08, sử dụng lớp của năm học mới.</p>
+                                    <p>Chọn khối lớp để làm căn cứ xếp hạng. <b class="dam">(Bạn vẫn có thể học toàn bộ
+                                        chương trình của các lớp khác.)</b></p>
+                                    <p>Thông tin trường lớp là cơ sở để xét thưởng cho học sinh.</p>
+                                </div>
+                                <div class="space10"></div>
+                                <p><label>Nhập mã xác nhận: </label><span class="captcha"><img id="reloadCapcha"
+                                                                                               src="includes/captcha.png">&nbsp
                             <a href="javascript:;" id="rsreloadCapcha"><img src="/assets/image/res_bt_code.png"></a>&nbsp
-                            <input title="Nhập chính xác mã xác nhận bên cạnh." class="code-capt reg_tooltip" name="code-capt" type="text">
+                            <input title="Nhập chính xác mã xác nhận bên cạnh." class="code-capt reg_tooltip"
+                                   name="code-capt" type="text">
                             <span class="span-star-red">*</span>
-                            <span class="reg_hint">Nhập chính xác mã có trong hình bên cạnh. <span class="reg_hint_left"></span></span>
-                        </span></p><p class="alert-err error-codecapt"></p>
-                    <div class="space20"></div>
-                    <div class="cbx-reg-note tick" tck="true">Tôi cùng phụ huynh đồng ý với các <a class="a-blue" href="tin-tuc/huong-dan/quy-dinh-su-dung-109.html" target="_blank">điều khoản và quy định</a> của website <font style="color:red">*</font></div>
-                    <p class="error-cbx-reg" style="color: #ed1c24;margin-left: 45px;margin-top: 8px;font-size: 12px;display:none;">Vui lòng đồng ý với các điều khoản và quy định của website!</p>
-                    <div class="space10"></div>
-                    <p class="error-cbx-reg" rel="act" style="color: #ed1c24;margin-left: 45px;margin-top: 8px;font-size: 12px;"></p>
-                    <div class="space10"></div>
-                    <button class="act-register">Đăng ký</button>
-                    <div class="space20"></div>
+                            <span class="reg_hint">Nhập chính xác mã có trong hình bên cạnh. <span
+                                    class="reg_hint_left"></span></span>
+                        </span></p>
+                                <p class="alert-err error-codecapt"></p>
+                                <div class="space20"></div>
+                                <div class="cbx-reg-note tick" tck="true">Tôi cùng phụ huynh đồng ý với các <a
+                                        class="a-blue" href="tin-tuc/huong-dan/quy-dinh-su-dung-109.html"
+                                        target="_blank">điều khoản và quy định</a> của website <font
+                                        style="color:red">*</font></div>
+                                <p class="error-cbx-reg"
+                                   style="color: #ed1c24;margin-left: 45px;margin-top: 8px;font-size: 12px;display:none;">
+                                    Vui lòng đồng ý với các điều khoản và quy định của website!</p>
+                                <div class="space10"></div>
+                                <p class="error-cbx-reg" rel="act"
+                                   style="color: #ed1c24;margin-left: 45px;margin-top: 8px;font-size: 12px;"></p>
+                                <div class="space10"></div>
+                                <button class="act-register">Đăng ký</button>
+                                <div class="space20"></div>
+                            </div>
+                            <div class="space20"></div>
+                            <p class="p-nomal">Nếu bạn đã là thành viên, <a href="login.html" class="a-blue">bấm vào đây
+                                để đăng nhập</a></p>
+                            <div class="space20"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="space20"></div>
-                <p class="p-nomal">Nếu bạn đã là thành viên, <a href="login.html" class="a-blue">bấm vào đây để đăng nhập</a></p>
-                <div class="space20"></div>
             </div>
+            <!-- script for form register -->
+            <link rel="stylesheet" href="/assets/css/register.css"/>
+            <script type="text/javascript" src="/assets/js/ajaxlogin9713.js?vs=1"></script>
+            <input type="hidden" id="c_url" value="login.html">
+
+
         </div>
     </div>
-</div>
-<!-- script for form register -->
-<link rel="stylesheet" href="/assets/css/register.css" />
-<script type="text/javascript" src="/assets/js/ajaxlogin9713.js?vs=1"></script>
-<input type="hidden" id="c_url" value="login.html">
-
-
-</div>
-</div>
 </div>
 <!-- WRAPPER -->
 
 <!-- FOOTER  -->
 <div id="footer">
     <div id="top-footer">
-      <a href="gioi-thieu.html" title="Giới thiệu">Giới thiệu</a>&nbsp&nbsp|&nbsp&nbsp
-      <a href="tin-tuc/huong-dan/cau-hoi-thuong-gap-59.html" title="Hướng dẫn">Câu hỏi thường gặp</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-      <a href="de-kiem-tra/toan-lop-1.html" title="Kiểm tra">Kiểm tra</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-      <!--<a href="" title="Giới thiệu">Thi đấu</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp-->
-      <a href="hoc-ma-choi.html" title="Học mà chơi">Học mà chơi</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-      <!--<a href="" title="Giới thiệu">Bác học nhí</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp-->
-      <a href="tin-tuc.html" title="Tin tức">Tin tức</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-      <a href="tin-tuc/huong-dan/quy-dinh-su-dung-109.html" title="Tin tức">Quy định sử dụng</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-      <a href="tin-tuc/huong-dan/chinh-sach-bao-mat-148.html" title="Tin tức">Chính sách bảo mật</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-      <a href="lien-he.html" title="Liên hệ">Góp ý - Liên hệ</a>
-     
+        <a href="gioi-thieu.html" title="Giới thiệu">Giới thiệu</a>&nbsp&nbsp|&nbsp&nbsp
+        <a href="tin-tuc/huong-dan/cau-hoi-thuong-gap-59.html" title="Hướng dẫn">Câu hỏi thường gặp</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <a href="de-kiem-tra/toan-lop-1.html" title="Kiểm tra">Kiểm tra</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <!--<a href="" title="Giới thiệu">Thi đấu</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp-->
+        <a href="hoc-ma-choi.html" title="Học mà chơi">Học mà chơi</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <!--<a href="" title="Giới thiệu">Bác học nhí</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp-->
+        <a href="tin-tuc.html" title="Tin tức">Tin tức</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <a href="tin-tuc/huong-dan/quy-dinh-su-dung-109.html" title="Tin tức">Quy định sử dụng</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <a href="tin-tuc/huong-dan/chinh-sach-bao-mat-148.html" title="Tin tức">Chính sách bảo mật</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <a href="lien-he.html" title="Liên hệ">Góp ý - Liên hệ</a>
+
     </div>
-    
+
     <div id="bottom-footer">
-      <a class="b_logo" href="index.html"></a>
-      <div class="info_foo">
-        <p class="foo_text_info">Website mathematics online - a product of BeOnline Co., Ltd.<br /></p>
-        <div class="space5"></div>
-        <p class="foo_add">Tel: 0123456896  -  02436628077 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email: hotro@Website_mathematics_online.com<br/>Địa chỉ:  Khu phố 6, P. Linh Trung, Q. Thủ Đức, TP.HCM.</p>
-      </div>
-      <div class="social_foo">
-       
-        <!--<a class="tw_icon" target="_blank" href="https://twitter.com/Luyen_thi_123"></a>
-        <a class="rss_icon" target="_blank" href="http://rss.com"></a>-->
-      </div>
-      </div>
+        <a class="b_logo" href="index.html"></a>
+        <div class="info_foo">
+            <p class="foo_text_info">Website mathematics online - a product of BeOnline Co., Ltd.<br/></p>
+            <div class="space5"></div>
+            <p class="foo_add">Tel: 0123456896 - 02436628077 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Email:
+                hotro@Website_mathematics_online.com<br/>Địa chỉ: Khu phố 6, P. Linh Trung, Q. Thủ Đức, TP.HCM.</p>
+        </div>
+        <div class="social_foo">
+
+            <!--<a class="tw_icon" target="_blank" href="https://twitter.com/Luyen_thi_123"></a>
+            <a class="rss_icon" target="_blank" href="http://rss.com"></a>-->
+        </div>
     </div>
+</div>
 </div>
 <!-- END FOOTER -->
 <!-- BOTTOM POPUP  -->
