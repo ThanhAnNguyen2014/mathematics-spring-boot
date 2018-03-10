@@ -1,22 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Login-Website mathematics online</title>
-
-    <link rel="shortcut icon" href="/assets/img/luyenthi123-favicon.ico"
-          type="image/x-icon"/>
-    <link rel="stylesheet" href="/assets/css/homed86d.css"/>
-    <link rel="stylesheet" href="/assets/css/style.css"/>
-    <link href="/assets/css/font-awesome.mina138.css" rel="stylesheet"/>
-    <script src="/assets/js/jquery_min.js"></script>
-    <script src="/assets/js/jquery.cookie.js"></script>
-    <script src="/assets/js/smart.min.js"></script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+<head th:replace="user/sharedlayout/head-tag :: head-tag">
 </head>
 <body>
 <!-- WRAPPER -->
@@ -34,14 +19,11 @@
             tiết xem tại đây</a>
         </div>
         <div class="header-right">
-
-
             <div class="header-member-act">
                 <a class="f-act-login" href="login.html" title="Đăng nhập hệ thống">Đăng
                     nhập</a> <a class="f-act-register" href="/dang-ky" title="Đăng ký">Đăng
                 ký</a>
             </div>
-
         </div>
         <img class="top-head-cloud1" src="/assets/image/home/top-cloud1.png"/>
         <img class="top-head-cloud2" src="/assets/image/home/top-cloud2.png"/>
@@ -108,8 +90,7 @@
                                     <input type="button" class="btn-login-captcha" value="Đăng nhập">
                                     <div class="space20"></div>
                                     <div class="option-ctl">
-                                        <a href="quen-mat-khau.html">Quên mật khẩu</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
-                                            href="/dang-ky">Đăng kí tài khoản mới</a>
+                                        <a href="/dang-ky">Đăng kí tài khoản mới</a>
                                     </div>
                                 </div>
                             </div>
