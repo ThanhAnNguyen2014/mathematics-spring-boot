@@ -64,33 +64,36 @@ public class UserController {
 	}
 	
 	@RequestMapping("/toan-lop-1")
-	public String toanlop1(){
+	public String lop1(){
 		return "user/toan-lop-1";
 	
 	}
 	
 	@RequestMapping("/toan-lop-2")
-	public String toanlop2(){
+	public String lop2(){
 		return "user/toan-lop-2";
 	}
 	
 	@RequestMapping("/toan-lop-3")
-	public String toanlop3(){
+	public String lop3(){
 		return "user/toan-lop-3";
 	}
 	
 	@RequestMapping("/toan-lop-4")
-	public String toanlop4(){
+	public String lop4(){
 		return "user/toan-lop-4";
 	}
 
 	@RequestMapping("/toan-lop-5")
-	public String toanlop5(){
+	public String lop5(){
 		return "user/toan-lop-5";
 	}
 	@RequestMapping("/toan-vui-moi-tuan")
 	public String toanvuimoituan(){
 		return "user/toan-vui-moi-tuan";
+		
+		
+	}
 
 	@RequestMapping("/phep-cong-trong-pham-vi-10")
 	public String phepcong() {
