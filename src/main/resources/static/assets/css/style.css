@@ -18,9 +18,9 @@
     /*width: 730px;*/
     width: 790px;
     display: inline-block;
-    margin-left: 161px;
+    margin-left: 15px;
     vertical-align: top;
-    
+    border-right: 1px solid #f5cac8;
 }
 .box_section_hocba {
     /*width: 730px;*/
@@ -267,7 +267,7 @@ div.action_reply_hoidap[style*="display: block"] .hoidap_reply .hd_reply:last-ch
 .navigation_tree a:hover{text-decoration:underline;}
 .navigation_tree .nav_tree_links{color:#494949; display:inline-block; background-image:url(../image/ic_nav_links.png); background-position:right center; background-repeat:no-repeat; padding-right:10px;}
 .navigation_tree .nav_tree_links_ac{color:#a1a0a0;}
-.box_class_content_cen{/*background-color:#fff;*/height:auto;
+.box_class_content_cen{background-color:#fff;height:auto;
     /*
     border-radius:10px;
     -webkit-border-radius: 10px;
