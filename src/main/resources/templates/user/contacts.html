@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="user/sharedlayout/head-tag :: head-tag">
+    <title>Website mathematics online</title>
+</head>
+<body>
+<!-- WRAPPER -->
+<div class="wrapper">
+    <div class="header_tb_opacity"></div>
+    <!-- HEADER -->
+    <div id="header" th:replace="user/sharedlayout/header::header"></div>
+
+
+    <!-- MAIN - MENU -->
+    <div id="main-menu" th:replace="user/sharedlayout/menu :: menu"></div>
+     <link rel="stylesheet" type="text/css" href="/assets/css/contact_us.css">
+     
+     
+<div class="body_content" >
+    <div class="boxcontent">
+        <div class="box_section" id="frmlienhe">
+            <div class="navigation_tree">
+                <a class="nav_tree_links" href="index.html">Home</a>
+                <span class="nav_tree_links_ac">Góp ý - Liên hệ</span>
+            </div>
+            <div class="title_contact_us">Góp ý - Liên hệ</div>
+            <div class="box_contact_left">
+                <img src="/assets/image/home/bg_contactus.png"/>
+                <div class="contact_intro">
+                    Website mathematics online là chương trình giáo dục trực tuyến dành cho học sinh, trực thuộc công ty TNHH Hãy Trực Tuyến (BeOnline Co.,Ltd).<br/>
+                    Trong quá trình sử dụng, nếu bạn có thắc mắc, góp ý hoặc phản hồi gì để giúp Luyện Thi 123 phục vụ ngày một tốt hơn xin hãy liên hệ với chúng tôi qua thông tin bên dưới. Hoặc viết thư cho chúng tôi qua form bên cạnh.
+                </div>
+                <div class="info_contact">
+                    <p><img src="/assets/image/home/ic_location.png"/> Địa chỉ:  Khu phố 6, P. Linh Trung, Q. Thủ Đức, TP.HCM.</p>
+                    <p><img src="/assets/image/home/ic_hotline.png"/> 02473080123  -  02436628077 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/assets/image/home/ic_mail.png"/> hotro@luyenthi123.com</p>
+                </div>
+            </div>
+            <div class="box_contact_right">
+                <div class="form_contact">
+                    <div class="item" style="color: #222222;padding-top: 9px;text-align: justify;width: 86%;">Nếu bạn bị mất hoặc quên mật khẩu, <a href="quen-mat-khau.html" style="color:#1E90FF" title="Lấy lại mật khẩu">hãy click vào đây</a>. Nếu liên hệ vấn đề khác, hãy gửi vào form bên dưới:</div>
+                    <div class="item">
+                        <label>Họ và tên:</label>
+                        <input class="contact_inp" name="contact_hoten" id="contact_hoten"/>
+                        <div class="space5"></div>
+                        <div class="error_contact" value="Bạn chưa nhập họ tên!">&nbsp;</div>
+                    </div>
+                    <div class="item">
+                        <label>Số điện thoại của bạn (để chúng tôi liên hệ lại):</label>
+                        <input class="contact_inp" name="contact_email" id="contact_email"/>
+                        <div class="space5"></div>
+                        <div class="error_contact" value="Địa chỉ email của bạn chưa chính xác!">&nbsp;</div>
+                    </div>
+                    <div class="item">
+                        <label>Tiêu đề:</label>
+                        <input class="contact_inp" name="contact_title" id="contact_title"/>
+                    </div>
+                    <div class="item">
+                        <label>Nội dung</label>
+                        <textarea class="contact_inp" name="contact_content" style="height:105px;" cols="25" id="contact_content"></textarea>
+                        <div class="space5"></div>
+                        <div class="error_contact" value="Bạn chưa nhập địa chỉ nhận thẻ!">&nbsp;</div>
+                    </div>
+                    <div class="bt_send_contact">Gửi đi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (email == '') {
+            return true;
+        } else {
+            return re.test(email);
+        }
+    }
+    $(document).ready(function () {
+        $(".contact_inp").click(function () {
+            $(this).removeClass('false');
+            $(this).parent().find('.error_contact').html('&nbsp;');
+        });
+
+        $(".contact_inp").blur(function () {
+            if ($(this).attr('id') != 'contact_email') {
+                if ($(this).val() == '') {
+                    $(this).parent().find('.error_contact').html($(this).parent().find('.error_contact').attr('value'));
+                    $(this).addClass('false');
+                }
+            }
+        });
+
+        $(".bt_send_contact").click(function () {
+            if ($('.false').length > 0) {
+                return false;
+            }
+
+            var hoten = $("#contact_hoten").val();
+            var email = $("#contact_email").val();
+            var title = $("#contact_title").val();
+            var content = $("#contact_content").val();
+
+            if (hoten == '') {
+                $("#contact_hoten").parent().find('.error_contact').html($("#contact_hoten").parent().find('.error_contact').attr('value'));
+                $("#contact_hoten").addClass('false');
+                return false;
+            }
+            /*if (email != '' && !validateEmail(email)) {
+                $("#contact_email").parent().find('.error_contact').html($("#contact_email").parent().find('.error_contact').attr('value'));
+                $("#contact_email").addClass('false');
+                return false;
+            }*/
+            
+            if (content == '') {
+                $("#contact_content").parent().find('.error_contact').html($("#contact_content").parent().find('.error_napthe').attr('value'));
+                $("#contact_content").addClass('false');
+                return false;
+            }
+
+            $(".bt_send_contact").after('<div class="onsend"><img src="' + base_urlroot + '/assets/image/loadmore.gif"></div>');
+            $(".bt_send_contact").hide();
+
+            var ajax_path = base_urlroot + 'act/lien_he';
+            var params = {
+                'hoten': hoten,
+                'email': email,
+                'title': title,
+                'content': content
+            };
+
+            $.post(ajax_path, params, function (res) {
+                if (IsJsonString(res)) {
+                    res = jQuery.parseJSON(res);
+                    if (res.status == '0') {
+                        alert('Gửi góp ý - liên hệ không thành công! Vui lòng thực hiện lại!');
+                    } else if (res.status == '1') {
+                        alert('Bạn đã Gửi góp ý - liên hệ thành công! Xin cảm ơn đóng góp của bạn!');
+                        window.location.reload();
+                    }
+                } else {
+                    alert('Thao tác không thành công! Vui lòng thực hiện lại.');
+                    window.location.reload();
+                }
+            }).fail(function () {
+                alert("Lỗi hệ thống! Vui lòng thực hiện lại.");
+                window.location.reload();
+            });
+        });
+    });
+</script>
+</div>
+    
+    <!-- WRAPPER -->
+<div id="footer" th:replace="user/sharedlayout/footer::footer"></div>
+</body>
+ 
