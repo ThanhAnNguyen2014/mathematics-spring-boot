@@ -1,0 +1,1047 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="user/sharedlayout/head-tag :: head-tag">
+    <title>Website mathematics online</title>
+</head>
+<body>
+<!-- WRAPPER -->
+<div class="wrapper">
+    <div class="header_tb_opacity"></div>
+    <!-- HEADER -->
+    <div id="header" th:replace="user/sharedlayout/header::header"></div>
+
+
+    <!-- MAIN - MENU -->
+    <div id="main-menu" th:replace="user/sharedlayout/menu :: menu"></div>
+    
+    
+     <script src="/assets/js/jquery.form.min.js" type="text/javascript"></script>
+<script src="/assets/js/badwords.js" type="text/javascript"></script>
+<script src="/assets/js/giaitoan54c2.js?vs=2" type="text/javascript"></script>
+<link rel="stylesheet" href="/assets/css/giaitoan.css" />
+<script type="text/javascript" src="/assets/js/badwords.js"></script>
+<!-- libs editor -->
+<script type='text/javascript' src="/assets/libraries/editor/question.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/libraries/editor/mathquill.css">
+<script src="/assets/libraries/editor/mathquill.min.js"></script>
+<script src="/assets/libraries/editor/ck_basic.js"></script>
+<script src="/assets/libraries/editor/adapters/jquery.js"></script>
+<script type='text/javascript' src="/assets/libraries/editor/hack/js/fndaf9.js?t=11111"></script>
+<link rel="stylesheet" type="text/css" href="/assets/libraries/editor/hack/css/chebien.css">
+<link rel="stylesheet" type="text/css" href="/assets/libraries/editor/hack/css/style.css">
+<script type="text/javascript" src="/assets/libraries/MathJax/MathJax8331.js?config=TeX-AMS_HTML-full"></script>
+
+<div class="gt-top-header">
+    <div class="menu">
+        <a href="index.html"><img src="/assets/image/giaitoan/top_logo.png" class="" style="vertical-align: middle;"></a>
+         
+        <a href="goc-thong-thai.html">
+            <div class="new_ques_link gt-tabs-link _active"> Mới nhất</div>
+        </a>
+         
+        <a href="goc-thong-thaib3b7.html?select=chua-tra-loi">
+            <div class="no_ans_ques_link gt-tabs-link "> Chưa trả lời</div>
+        </a>
+         
+        <a href="goc-thong-thai3f3d.html?select=cau-hoi-hay">
+            <div class="good_ques_link gt-tabs-link "> <i class="fa fa-star text-gray" aria-hidden="true"></i> Câu hỏi hay</div>
+        </a>
+         
+        <a href="goc-thong-thai/following.html">
+            <div class="follow_ques_link gt-tabs-link "> <i class="fa fa-anchor text-gray" aria-hidden="true"></i> Đang theo dõi</div>
+        </a>
+         
+        <a href="goc-thong-thai1ffc.html?select=cau-hoi-cua-toi">
+            <div class="my_ques_link gt-tabs-link "> Câu hỏi của tôi</div>
+        </a>
+         
+        <a href="goc-thong-thai/create.html"> 
+            <div class="create_ques_link gt-tabs-link"><i class="fa fa-paper-plane text-green" aria-hidden="true"></i> Gửi câu hỏi</div>
+        </a>
+        <div class="top_filter">
+            <div class="btn_top_filter"><i class="fa fa-filter" aria-hidden="true"></i> Lọc câu hỏi</div>
+            <div class="top_box_filter" style="display:none;">
+                <div class="title_filter">Xem câu hỏi của:</div>
+                <div class="box_gt_select">
+                    <select name="class_name" class="filter_class" id="class_name_top">
+                        <option class="" value="">Tất cả các lớp </option>
+                        
+                        <option class="" value="8000" >Lớp 1</option>
+                        
+                        <option class="" value="8025" >Lớp 2</option>
+                        
+                        <option class="" value="8027" >Lớp 3</option>
+                        
+                        <option class="" value="8289" >Lớp 4</option>
+                        
+                        <option class="" value="8290" >Lớp 5</option>
+                        
+                        
+                    </select> 
+                    <select name="mon_name" class="filter_mon" id="mon_name_top">
+                        <option class="" value="">Tất cả các môn </option>
+                        
+                    </select> 
+                    <select name="tag_id" class="filter_tag" id="tag_id_top">
+                        <option class="" value="">Tất cả các chủ đề </option>
+                        
+                    </select>     
+                </div>
+                <div class="btn_filter_gtt" onclick="return filter_ques();">Lọc câu hỏi</div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="body_content">
+    <div class="same_ques_tb_opacity"></div> 
+    <div class="box_same_ques" style="display: none;">
+        <div class="box_popup_tb_same_ques">
+            <div class="close_popup">Đóng <i class="fa fa-window-close" aria-hidden="true"></i></div>
+            <div class="title_popup">
+                <div style="display: inline-block;width: 96%;">
+                    Danh sách các câu hỏi tương tự câu hỏi này:
+                </div>
+                <i class="fa fa-arrows" aria-hidden="true" style="font-size: 25px;color: #969696;display: inline-block;vertical-align: top;"></i>
+            </div>
+            <div class="content_popup">
+
+            </div>
+
+            <div class="text_not_same">&nbsp;</div>
+        </div>               
+    </div>
+
+    <div class="history_user_gt_opacity"></div> 
+    <div class="box_history_user_gt" style="display: none;">
+        <div class="box_popup_tb_history_user_gt">
+            <div class="close_popup">Đóng <i class="fa fa-window-close" aria-hidden="true"></i></div>
+            <div class="title_popup">
+                <div style="display: inline-block;width: 96%;">
+                    Lịch sử hỏi đáp của :
+                </div>
+                <i class="fa fa-arrows" aria-hidden="true" style="font-size: 25px;color: #969696;display: inline-block;vertical-align: top;"></i>
+            </div>
+            <div class="content_popup">
+
+            </div>
+
+            <div class="text_not_same">&nbsp;</div>
+        </div>               
+    </div>
+    <div class="_boxcontent">
+        <div class="navigation_tree"><a class="nav_tree_links" href="index.html">Home</a><a href="goc-thong-thai.html" class="nav_tree_links_ac">Góc Thông Thái (Hỏi - Đáp)</a></div>
+        <div class="box_section">
+            <div class="class_content_cen">
+                <div class="box_class_content_cen home_hocmachoi">
+                    <div class="header-vst">
+                        <div class="_toptitle _lifted">HỎI ĐÁP</div>
+                    </div>
+                     
+                    <script>
+                        const $badWord = ["c\u1eb7c","c\u1ee9t","d\u00e1i","wtf","o\u1eaft t\u1edd ph\u1eafc","l\u1ed3n","\u0111\u1ecbt","bu\u1ed3i","\u0111\u1ee5","dmm","\u0111\u00e9o","dcm","vl","clgt","\u0111\u00e9o*","cmnr","vai lon","dcmm","dech","wth","f u c k","w h a t t h e f u c k","w t f","clmm","dit me","\u0111\u1ed3 con ch\u00f3","ch\u1ecbch","bitch","\u0110 \u1ee5 M \u1eb9","c\u1ee9c","\u0111\u1ec7t","vcl"];
+                    </script>
+                    <div class="hkb hkgc" id="hkb_learn_play">
+                        <div class="hkgc_title" id="hkgc3_title">
+                            <div class="hkgc_introduce"></div>                    
+                            <div class="select_tab hide"></div>                    
+                        </div>
+                        <div class="space10"></div>
+                        <div class="box_search_gtt">
+                            <input type="text" class="txt_search_gtt" id="txt_search_gtt" placeholder="Tìm kiếm câu hỏi, chủ đề ..."/>
+                            <div class="btn_search_gtt" onclick="return filter_ques();"><i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm</div>
+                        </div>
+                        <div class="space5"></div>
+                        <div class="gt_container">
+                            <div class="gt-tabs">
+                                 
+                                <a href="goc-thong-thai.html">
+                                    <div class="new_ques_link gt-tabs-link _active"> Mới nhất</div>
+                                </a>
+                                 
+                                <a href="goc-thong-thaib3b7.html?select=chua-tra-loi">
+                                    <div class="no_ans_ques_link gt-tabs-link "> Chưa trả lời</div>
+                                </a>
+                                 
+                                <a href="goc-thong-thai3f3d.html?select=cau-hoi-hay">
+                                    <div class="good_ques_link gt-tabs-link "> <i class="fa fa-star text-gray" aria-hidden="true"></i> Câu hỏi hay</div>
+                                </a>
+                                 
+                                <a href="goc-thong-thai/following.html">
+                                    <div class="follow_ques_link gt-tabs-link "> <i class="fa fa-anchor text-gray" aria-hidden="true"></i> Đang theo dõi</div>
+                                </a>
+                                 
+                                <a href="goc-thong-thai1ffc.html?select=cau-hoi-cua-toi">
+                                    <div class="my_ques_link gt-tabs-link "> Câu hỏi của tôi</div>
+                                </a>
+                                 
+                                <a href="goc-thong-thai/create.html"> 
+                                    <div class="create_ques_link gt-tabs-link"><i class="fa fa-paper-plane text-green" aria-hidden="true"></i> Gửi câu hỏi</div>
+                                </a>
+                            </div>
+                            <div style="float: right;color: #a1a1a1;padding: 9px 0;">Sắp xếp theo câu hỏi mới nhất</div>
+                            <div class="gt-content" type="">
+                                 
+                                 
+                                <div class="_item_ques" ques_id="4423" uid="125584" stt="1">
+                                    <div class="_title">
+                                        <a href="login6435.html">
+                                            <div class="gt-ava">
+                                                <img class="gt-ava-mem" src="/assets/ava_member/cute_students/cs17.jpg">
+                                                 
+                                                <span class="vip_user"></span>
+                                                 
+                                            </div>
+                                            <div class="gt-info">
+                                                <div class="gt_usn">huyenlinh3232</div>
+                                                <div class="gt_time">Gửi lúc: 6 phút trước (17:03) </div>
+                                            </div>
+                                        </a>
+                                        <div class="ctr_ques_gt">
+                                            <nav>
+                                                <ul class="nav">
+                                                    <li>
+                                                        <div style="font-size: 30px;font-family: Times new roman;">...</div>
+                                                        <ul class="sub-menu">
+                                                            
+                                                             
+                                                            <li>
+                                                                <div class="_follow_ques" title="Theo dõi câu hỏi này" onclick="return follow_user_ques(this);"><i class="fa fa-anchor" aria-hidden="true"></i>Theo dõi câu hỏi này</div>
+                                                            </li>
+                                                             
+                                                            <li>
+                                                                <div class="_vote_ques" onclick="return vote_ques(this, 'no');" title="Vote câu hỏi hay"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Vote câu hỏi hay</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_history_user" title="Xem lịch sử HĐ của TV này" onclick="return history_user_gt(this);"><i class="fa fa-history" aria-hidden="true"></i>Xem lịch sử HĐ của TV này</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_same_ques" title="Xem câu hỏi tương tự câu này" onclick="return same_ques(this);"><i class="fa fa-filter" aria-hidden="true"></i>Xem câu hỏi tương tự câu này</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_spam_ques" title="Báo cáo nội dung sai phạm" onclick="return spam_ques(this);"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Báo cáo nội dung sai phạm</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_send_mess" title="Gửi tin nhắn" onclick="return send_mess('125584');"><i class="fa fa-envelope" aria-hidden="true"></i>Gửi tin nhắn</div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="_ans_ques">
+                                        <div class="_number" onclick="return show_reply(this, 'no');" title="Trả lời câu hỏi này">2  </div>
+                                        Trả lời
+                                    </div>-->
+
+
+                                    <br>
+                                    <a title="Xem chi tiết câu hỏi" href="goc-thong-thai/questionc89e.html?ques=4423"><p>tả 1 cuốn sách tv lớp 5 của em !</p> </a>
+                                    <br>
+                                    <a href="goc-thong-thai/tag0bb6.html?mon=8695" title="Xem thêm các câu hỏi Tiếng Việt Lớp 1"><div class="_class_ques _class_5_ques">Tiếng Việt Lớp 1</div></a>
+                                     
+                                    <span onclick="return same_ques(this);" title="Tìm câu hỏi tương tự" class="find_same_ques">Tìm câu hỏi tương tự</span>
+                                    <br>
+                                    <br>
+                                    <div class="box_content_ctr">
+                                        <div class="ctrl_reply_ques has_reply" onclick="show_reply(this, 'no')"><i class="fa fa-commenting" aria-hidden="true"></i> <span class="_number">2</span> Trả lời</div>
+                                        <div class="ctrl_follow_ques " onclick="return follow_user_ques(this);"><i class="fa fa-anchor" aria-hidden="true"></i>Theo dõi câu hỏi này</div>
+                                        <div class="ctrl_share_ques" onclick="post_fb(this)"><i class="fa fa-share" aria-hidden="true"></i>Chia sẻ facebook</div>
+                                    </div>
+                                    <div class="box_content_hint">
+                                        <div class="box_content_hint" onclick="show_reply(this, 'no')">Trả lời câu hỏi này </div>
+                                    </div>
+                                    <div class="box_content_reply"></div>
+                                    <div class="box_content_ans">
+                                         
+                                        <div class="_item_ans" ans_id="48684" uid="146247" ques_id="4423">
+                                            <div class="_title">
+                                                <a href="login0ac8.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nu/10.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">Animegirllove </div>
+                                                        <div class="gt_time">Gửi lúc: 32 giây trước(17:08) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>153</b> | Điểm thông thái Tiếng Việt Lớp 1: <b>1</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><div>duyên thích phá đám hả</div><div>Được thôi tui cho biết tay</div></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48680" uid="89216" ques_id="4423">
+                                            <div class="_title">
+                                                <a href="login8380.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/avatar_fantasy/av1.png">
+                                                         
+                                                        <span class="vip_user"></span>
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">kimduyen33xh </div>
+                                                        <div class="gt_time">Gửi lúc: 5 phút trước (17:04) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>143</b> | Điểm thông thái Tiếng Việt Lớp 1: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p class="Bodytext501" style="margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Arial, Tahoma, Helvetica, sans-serif; font-size: 13px; text-align: justify;">Để chuẩn bị vào năm học mới, ba mua cho em một bộ sách giáo khoa lớp Năm, trong đó có cuốn sách Tiếng Việt 5, tập hai.</p><p style="margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Arial, Tahoma, Helvetica, sans-serif; font-size: 13px; text-align: justify;">&nbsp; &nbsp;Quyển sách Tiếng Việt mới xinh xắn làm sao, hình chữ nhật. Bìa sách được trang trí bằng một bức tranh với nhiều màu sắc khác nhau. Mặt bìa láng bóng. Sách mới nên có mùi thơm của giấy và mực in.</p><p style="margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Arial, Tahoma, Helvetica, sans-serif; font-size: 13px; text-align: justify;">&nbsp; &nbsp;Quyển sách khá dày, gồm 176 trang. Ngoài bìa phía trên in chữ TIẾNG VIỆT 5, tập hai bằng mực xanh và đỏ. Phía dưới là bức tranh có các hạn nhỏ thuộc nhiều dân tộc khác nhau đang nói chuyện vui vẻ<sub>.</sub>&nbsp;Trước mặt các bạn, những cô chú xã viên đang miệt mài cấy lúa, cày bừa trên các thửa ruộng. Xa xa là một ngôi làng nhỏ, mái ngói đỏ tươi nấp dưới những rặng tre đang rì rào ca hát. Xa nữa là biển cả mênh mông, từng đoàn tàu căng buồm ra khơi đánh cá. Trên bầu trời trong xanh, đàn hải âu đang nghiêng mình chao liệng.</p><p style="margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Arial, Tahoma, Helvetica, sans-serif; font-size: 13px; text-align: justify;">&nbsp; &nbsp;Lật sách ra, trang thứ nhất ghi tên các tác giả của quyển sách và một lần nữa chữ TIẾNG VIỆT 5, tập hai lại được lặp lại, có lẽ là để nhắc nhở chúng em hãy học tập tốt bộ môn Tiếng Việt. Trang 3 là chủ điểm Người công dân và một bức tranh vẽ cảnh các bạn thiếu niên khăn quàng đỏ thắm trên vai đang vui vẻ bỏ phiếu thể hiện vai trò và trách nhiệm của người công dân. Trang số 4 ghi chữ “Tuần 19” và bài tập đọc&nbsp;<em>Người công dân số</em>&nbsp;<em>Một</em>&nbsp;nói về tâm trạng của người thanh niên Nguyễn Tất Thành trong việc đi tìm con đường cứu nước, cứu dân. Bên trong các bài học sắp xếp theo tuần, xoay quanh năm chủ điểm:&nbsp;<em>Người công dân, Vì cuộc sống thanh bình, Nhớ nguồn, Nam và nữ, Những chủ nhân tương lai</em>. Những trang giấy đều thuộc loại tốt nên chữ đen nổi bật trên nền giấy trắng tinh. Để thuận tiện cho việc học tập, sách đã sắp xếp khéo léo các bài học theo từng chủ điểm từng tuần học, từng phân môn. Ngoài nội dung bằng chữ, sách còn ghép các bức tranh minh hoạ sinh động giúp các em hứng thú hơn trong học tập. Các phân môn học trong tuần gồm Tập đọc, Chính tả, Luyện từ và câu, Kể chuyện và Tập làm văn. Các phần ghi nhớ được đóng khung với nền màu xanh biếc, gây được sự chú ý nhất định cho người đọc. Trước mỗi chủ điểm sách đều dành hẳn một trang và hình minh hoạ cho chủ điểm đó. Mỗi bài học lại thường có hình minh hoạ rõ ràng, màu sắc hấp dẫn.</p><p align="left" style="margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Arial, Tahoma, Helvetica, sans-serif; font-size: 13px; text-align: justify;">&nbsp; &nbsp;Quyển sách TIẾNG VIỆT 5, tập hai sẽ là người bạn đồng hành cùng em trong suốt học kì II giúp em mở mang kiến thức và học tốt môn Tiếng Việt. Em quý quyển sách của em lắm! Hằng ngày, sau khi học bài xong, em bỏ nó vào cặp sách. Mai này dù lên lớp 6, em vẫn xem quyển sách ấy là người bạn tri kỉ giúp em vững kiến thức bước vào ngưỡng cửa cấp II.<span style="color: rgb(0, 0, 0); font-family: Arial, Tahoma, Helvetica, sans-serif; font-size: 13px;"></span></p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                         
+                                    </div>
+                                </div>
+                                 
+                                <div class="_item_ques" ques_id="4422" uid="125584" stt="2">
+                                    <div class="_title">
+                                        <a href="login6435.html">
+                                            <div class="gt-ava">
+                                                <img class="gt-ava-mem" src="/assets/ava_member/cute_students/cs17.jpg">
+                                                 
+                                                <span class="vip_user"></span>
+                                                 
+                                            </div>
+                                            <div class="gt-info">
+                                                <div class="gt_usn">huyenlinh3232</div>
+                                                <div class="gt_time">Gửi lúc: 9 phút trước (17:00) </div>
+                                            </div>
+                                        </a>
+                                        <div class="ctr_ques_gt">
+                                            <nav>
+                                                <ul class="nav">
+                                                    <li>
+                                                        <div style="font-size: 30px;font-family: Times new roman;">...</div>
+                                                        <ul class="sub-menu">
+                                                            
+                                                             
+                                                            <li>
+                                                                <div class="_follow_ques" title="Theo dõi câu hỏi này" onclick="return follow_user_ques(this);"><i class="fa fa-anchor" aria-hidden="true"></i>Theo dõi câu hỏi này</div>
+                                                            </li>
+                                                             
+                                                            <li>
+                                                                <div class="_vote_ques" onclick="return vote_ques(this, 'no');" title="Vote câu hỏi hay"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Vote câu hỏi hay</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_history_user" title="Xem lịch sử HĐ của TV này" onclick="return history_user_gt(this);"><i class="fa fa-history" aria-hidden="true"></i>Xem lịch sử HĐ của TV này</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_same_ques" title="Xem câu hỏi tương tự câu này" onclick="return same_ques(this);"><i class="fa fa-filter" aria-hidden="true"></i>Xem câu hỏi tương tự câu này</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_spam_ques" title="Báo cáo nội dung sai phạm" onclick="return spam_ques(this);"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Báo cáo nội dung sai phạm</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_send_mess" title="Gửi tin nhắn" onclick="return send_mess('125584');"><i class="fa fa-envelope" aria-hidden="true"></i>Gửi tin nhắn</div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="_ans_ques">
+                                        <div class="_number" onclick="return show_reply(this, 'no');" title="Trả lời câu hỏi này">5  </div>
+                                        Trả lời
+                                    </div>-->
+
+
+                                    <br>
+                                    <a title="Xem chi tiết câu hỏi" href="goc-thong-thai/question82a6.html?ques=4422"><p> </p><p><span style="color: rgb(0, 0, 0); font-family: Roboto; font-size: 16px;"></span></p><p style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">&nbsp; &nbsp; &nbsp; &nbsp; Trên đường đi học về, Hà Hà thích thú chơi trò đếm cột điện. Bạn ấy bước đi về phía trước với tốc độ đều đặn. Sau 6 phút, từ cột điện thứ nhất, bạn ấy đã tới được cột thứ 12. Cứ vừa đi vừa đếm như vậy, hỏi sau 6 phút nữa, bạn ấy sẽ tới cột diện thứ bao nhiêu?</p> </a>
+                                    <br>
+                                    <a href="goc-thong-thai/taga70d.html?mon=8001" title="Xem thêm các câu hỏi Toán lớp 1"><div class="_class_ques _class_1_ques">Toán lớp 1</div></a>
+                                     
+                                    <a href="goc-thong-thai/taga6be.html?tag=1&amp;mon=8001" title="Xem thêm các câu hỏi Đố vui"><div class="_tag_ques">Đố vui</div></a>
+                                     
+                                    <span onclick="return same_ques(this);" title="Tìm câu hỏi tương tự" class="find_same_ques">Tìm câu hỏi tương tự</span>
+                                    <br>
+                                    <br>
+                                    <div class="box_content_ctr">
+                                        <div class="ctrl_reply_ques has_reply" onclick="show_reply(this, 'no')"><i class="fa fa-commenting" aria-hidden="true"></i> <span class="_number">5</span> Trả lời</div>
+                                        <div class="ctrl_follow_ques " onclick="return follow_user_ques(this);"><i class="fa fa-anchor" aria-hidden="true"></i>Theo dõi câu hỏi này</div>
+                                        <div class="ctrl_share_ques" onclick="post_fb(this)"><i class="fa fa-share" aria-hidden="true"></i>Chia sẻ facebook</div>
+                                    </div>
+                                    <div class="box_content_hint">
+                                        <div class="box_content_hint" onclick="show_reply(this, 'no')">Trả lời câu hỏi này </div>
+                                    </div>
+                                    <div class="box_content_reply"></div>
+                                    <div class="box_content_ans">
+                                         
+                                        <div class="_item_ans" ans_id="48679" uid="89216" ques_id="4422">
+                                            <div class="_title">
+                                                <a href="login8380.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/avatar_fantasy/av1.png">
+                                                         
+                                                        <span class="vip_user"></span>
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">kimduyen33xh </div>
+                                                        <div class="gt_time">Gửi lúc: 6 phút trước (17:03) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>143</b> | Điểm thông thái Toán lớp 1: <b>61</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><div class="gt-ct-ans" style="margin: 0px 0px 0px 60px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Roboto; vertical-align: baseline; color: rgb(84, 84, 84); background-color: rgb(236, 245, 245);"><p style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Vì cây cột điện thứ 12 đã đếm rồi nên đếm tiếp cây thứ 13 khồng&nbsp;tính cây cột điện thứ 12 vậy đáp án đúng là 23 cây cột điện</p></div></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>2 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            <div class="_choice_reply_ques"><i class="fa fa-check-square" aria-hidden="true"></i> huyenlinh3232 đã chọn câu trả lời này</div>
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48683" uid="108274" ques_id="4422">
+                                            <div class="_title">
+                                                <a href="login2f48.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/1.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">calononqua </div>
+                                                        <div class="gt_time">Gửi lúc: 2 phút trước (17:07) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>5</b> | Điểm thông thái Toán lớp 1: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>24</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48681" uid="108274" ques_id="4422">
+                                            <div class="_title">
+                                                <a href="login2f48.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/1.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">calononqua </div>
+                                                        <div class="gt_time">Gửi lúc: 4 phút trước (17:05) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>5</b> | Điểm thông thái Toán lớp 1: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>24</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48678" uid="146247" ques_id="4422">
+                                            <div class="_title">
+                                                <a href="login0ac8.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nu/10.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">Animegirllove </div>
+                                                        <div class="gt_time">Gửi lúc: 7 phút trước (17:02) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>153</b> | Điểm thông thái Toán lớp 1: <b>108</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p><em>ban ơi v-o-t-e mình được không</em></p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48677" uid="146247" ques_id="4422">
+                                            <div class="_title">
+                                                <a href="login0ac8.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nu/10.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">Animegirllove </div>
+                                                        <div class="gt_time">Gửi lúc: 8 phút trước (17:01) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>153</b> | Điểm thông thái Toán lớp 1: <b>108</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>24</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>1 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                         
+                                        <div class="_view_more_ans" onclick="return view_more_reply(this);">Xem thêm 2 câu trả lời khác</div>
+                                         
+                                    </div>
+                                </div>
+                                 
+                                <div class="_item_ques" ques_id="4421" uid="143676" stt="3">
+                                    <div class="_title">
+                                        <a href="login558b.html">
+                                            <div class="gt-ava">
+                                                <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/4.png">
+                                                 
+                                                <span class="vip_user"></span>
+                                                 
+                                            </div>
+                                            <div class="gt-info">
+                                                <div class="gt_usn">daiphongmay</div>
+                                                <div class="gt_time">Gửi lúc: 33 phút trước (16:36) </div>
+                                            </div>
+                                        </a>
+                                        <div class="ctr_ques_gt">
+                                            <nav>
+                                                <ul class="nav">
+                                                    <li>
+                                                        <div style="font-size: 30px;font-family: Times new roman;">...</div>
+                                                        <ul class="sub-menu">
+                                                            
+                                                             
+                                                            <li>
+                                                                <div class="_follow_ques" title="Theo dõi câu hỏi này" onclick="return follow_user_ques(this);"><i class="fa fa-anchor" aria-hidden="true"></i>Theo dõi câu hỏi này</div>
+                                                            </li>
+                                                             
+                                                            <li>
+                                                                <div class="_vote_ques" onclick="return vote_ques(this, 'no');" title="Vote câu hỏi hay"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Vote câu hỏi hay</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_history_user" title="Xem lịch sử HĐ của TV này" onclick="return history_user_gt(this);"><i class="fa fa-history" aria-hidden="true"></i>Xem lịch sử HĐ của TV này</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_same_ques" title="Xem câu hỏi tương tự câu này" onclick="return same_ques(this);"><i class="fa fa-filter" aria-hidden="true"></i>Xem câu hỏi tương tự câu này</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_spam_ques" title="Báo cáo nội dung sai phạm" onclick="return spam_ques(this);"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Báo cáo nội dung sai phạm</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="_send_mess" title="Gửi tin nhắn" onclick="return send_mess('143676');"><i class="fa fa-envelope" aria-hidden="true"></i>Gửi tin nhắn</div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="_ans_ques">
+                                        <div class="_number" onclick="return show_reply(this, 'no');" title="Trả lời câu hỏi này">5  </div>
+                                        Trả lời
+                                    </div>-->
+
+
+                                    <br>
+                                    <a title="Xem chi tiết câu hỏi" href="goc-thong-thai/question8c20.html?ques=4421"><p>1+2-3-4+5+6-7-8+9+10-11-12+13+...+2006-2007-2008+2009+2010-2011</p> </a>
+                                    <br>
+                                    <a href="goc-thong-thai/tagaf4e.html?mon=8291" title="Xem thêm các câu hỏi Toán lớp 4"><div class="_class_ques _class_4_ques">Toán lớp 4</div></a>
+                                     
+                                    <span onclick="return same_ques(this);" title="Tìm câu hỏi tương tự" class="find_same_ques">Tìm câu hỏi tương tự</span>
+                                    <br>
+                                    <br>
+                                    <div class="box_content_ctr">
+                                        <div class="ctrl_reply_ques has_reply" onclick="show_reply(this, 'no')"><i class="fa fa-commenting" aria-hidden="true"></i> <span class="_number">5</span> Trả lời</div>
+                                        <div class="ctrl_follow_ques " onclick="return follow_user_ques(this);"><i class="fa fa-anchor" aria-hidden="true"></i>Theo dõi câu hỏi này</div>
+                                        <div class="ctrl_share_ques" onclick="post_fb(this)"><i class="fa fa-share" aria-hidden="true"></i>Chia sẻ facebook</div>
+                                    </div>
+                                    <div class="box_content_hint">
+                                        <div class="box_content_hint" onclick="show_reply(this, 'no')">Trả lời câu hỏi này </div>
+                                    </div>
+                                    <div class="box_content_reply"></div>
+                                    <div class="box_content_ans">
+                                         
+                                        <div class="_item_ans" ans_id="48676" uid="108274" ques_id="4421">
+                                            <div class="_title">
+                                                <a href="login2f48.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/1.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">calononqua </div>
+                                                        <div class="gt_time">Gửi lúc: 13 phút trước (16:56) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>5</b> | Điểm thông thái Toán lớp 4: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>dễ ợt đó mà</p><p>bang 0</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48675" uid="149049" ques_id="4421">
+                                            <div class="_title">
+                                                <a href="login2375.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/14.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">dung2703 </div>
+                                                        <div class="gt_time">Gửi lúc: 18 phút trước (16:51) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>0</b> | Điểm thông thái Toán lớp 4: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>bằng 0</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48673" uid="108274" ques_id="4421">
+                                            <div class="_title">
+                                                <a href="login2f48.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/1.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">calononqua </div>
+                                                        <div class="gt_time">Gửi lúc: 30 phút trước (16:39) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>5</b> | Điểm thông thái Toán lớp 4: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>vote đi tớ giải cho</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48672" uid="143676" ques_id="4421">
+                                            <div class="_title">
+                                                <a href="login558b.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/4.png">
+                                                         
+                                                        <span class="vip_user"></span>
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">daiphongmay </div>
+                                                        <div class="gt_time">Gửi lúc: 30 phút trước (16:39) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>1</b> | Điểm thông thái Toán lớp 4: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>giải được tớ cho 1 triệu đô la</p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                        <div class="_item_ans" ans_id="48671" uid="108274" ques_id="4421">
+                                            <div class="_title">
+                                                <a href="login2f48.html">
+                                                    <div class="gt-ava">
+                                                        <img class="gt-ava-mem" src="/assets/ava_member/noava2/Nam/1.png">
+                                                         
+                                                    </div>
+                                                    <div class="gt-info">
+                                                        <div class="gt_usn">calononqua </div>
+                                                        <div class="gt_time">Gửi lúc: 31 phút trước (16:38) </div>
+                                                        <div class="gt_point">Tổng điểm thông thái: <b>5</b> | Điểm thông thái Toán lớp 4: <b>0</b> </div>
+                                                    </div>
+                                                </a>
+
+                                                
+                                            </div>
+                                            
+                                            <div class="gt-ct-ans"><p>ko biet</p><p> </p></div> 
+                                            <br/>
+                                            <div class="like_gt" onclick="return like_reply(this, 'no')" title="Câu trả lời đúng. Click vào đây để người hỏi biết câu trả lời này là đúng!"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0 </span> bình chọn đúng </div>
+                                            <div class="spam_ans_gt" onclick="return spam_ans(this)" title="Báo cáo sai phạm câu trả lời này"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Báo cáo sai phạm </div>
+                                            
+                                            
+                                            
+
+                                        </div> 
+                                         
+                                         
+                                        <div class="_view_more_ans" onclick="return view_more_reply(this);">Xem thêm 2 câu trả lời khác</div>
+                                         
+                                    </div>
+                                </div>
+                                 
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+
+                    </script>
+                     
+                </div>
+            </div>
+        </div>
+        <!-- SIDEBAR GOC THONG THAI -->
+        <div class="box_sidebar_gtt">
+    <div class="box_filter">
+        <div class="title_filter">Xem câu hỏi của:</div>
+        <div class="box_gt_select">
+            <select name="class_name" class="filter_class" id="class_name">
+                <option class="" value="">Tất cả các lớp </option>
+                
+                <option class="" value="8000" >Lớp 1</option>
+                
+                <option class="" value="8025" >Lớp 2</option>
+                
+                <option class="" value="8027" >Lớp 3</option>
+                
+                <option class="" value="8289" >Lớp 4</option>
+                
+                <option class="" value="8290" >Lớp 5</option>
+                
+               
+                
+            </select> 
+            <select name="mon_name" class="filter_mon" id="mon_name">
+                <option class="" value="">Tất cả các môn </option>
+                
+            </select> 
+            <select name="tag_id" class="filter_tag" id="tag_id">
+                <option class="" value="">Tất cả các chủ đề </option>
+                
+            </select>     
+        </div>
+        <div class="btn_filter_gtt" onclick="return filter_ques();">Lọc câu hỏi</div>
+    </div> 
+    <div class="box_send_gt">
+        <a href="goc-thong-thai/create.html" title="Gửi câu hỏi mới"><div class="btn_send_gt"><i class="fa fa-paper-plane" aria-hidden="true"></i> Gửi câu hỏi</div></a>
+    </div>
+    <div class="box_noiquy_gt">
+        <a href="goc-thong-thai/noiquy.html" title="Nội quy mục hỏi đáp"><div class="btn_noiquy_gt"><i style="color: #f7941d;margin-right: 8px;" class="fa fa-list-alt" aria-hidden="true"></i> Nội quy mục hỏi đáp</div></a>
+    </div>
+    <div class="box_giaithuong_gt">
+        <a href="goc-thong-thai/giaithuong.html" title="Giải thưởng mục hỏi đáp"><div class="btn_giaithuong_gt"><i style="color: #f7941d;margin-right: 8px;" class="fa fa-trophy" aria-hidden="true"></i> Giải thưởng mục hỏi đáp</div></a>
+    </div>
+
+    <div class="box_bxh_gt">
+        <div class="box_bxh_gt_content">
+            
+            <div  class="_title_bxh" title="Bảng xếp hạng tuần 9">Bảng xếp hạng tuần</div>
+            <div  class="_content_bxh">
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: Animegirllove" href="login0ac8.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/noava2/Nu/10.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="Animegirllove"><a title="Đến trang cá nhân: Animegirllove" href="login0ac8.html">Animegirllove</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">38</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: boboiboy26" href="login107d.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/noava2/Nam/1.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="boboiboy26"><a title="Đến trang cá nhân: boboiboy26" href="login107d.html">boboiboy26</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">14</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: kimduyen33xh" href="login8380.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/avatar_fantasy/av1.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="kimduyen33xh"><a title="Đến trang cá nhân: kimduyen33xh" href="login8380.html">kimduyen33xh</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">11</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: dang01" href="loginc443.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/noava2/Nam/6.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="dang01"><a title="Đến trang cá nhân: dang01" href="loginc443.html">dang01</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">9</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: dangdinhtung01" href="logineee2.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/noava2/Nam/7.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="dangdinhtung01"><a title="Đến trang cá nhân: dangdinhtung01" href="logineee2.html">dangdinhtung01</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">8</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: xuanmai123" href="login9a6f.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/noava2/Nu/8.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="xuanmai123"><a title="Đến trang cá nhân: xuanmai123" href="login9a6f.html">xuanmai123</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">6</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: baolop6b" href="login5188.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/noava2/Nam/14.png"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="baolop6b"><a title="Đến trang cá nhân: baolop6b" href="login5188.html">baolop6b</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">5</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: hoangnanit" href="logind512.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/avatar_fantasy/27.jpg"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="hoangnanit"><a title="Đến trang cá nhân: hoangnanit" href="logind512.html">hoangnanit</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">5</div>
+                    </div>
+                </div>
+                
+                <div class="_item_bxh">
+                    <div class="_number"></div>
+                    <div class="_avatar"><a title="Đến trang cá nhân: huyenlinh3232" href="login6435.html"><img class="gt-bxh-ava-mem" src="/assets/ava_member/cute_students/cs17.jpg"></a></div>
+                    <div class="_info">
+                        <div class="_username" title="huyenlinh3232"><a title="Đến trang cá nhân: huyenlinh3232" href="login6435.html">huyenlinh3232</a></div>
+                        <div class="">Điểm TT tuần</div>
+                    </div>
+                    <div class="_point_hoidap">
+                        <div class="_point">5</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <a href="goc-thong-thai/bangxephang.html"><div class="view_bxh">Xem bảng xếp hạng</div> </a>       
+            
+        </div>
+    </div>
+</div>
+    </div>
+    <!-- libs khoi tao editor -->
+    <div style='display:none;'>
+        <div id='mathquill-hold'>
+            <div class='mq-editor'>
+                <div id='mq-toolbar'>
+                    <span class='mq-btn cmd' data-cmd='\sqrt'><img src='/assets/libraries/editor/sqrt.png' /></span>
+                    <span class='mq-btn cmd' data-write='\sqrt[]{}'><img src='/assets/libraries/editor/x_sqrt.png' /></span>
+                    <span class='mq-btn cmd' data-cmd='\frac'><img src='/assets/libraries/editor/frac.png' /></span>
+                    <!--<span class="mq-btn cmd" data-write="\hept{\begin {} \ {} \ {} \end}"><img src="/libraries/editor/case3.png"></span>
+                    <span class="mq-btn cmd" data-write="\hept{\begin {} \ {} \end}"><img src="//assets/libraries/editor/case2.png"></span><span class="mq-btn cmd" data-write="\orbr{\begin {} \ {}  \end}"><img src="//assets/libraries/editor/nhpt.png" style="width: 32px; height: 32px;"></span>-->
+                    <span class='mq-btn cmd' data-write='\int^{}_{}'><img src='/assets/libraries/editor/int.png' /></span>
+                    <span class='mq-btn cmd' data-write='^{}'><img src='/assets/libraries/editor/sqr.png' /></span>
+                    <span class='mq-btn cmd' data-write='^2'><img src='/assets/libraries/editor/x2.png' /></span>
+                    <span class='mq-btn cmd' data-write='_{}'><img src='/assets/libraries/editor/x_.png' /></span>
+                    <!--<span class="mq-btn mq-drop" tabindex="1">
+                        <img src="//assets/libraries/editor/vecx.png">
+                        <div class="mq-sub-cmd" style="display: none;">
+                            <span class="cmd" data-write="\widehat{} "><img src="//assets/libraries/editor/hat.png"></span>
+                            <span class="cmd" data-write="\widebat{} "><img src="//assets/libraries/editor/bat.png"></span>
+                            <span class="cmd" data-write="\overline{} "><img src="//assets/libraries/editor/top.png"></span>
+                            <span class="cmd" data-write="\overrightarrow{ } "><img src="//assets/libraries/editor/vec.png"></span><br>
+                            <span class="cmd" data-write="^{ }_{ } "><img src="//assets/libraries/editor/behind.png"></span>
+                            <span class="cmd" data-write="\underrightarrow{ } "><img src="//assets/libraries/editor/right.png"></span>
+                            <span class="cmd" data-write="|^{ }_{ } "><img src="//assets/libraries/editor/intval.png"></span>
+                        </div>
+                    </span>-->
+                    <span class='mq-btn cmd' data-cmd='\vec'><img src='/assets/libraries/editor/vec.png' /></span>
+                    <span class='mq-btn cmd' data-write='\overline{}'><img src='/assets/libraries/editor/top.png' /></span>
+
+                    <span class='mq-btn mq-drop' tabindex='1'><img src='/assets/libraries/editor/sin.png' />
+                        <div class='mq-sub-cmd'>
+                            <div><strong>Lượng giác</strong></div>
+                            <span class='cmd' data-write='\sin'>sin</span>
+                            <span class='cmd' data-write='\cos'>cos</span>
+                            <span class='cmd' data-write='\tan'>tan</span>
+                            <span class='cmd' data-write='\cot'>cot</span>
+                            <span class='cmd' data-write='\sinh'>sinh</span>
+                            <span class='cmd' data-write='\cosh'>cosh</span>
+                            <span class='cmd' data-write='\tanh'>tanh</span>
+                            <div><strong>Lim-log</strong></div>
+                            <span class='cmd' data-write='\log_{}'>Log</span>
+                            <span class='cmd' data-write='\ln'>Ln</span>
+                            <span class='cmd' data-write='\lim_{x\rightarrow n}'>Lim</span>
+                        </div>
+                    </span>
+                    <span class='mq-btn mq-drop' tabindex='1'>
+                        <img src='/assets/libraries/editor/ao.png' />
+                        <div class='mq-sub-cmd'>
+                            <span class='cmd' data-write='\Leftrightarrow'>&Leftrightarrow;</span>
+                            <span class='cmd' data-write='\Rightarrow'>&Rightarrow;</span>
+                            <span class='cmd' data-write='\Leftarrow'>&Leftarrow;</span>
+                            <span class='cmd' data-write='\rightarrow'>→</span>
+                            <span class='cmd' data-write='\leftarrow'>←</span>
+                            <span class='cmd' data-write='\leftrightarrow'>↔</span>
+                            <span class='cmd' data-write='\uparrow'>↑</span>
+                            <span class='cmd' data-write='\downarrow'>↓</span>
+                            <div><strong>Phép toán</strong></div>
+                            <span class='cmd' data-write='+'>+</span>
+                            <span class='cmd' data-write='-'>-</span>
+                            <span class='cmd' data-write='\div'>÷</span>
+                            <span class='cmd' data-write='\times'>×</span>
+                            <span class='cmd' data-write='\neq'>≠</span>
+                            <span class='cmd' data-write='='>=</span>
+                            <span class='cmd' data-write='\subset'>⊂</span>
+                            <span class='cmd' data-write='\supset'>⊃</span>
+                            <span class='cmd' data-write='\subseteq'>⊆</span>
+                            <span class='cmd' data-write='\supseteq'>⊇</span>
+                            <span class='cmd' data-write='\approx'>≈</span>
+                            <span class='cmd' data-write='\in'>∈</span>
+                            <span class='cmd' data-write='\notin'>&notin;</span>
+                            <span class='cmd' data-write='\exists'>∃</span>
+                            <span class='cmd' data-write='\le'>&le;</span>
+                            <span class='cmd' data-write='\ge'>&ge;</span>
+                        </div>
+                    </span>
+                    <span class='mq-btn mq-drop' tabindex='1'>
+                        <img src='/assets/libraries/editor/char.png' />
+                        <div class='mq-sub-cmd'>
+                            <span class='cmd' data-write='\alpha'>α</span>
+                            <span class='cmd' data-write='\beta'>β</span>
+                            <span class='cmd' data-write='\gamma'>&gamma;</span>
+                            <span class='cmd' data-write='\eta'>&eta;</span>
+                            <span class='cmd' data-write='\theta'>&theta;</span>
+                            <span class='cmd' data-write='\lambda'>&lambda;</span>
+                            <span class='cmd' data-write='\Delta'>&Delta;</span>
+                            <span class='cmd' data-write='\delta'>&delta;</span>
+                            <span class='cmd' data-write='\varepsilon'>&varepsilon;</span>
+                            <span class='cmd' data-write='\xi'>&xi;</span>
+                            <span class='cmd' data-write='\varphi'>&varphi;</span>
+                            <span class='cmd' data-write='\phi'>&phi;</span>
+                            <span class='cmd' data-write='\Phi'>&Phi;</span>
+                            <span class='cmd' data-write='\mu'>&mu;</span>
+                            <span class='cmd' data-write='\partial'>∂</span>
+                            <span class='cmd' data-write='\Omega'>&Omega;</span>
+                            <span class='cmd' data-write='\omega'>&omega;</span>
+                            <span class='cmd' data-write='\chi'>&chi;</span>
+                            <span class='cmd' data-write='\sigma'>&sigma;</span>
+                            <span class='cmd' data-write='\rho'>&rho;</span>
+                            <span class='cmd' data-write='\infty'>∞</span>
+                            <span class='cmd' data-write='\pi'>π</span>
+                            <span class='cmd' data-write='\exists'>∃</span>
+                        </div>
+                    </span>
+                    <br style='clear: both;'/>
+                </div>
+                <div id='mq-edit-inner'>
+                    <h4>Công thức:</h4>
+                    <div class='mq'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+ 
+      <!-- WRAPPER -->
+<div id="footer" th:replace="user/sharedlayout/footer::footer"></div>
+</body>

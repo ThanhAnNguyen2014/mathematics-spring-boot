@@ -32,4 +32,64 @@ public class UserController {
 		
 		return "user/register";
 	}
+	// tin tuc
+	@RequestMapping("/tin-tuc")
+	public String news(){
+			
+	return "user/news";
+	}
+		
+		// lien he
+	@RequestMapping("/lien-he")
+	public String contacts(){
+					
+	return "user/contacts";
+	}
+	@RequestMapping("/hoc-ma-choi")
+	public String studyandplay(){
+		return "user/studyandplay";
+	
+	}
+	
+	@RequestMapping("/goc-thong-thai")
+	public String gocthongthai(){
+		return "user/goc-thong-thai";
+	
+	}
+
+	@RequestMapping("/gioi-thieu")
+	public String gioithieu(){
+		return "user/gioi-thieu";
+	
+	}
+	
+	@RequestMapping("/toan-lop-1")
+	public String toanlop1(){
+		return "user/toan-lop-1";
+	
+	}
+	
+	@RequestMapping("/toan-lop-2")
+	public String toanlop2(){
+		return "user/toan-lop-2";
+	}
+	
+	@RequestMapping("/toan-lop-3")
+	public String toanlop3(){
+		return "user/toan-lop-3";
+	}
+	
+	@RequestMapping("/toan-lop-4")
+	public String toanlop4(){
+		return "user/toan-lop-4";
+	}
+
+	@RequestMapping("/toan-lop-5")
+	public String toanlop5(){
+		return "user/toan-lop-5";
+	}
+	@RequestMapping("/toan-vui-moi-tuan")
+	public String toanvuimoituan(){
+		return "user/toan-vui-moi-tuan";
+	}
 }
