@@ -32,6 +32,12 @@ public class UserController {
 
 		return "user/register";
 	}
+	// trang chủ
+		@RequestMapping("/index")
+		public String trangchu(){
+				
+		return "user/index";
+		}
 	// tin tuc
 	@RequestMapping("/tin-tuc")
 	public String news(){
@@ -125,7 +131,7 @@ public class UserController {
 		return "user/toan-lop-5/bai-kiem-tra-chuong-1";
 	}
 	
-	@RequestMapping("/toan-lop-5")
+	@RequestMapping("/bai-giang/toan-lop-5")
 	public String toanlop5() {
 
 		return "user/bai-giang/toan-lop-5";
