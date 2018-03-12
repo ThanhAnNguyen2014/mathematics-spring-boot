@@ -68,4 +68,10 @@ public class UserController {
 
 		return "user/bai-giang/toan-lop-5";
 	}
+	
+	@RequestMapping("/1-on-tap-khai-niem-ve-phan-so-va-tinh-chat-co-ban-cua-phan-so")
+	public String toanlop5bai1() {
+
+		return "user/bai-giang/toan-lop-5/1-on-tap-khai-niem-ve-phan-so-va-tinh-chat-co-ban-cua-phan-so";
+	}
 }
