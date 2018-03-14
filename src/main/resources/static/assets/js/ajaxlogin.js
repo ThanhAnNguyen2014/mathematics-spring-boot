@@ -1,4 +1,5 @@
 var fail = 0;
+var base_urlroot= window.location.origin;
 function detectPhoneNumber(num) {
     if (num && !num.match(/\D/g) && num.length >= 10 && num.length <= 11 && num.match("^(090|093|0120|0121|0122|0126|0128|096|097|098|0162|0163|0164|0165|0166|0167|0168|0169|091|094|0123|0124|0125|0127|0129|092|0188|095|0993|0994|0995|0996|0199).*")) {
         return true;
@@ -576,8 +577,9 @@ $('.act-register').on('click', function () {
                 var gioitinh = $('.reg-mem-info select[name="gioitinh"]').val();
                 var dieukhoan = $('.cbx-reg-note').attr('tck');
 
-                $.post(base_urlroot + 'dang-ky/reg', {c_url: $('input#c_url').val(), gioitinh: gioitinh, address: address, quanhuyen: quanhuyen, school: school, dieukhoan: dieukhoan, usn: usn, pass: pass, repass: repass, fname: fname, capt: capt, aclass: aclass, tinhtp: tinhtp, phone: phone, email: email, inf: get_info_browser2()}, function (data) {
+                $.post(base_urlroot + 'dang-ky/reg', JSON.stringify( {c_url: $('input#c_url').val(), gioitinh: gioitinh, address: address, quanhuyen: quanhuyen, school: school, dieukhoan: dieukhoan, username: usn, password: pass, repass: repass, fname: fname, capt: capt, aclass: aclass, tinhtp: tinhtp, phone: phone, email: email, inf: get_info_browser2()}), function (data) {
                     if (IsJsonString(data)) {
+                        console.log(data)
                         data = jQuery.parseJSON(data);
                         if (data.stt == 'true') {
                             $('.box-reg').html(data.mess);
